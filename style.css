@@ -36,7 +36,7 @@ header p {
 }
 
 section {
-    background-color: #f7f7f7; /* Light gray background */
+    background-color: #f4f6f9; /* Light gray background to contrast with dark elements */
     padding: 2rem;
     margin: 1rem 0;
     width: 90%;
