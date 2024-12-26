@@ -8,7 +8,8 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #000; /* Black background */
+    color: white; /* White text for all sentences */
     margin: 0;
     padding: 20px; /* Adding padding to the body to prevent sticking at the top */
     display: flex;
@@ -19,7 +20,7 @@ body {
 
 /* Main Container */
 section {
-    background-color: white;
+    background-color: #1a1a1a; /* Dark gray for the container */
     padding: 2rem;
     width: 90%;
     max-width: 800px;
@@ -31,8 +32,8 @@ section {
 
 /* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #FFC107; /* Yellow background for header */
+    color: black; /* Black text for the header */
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -49,7 +50,7 @@ header p {
 
 /* Section Titles */
 h2 {
-    color: #4CAF50;
+    color: #FFC107; /* Yellow color for section titles */
     margin-bottom: 1rem;
 }
 
@@ -60,7 +61,7 @@ ul {
 }
 
 ul li {
-    background-color: #e7f7e7;
+    background-color: #333; /* Dark gray list items */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
     border-radius: 5px;
@@ -68,7 +69,7 @@ ul li {
 
 /* Links */
 a {
-    color: #4CAF50;
+    color: #FFC107; /* Yellow for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -80,20 +81,20 @@ a:hover {
 /* Definition List */
 dl dt {
     font-weight: bold;
-    color: #333;
+    color: #fff; /* White color for definition titles */
     margin-top: 1rem;
 }
 
 dl dd {
     margin-left: 1.5rem;
-    color: #666;
+    color: #bbb; /* Light gray for definition descriptions */
 }
 
 /* Blockquote */
 blockquote {
     font-style: italic;
-    color: #555;
-    border-left: 4px solid #4CAF50;
+    color: #ccc; /* Light gray for blockquote text */
+    border-left: 4px solid #FFC107; /* Yellow border-left for blockquotes */
     padding-left: 1rem;
     margin-top: 2rem;
 }
