@@ -1,5 +1,5 @@
 /* Reset default margin and padding */
- {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,8 +8,8 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000; /* Black background */
-    color: white; /* White text for all sentences */
+    background-color: #000; /* Black background for the body */
+    color: white; /* White text for all body content */
     margin: 0;
     padding: 20px; /* Adding padding to the body to prevent sticking at the top */
     display: flex;
@@ -20,7 +20,7 @@ body {
 
 /* Main Container */
 section {
-    background-color: #1a1a1a; /* Dark gray for the container */
+    background-color: #222; /* Dark gray background for the section */
     padding: 2rem;
     width: 90%;
     max-width: 800px;
@@ -32,8 +32,8 @@ section {
 
 /* Header */
 header {
-    background-color: #FFC107; /* Yellow background for header */
-    color: black; /* Black text for the header */
+    background-color: #FFC107; /* Yellow background for the header */
+    color: black; /* Black text inside the header */
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -69,7 +69,7 @@ ul li {
 
 /* Links */
 a {
-    color: #FFC107; /* Yellow for links */
+    color: #FFC107; /* Yellow color for links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -81,7 +81,7 @@ a:hover {
 /* Definition List */
 dl dt {
     font-weight: bold;
-    color: #fff; /* White color for definition titles */
+    color: #FFC107; /* Yellow for definition titles */
     margin-top: 1rem;
 }
 
