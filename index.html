@@ -110,7 +110,23 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+
+        /* Hidden Content */
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
     </style>
+    <script>
+        function toggleMoreInfo() {
+            const moreInfoSection = document.getElementById('more-info');
+            moreInfoSection.classList.toggle('hidden');
+            moreInfoSection.classList.toggle('visible');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -121,7 +137,6 @@
             <a href="#course-highlights">Course Highlights</a>
             <a href="#team-members">Team Members</a>
             <a href="#smart-city">Smart City Project</a>
-            <a href="#about-kwin">About & Location</a>
         </nav>
     </header>
 
@@ -163,7 +178,11 @@
         <blockquote>"Alone we can do so little; together we can do so much." — Helen Keller</blockquote>
     </section>
 
-    <section id="about-kwin">
+    <div style="text-align: center;">
+        <button class="button" onclick="toggleMoreInfo()">More Info</button>
+    </div>
+
+    <section id="more-info" class="hidden">
         <h2>About KWIN City</h2>
         <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation.</p>
         <ul>
