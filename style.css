@@ -81,8 +81,8 @@ blockquote {
 }
 
 .button {
-    background-color: #001f3d; /* Navy background for buttons */
-    color: #fff; /* Yellow text */
+    background-color: #yellow; /* Navy background for buttons */
+    color: #333; /* Yellow text */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
