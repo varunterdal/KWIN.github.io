@@ -1,5 +1,5 @@
 /* Reset and Global Styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    color: #333; /* Dark gray text for better visibility */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +57,7 @@ ul, dl {
 
 ul li, dl dd {
     background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    color: #333; /* Dark gray text */
     margin-bottom: 0.5rem;
     padding: 0.8rem;
     border-radius: 5px;
