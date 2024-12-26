@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #001f3d; /* Navy background */
-    color: #FFD700; /* Yellow text for a pop of color */
+    color: #fff; /* Yellow text for a pop of color */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -82,7 +82,7 @@ blockquote {
 
 .button {
     background-color: #001f3d; /* Navy background for buttons */
-    color: #FFD700; /* Yellow text */
+    color: #fff; /* Yellow text */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
