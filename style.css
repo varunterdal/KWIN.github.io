@@ -33,7 +33,7 @@ section {
 /* Header */
 header {
     background-color: #FFC107; /* Yellow background for the header */
-    color: black; /* Black text inside the header */
+    color: white; /* Black text inside the header */
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
