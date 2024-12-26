@@ -46,7 +46,7 @@ section {
 }
 
 section h2 {
-    color: #FFD700; /* Yellow color for headings */
+    color: #fff; /* Yellow color for headings */
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -64,12 +64,12 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #FFD700; /* Yellow hover effect */
+    background-color: #ff; /* Yellow hover effect */
     color: #121212; /* Dark text on hover */
 }
 
 blockquote {
-    color: #FFD700; /* Yellow text */
+    color: #333; /* Yellow text */
     font-style: italic;
     border-left: 4px solid #FFD700;
     padding-left: 1rem;
@@ -92,14 +92,14 @@ blockquote {
 }
 
 .button:hover {
-    background-color: #FFD700; /* Yellow background on hover */
+    background-color: #fff; /* Yellow background on hover */
     color: #121212; /* Dark text on hover */
 }
 
 footer {
     text-align: center;
     background-color: #001f3d; /* Navy background */
-    color: #FFD700; /* Yellow text */
+    color: #fff; /* Yellow text */
     padding: 1rem;
     width: 100%;
 }
