@@ -1,201 +1,97 @@
-/* Reset default margin and padding */
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #000; /* Black background */
     color: #fff; /* White text */
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
 header {
-    background-color: #FFC107; /* Yellow background */
+    background-color: #FF914D; /* Light orange background */
     color: #fff; /* White text */
     padding: 2rem;
-    border-radius: 12px;
     text-align: center;
     width: 100%;
-    max-width: 1200px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 2rem; /* Added spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 header p {
     font-size: 1.2rem;
 }
 
-/* Section Styling */
 section {
     background-color: #222; /* Dark gray background */
-    color: #fff; /* White text */
     padding: 2rem;
-    margin: 1rem 0; /* Added margin between sections */
-    border-radius: 8px;
-    width: 100%;
+    margin: 1rem 0;
+    width: 90%;
     max-width: 1200px;
+    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Section Header Styling */
 section h2 {
-    color: #FFC107; /* Yellow text */
+    color: #FF914D; /* Light orange */
     font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-}
-
-/* List Styling */
-ul {
-    list-style: none; /* Remove bullets */
-    margin-top: 1rem;
-}
-
-ul li {
-    background-color: #333; /* Dark gray background */
-    padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul li:hover {
-    background-color: #444; /* Slightly lighter on hover */
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
-}
-
-/* Definition List Styling */
-dl {
-    margin-bottom: 2rem; /* Added spacing between sections */
-}
-
-dl dt {
-    font-weight: bold;
-    color: #FFC107; /* Yellow text */
+ul, dl {
     margin-top: 1rem;
 }
 
-dl dd {
-    margin-left: 1.5rem;
-    color: #fff; /* White text */
+ul li, dl dd {
+    background-color: #333; /* Slightly lighter gray */
     margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 5px;
 }
 
-/* Blockquote Styling */
 blockquote {
+    color: #FF914D; /* Light orange */
     font-style: italic;
-    color: #FFC107; /* Yellow text */
-    border-left: 4px solid #FFC107;
+    border-left: 4px solid #FF914D;
     padding-left: 1rem;
-    margin: 2rem 0; /* Added spacing around blockquotes */
+    margin: 1.5rem 0;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    header {
-        padding: 1.5rem;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    section h2 {
-        font-size: 1.5rem;
-    }
+.description-button {
+    margin: 2rem 0;
 }
 
-/* Links Styling */
-a {
-    color: #FFC107; /* Yellow links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Add transitions for links */
-a, button {
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-/* Flexbox for Layout */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem; /* Added gap for spacing */
-}
-
-.flex-item {
-    flex: 1 1 calc(33.333% - 1rem); /* Three columns layout */
-    background-color: #222;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-@media (max-width: 900px) {
-    .flex-item {
-        flex: 1 1 calc(50% - 1rem); /* Two columns for medium screens */
-    }
-}
-
-@media (max-width: 600px) {
-    .flex-item {
-        flex: 1 1 100%; /* Single column for small screens */
-    }
-}
-
-/* Button Styling */
-button, .button {
-    background-color: #FFC107; /* Yellow background */
-    color: #fff; /* White text */
+.button {
+    background-color: #FF914D;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.1em;
-    display: inline-block;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
-button:hover, .button:hover {
-    background-color: #FFA000; /* Darker yellow on hover */
+.button:hover {
+    background-color: #FF7A33; /* Slightly darker orange */
 }
 
-/* Footer Styling */
 footer {
-    background-color: #FFC107; /* Yellow background */
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    background-color: #FF914D; /* Light orange */
+    color: #fff;
+    padding: 1rem;
     width: 100%;
-    bottom: 0;
 }
