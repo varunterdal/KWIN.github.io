@@ -3,166 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWIN City</title>
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Reset and Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text */
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #FF914D; /* Light orange */
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        header p {
-            margin-top: 1rem;
-            font-size: 1.2rem;
-        }
-
-        nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-
-        nav a {
-            color: #FF914D;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 1rem;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            background-color: #222; /* Dark gray */
-            margin: 1rem auto;
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 900px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        section h2 {
-            color: #FF914D;
-            margin-bottom: 1rem;
-        }
-
-        ul, dl {
-            margin-top: 1rem;
-            padding-left: 1rem;
-        }
-
-        ul li, dl dd {
-            background-color: #333;
-            margin-bottom: 0.5rem;
-            padding: 0.8rem;
-            border-radius: 5px;
-        }
-
-        blockquote {
-            color: #FF914D;
-            font-style: italic;
-            border-left: 4px solid #FF914D;
-            padding-left: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #FF914D;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin-top: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #FF7A33;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #FF914D;
-            color: #fff;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        /* Hidden Content */
-        .hidden {
-            display: none;
-        }
-
-        .visible {
-            display: block;
-        }
-    </style>
-    <script>
-        function toggleMoreInfo() {
-            const moreInfoSection = document.getElementById('more-info');
-            moreInfoSection.classList.toggle('hidden');
-            moreInfoSection.classList.toggle('visible');
-        }
-    </script>
 </head>
 <body>
     <header>
-        <h1>KWIN City</h1>
+        <h1>Welcome to KWIN City</h1>
         <p>Your gateway to knowledge, innovation, and well-being.</p>
-        <nav>
-            <a href="#city-map">City Map</a>
-            <a href="#course-highlights">Course Highlights</a>
-            <a href="#team-members">Team Members</a>
-            <a href="#smart-city">Smart City Project</a>
-        </nav>
     </header>
 
-    <section id="city-map">
+    <section>
         <h2>City Map</h2>
         <p>Explore the districts of KWIN City, designed for knowledge, innovation, and growth.</p>
-        <div>
-            <img src="C:\Users\varun\OneDrive\图片\Screenshots\Screenshot 2024-12-26 114240.png" alt="KWIN City Map" style="width: 100%; border-radius: 8px;">
+        <div class="map-container">
+            <img src="C:\Users\varun\OneDrive\图片\Screenshots\Screenshot 2024-12-26 114240.png" alt="KWIN City Map">
         </div>
     </section>
 
-    <section id="course-highlights">
+    <section>
         <h2>Course Highlights</h2>
-        <dl>
-            <dt>Course Name:</dt>
-            <dd>Design and Analysis of Algorithms</dd>
-            <dt>Course Code:</dt>
-            <dd>24ECAC203</dd>
-            <dt>Instructor:</dt>
-            <dd>KMMR</dd>
-            <dt>University:</dt>
-            <dd>KLE Technological University</dd>
-        </dl>
+        <button class="button" onclick="toggleCourseDetails()">Course Introduction</button>
+        <div id="course-details" style="display:none; margin-top: 20px; padding: 15px; background-color: #222; border-radius: 8px;">
+            <h3>Course Introduction</h3>
+            <p><strong>Design and Analysis of Algorithms</strong> taught us how to solve problems efficiently using algorithms. The course helps us understand how to design solutions to problems, analyze their performance, and make sure they work well in real-world applications.</p>
+
+            <h4>Data Structures and Algorithms We Studied:</h4>
+            <ul>
+                <li><strong>Binary Search Trees (BST)</strong>: Used to organize data for quick searching in a hierarchy.</li>
+                <li><strong>AVL Trees</strong>: A balanced version of BSTs, ensuring faster searches.</li>
+                <li><strong>Red-Black Trees</strong>: A self-balancing binary search tree for quick operations and data retrieval.</li>
+                <li><strong>2-3 Trees</strong>: A balanced search tree that helps store and retrieve data efficiently.</li>
+            </ul>
+
+            <p>For each of these topics, we focused on understanding both the theory and practical usage, helping us apply the concepts effectively in real-world situations.</p>
+
+            <h4>Connecting the Course with Real-Time Applications:</h4>
+            <p>Algorithms are used in many things we use every day, such as search engines, social media, and GPS systems. This course helped us understand the logic behind these technologies:</p>
+            <ul>
+                <li><strong>Search Algorithms in Everyday Use</strong>: We saw how algorithms like Depth-First Search (DFS) and Breadth-First Search (BFS) are essential for exploring connections in networks. For example, DFS can find all possible paths between two friends on social media, while BFS finds the quickest path.</li>
+                <li><strong>Managing Large Data in Databases</strong>: We learned how AVL and Red-Black Trees help organize data efficiently in databases, making it quicker to search through millions of records. We also studied how heaps organize data in a way that speeds up data retrieval.</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="team-members">
+    <section>
+        <h2>About KWIN City</h2>
+        <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation.</p>
+        <ul>
+            <li>Eco-friendly and people-centric design.</li>
+            <li>Focus on collaboration and coexistence.</li>
+            <li>Empowering residents through technology and innovation.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Strategic Location</h2>
+        <p>KWIN City is conveniently located:</p>
+        <ul>
+            <li>45 minutes from Kempegowda International Airport.</li>
+            <li>Connected via major highways and rail routes.</li>
+        </ul>
+    </section>
+
+    <section>
         <h2>Team Members</h2>
         <ul>
             <li>Vishal U Hosur</li>
@@ -172,32 +76,26 @@
         </ul>
     </section>
 
-    <section id="smart-city">
+    <section>
         <h2>Smart City Project</h2>
         <p>Suryakshetra: A well-planned urban smart city in Gujarat that balances growth, sustainability, and livability.</p>
         <blockquote>"Alone we can do so little; together we can do so much." — Helen Keller</blockquote>
     </section>
 
-    <div style="text-align: center;">
-        <button class="button" onclick="toggleMoreInfo()">More Info</button>
-    </div>
-
-    <section id="more-info" class="hidden">
-        <h2>About KWIN City</h2>
-        <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation.</p>
-        <ul>
-            <li>Eco-friendly and people-centric design.</li>
-            <li>Focus on collaboration and coexistence.</li>
-        <h2>Strategic Location</h2>
-        <p>KWIN City is conveniently located:</p>
-        <ul>
-            <li>45 minutes from Kempegowda International Airport.</li>
-            <li>Connected via major highways and rail routes.</li>
-        </ul>
-    </section>
-
     <footer>
         <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
     </footer>
+
+    <script>
+        // JavaScript to toggle the course details
+        function toggleCourseDetails() {
+            var courseDetails = document.getElementById("course-details");
+            if (courseDetails.style.display === "none") {
+                courseDetails.style.display = "block";
+            } else {
+                courseDetails.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
