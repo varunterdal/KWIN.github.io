@@ -52,6 +52,7 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Section Header Styling */
 section h2 {
     color: #FFC107; /* Yellow text */
     font-size: 1.8rem;
@@ -125,7 +126,7 @@ blockquote {
     section h2 {
         font-size: 1.5rem;
     }
-} 
+}
 
 /* Links Styling */
 a {
@@ -136,12 +137,12 @@ a {
 
 a:hover {
     text-decoration: underline;
-} 
+}
 
-/* Add transitions */
+/* Add transitions for links */
 a, button {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-} 
+}
 
 /* Flexbox for Layout */
 .flex-container {
@@ -170,4 +171,31 @@ a, button {
     .flex-item {
         flex: 1 1 100%; /* Single column for small screens */
     }
-} 
+}
+
+/* Button Styling */
+button, .button {
+    background-color: #FFC107; /* Yellow background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover, .button:hover {
+    background-color: #FFA000; /* Darker yellow on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #FFC107; /* Yellow background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
