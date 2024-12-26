@@ -18,8 +18,8 @@ body {
 }
 
 header {
-    background-color: #001f3d; /* Navy background */
-    color: #FFD700; /* Yellow text for a pop of color */
+    background-color: #333; /* Dark gray background */
+    color: #FFD700; /* Yellow text */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -64,13 +64,13 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #FFD700; /* Yellow hover effect */
+    background-color: #FF7F32; /* Highlight orange on hover */
     color: #121212; /* Dark text on hover */
 }
 
 button {
-    background-color: #001f3d; /* Navy background for buttons */
-    color: #FFD700; /* Yellow text */
+    background-color: #FFD700; /* Yellow background for buttons */
+    color: #121212; /* Dark text */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -80,13 +80,13 @@ button {
 }
 
 button:hover {
-    background-color: #FFD700; /* Yellow background on hover */
-    color: #121212; /* Dark text on hover */
+    background-color: #FF7F32; /* Highlight orange on hover */
+    color: #fff; /* White text on hover */
 }
 
 footer {
     text-align: center;
-    background-color: #001f3d; /* Navy background */
+    background-color: #333; /* Dark gray background */
     color: #FFD700; /* Yellow text */
     padding: 1rem;
     width: 100%;
