@@ -11,7 +11,7 @@ body {
     background-color: #000; /* Black background for the body */
     color: white; /* White text for all body content */
     margin: 0;
-    padding: 20px; /* Adding padding to the body to prevent sticking at the top */
+    padding: 20px; /* Adding padding to prevent content from sticking to the edges */
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Aligns content towards the top */
@@ -27,13 +27,13 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    margin-top: 30px; /* Adding margin to ensure there's space from the top */
+    margin-top: 30px; /* Space from the top */
 }
 
 /* Header */
 header {
     background-color: #FFC107; /* Yellow background for the header */
-    color: white; /* Black text inside the header */
+    color: black; /* Black text inside the header */
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -48,7 +48,7 @@ header p {
     margin: 1rem 0 0;
 }
 
-/* Section Titles */
+/* Section Titles (h2) */
 h2 {
     color: #FFC107; /* Yellow color for section titles */
     margin-bottom: 1rem;
@@ -56,12 +56,12 @@ h2 {
 
 /* List Items */
 ul {
-    list-style: none;
+    list-style: none; /* Removing bullet points */
     padding: 0;
 }
 
 ul li {
-    background-color: #333; /* Dark gray list items */
+    background-color: #333; /* Dark gray background for list items */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
     border-radius: 5px;
@@ -70,12 +70,12 @@ ul li {
 /* Links */
 a {
     color: #FFC107; /* Yellow color for links */
-    text-decoration: none;
+    text-decoration: none; /* Removing the default underline */
     font-weight: bold;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover */
 }
 
 /* Definition List */
@@ -87,14 +87,14 @@ dl dt {
 
 dl dd {
     margin-left: 1.5rem;
-    color: #bbb; /* Light gray for definition descriptions */
+    color: #fff; /* White for definition descriptions */
 }
 
 /* Blockquote */
 blockquote {
     font-style: italic;
-    color: #ccc; /* Light gray for blockquote text */
-    border-left: 4px solid #FFC107; /* Yellow border-left for blockquotes */
+    color: #fff; /* White for blockquote text */
+    border-left: 4px solid #FFC107; /* Yellow left border for blockquotes */
     padding-left: 1rem;
     margin-top: 2rem;
 }
