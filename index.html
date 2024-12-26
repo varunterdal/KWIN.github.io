@@ -3,20 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWIN City - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KWIN City</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FF914D; /* Light orange */
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: #FF914D;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #222; /* Dark gray */
+            margin: 1rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            color: #FF914D;
+            margin-bottom: 1rem;
+        }
+
+        ul, dl {
+            margin-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        ul li, dl dd {
+            background-color: #333;
+            margin-bottom: 0.5rem;
+            padding: 0.8rem;
+            border-radius: 5px;
+        }
+
+        blockquote {
+            color: #FF914D;
+            font-style: italic;
+            border-left: 4px solid #FF914D;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #FF914D;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #FF7A33;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #FF914D;
+            color: #fff;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>KWIN City</h1>
         <p>Your gateway to knowledge, innovation, and well-being.</p>
+        <nav>
+            <a href="#city-map">City Map</a>
+            <a href="#course-highlights">Course Highlights</a>
+            <a href="#team-members">Team Members</a>
+            <a href="#smart-city">Smart City Project</a>
+            <a href="#about-kwin">About & Location</a>
+        </nav>
     </header>
 
     <section id="city-map">
         <h2>City Map</h2>
-        <div class="map-container">
-            <img src="C:\Users\varun\OneDrive\图片\Screenshots\Screenshot 2024-12-26 114240.png" alt="KWIN City Map">
+        <p>Explore the districts of KWIN City, designed for knowledge, innovation, and growth.</p>
+        <div>
+            <img src="C:\Users\varun\OneDrive\图片\Screenshots\Screenshot 2024-12-26 114240.png" alt="KWIN City Map" style="width: 100%; border-radius: 8px;">
         </div>
     </section>
 
@@ -50,31 +163,7 @@
         <blockquote>"Alone we can do so little; together we can do so much." — Helen Keller</blockquote>
     </section>
 
-    <div class="description-button">
-        <a href="complete_description.html" class="button">Complete Description</a>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Description</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>About KWIN City</h1>
-        <p>Your gateway to knowledge, innovation, and well-being.</p>
-    </header>
-
-    <section>
+    <section id="about-kwin">
         <h2>About KWIN City</h2>
         <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation.</p>
         <ul>
@@ -82,9 +171,7 @@
             <li>Focus on collaboration and coexistence.</li>
             <li>Empowering residents through technology and innovation.</li>
         </ul>
-    </section>
 
-    <section>
         <h2>Strategic Location</h2>
         <p>KWIN City is conveniently located:</p>
         <ul>
