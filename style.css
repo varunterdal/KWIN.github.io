@@ -19,8 +19,8 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #FF6F61; /* Bright Coral background */
-    color: #F5F5F5; /* Soft Gray text */
+    background-color: #FFC107; /* Yellow background */
+    color: #1E3A8A; /* Midnight Blue text */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -53,7 +53,7 @@ section {
 }
 
 section h2 {
-    color: #FF6F61; /* Bright Coral highlights */
+    color: #FFC107; /* Yellow highlights */
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -80,9 +80,9 @@ ul li:hover, dl dd:hover {
 
 /* Blockquote Styling */
 blockquote {
-    color: #FF6F61; /* Bright Coral */
+    color: #FFC107; /* Yellow */
     font-style: italic;
-    border-left: 5px solid #FF6F61;
+    border-left: 5px solid #FFC107;
     padding-left: 1.5rem;
     margin: 2rem 0;
 }
@@ -94,8 +94,8 @@ blockquote {
 }
 
 .button {
-    background-color: #FF6F61; /* Bright Coral */
-    color: #F5F5F5; /* Soft Gray text */
+    background-color: #FFC107; /* Yellow */
+    color: #1E3A8A; /* Midnight Blue text */
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 8px;
@@ -106,15 +106,15 @@ blockquote {
 }
 
 .button:hover {
-    background-color: #E65A50; /* Slightly darker coral */
+    background-color: #FFB300; /* Slightly darker yellow */
     transform: translateY(-2px);
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    background-color: #FF6F61; /* Bright Coral */
-    color: #F5F5F5; /* Soft Gray text */
+    background-color: #FFC107; /* Yellow */
+    color: #1E3A8A; /* Midnight Blue text */
     padding: 1.5rem 1rem;
     width: 100%;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
