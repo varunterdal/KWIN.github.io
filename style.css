@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-    background-color: #FF6A00; /* Orange background */
+    background-color: #FFC107; /* Yellow background */
     color: #fff; /* White text */
     padding: 2rem;
     border-radius: 12px;
@@ -53,7 +53,7 @@ section {
 }
 
 section h2 {
-    color: #FF6A00; /* Orange text */
+    color: #FFC107; /* Yellow text */
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
 }
@@ -85,7 +85,7 @@ dl {
 
 dl dt {
     font-weight: bold;
-    color: #FF6A00; /* Orange text */
+    color: #FFC107; /* Yellow text */
     margin-top: 1rem;
 }
 
@@ -98,8 +98,8 @@ dl dd {
 /* Blockquote Styling */
 blockquote {
     font-style: italic;
-    color: #FF6A00; /* Orange text */
-    border-left: 4px solid #FF6A00;
+    color: #FFC107; /* Yellow text */
+    border-left: 4px solid #FFC107;
     padding-left: 1rem;
     margin: 2rem 0; /* Added spacing around blockquotes */
 }
@@ -129,7 +129,7 @@ blockquote {
 
 /* Links Styling */
 a {
-    color: #FF6A00; /* Orange links */
+    color: #FFC107; /* Yellow links */
     text-decoration: none;
     font-weight: bold;
 }
