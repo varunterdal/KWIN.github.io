@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1E3A8A; /* Midnight Blue */
-    color: #F5F5F5; /* Soft Gray text */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,139 +17,108 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
 header {
-    background-color: #FFC107; /* Yellow background */
-    color: #1E3A8A; /* Midnight Blue text */
+    background-color: #001f3d; /* Navy background */
+    color: #fff; /* White text */
     padding: 2rem;
     text-align: center;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    font-weight: bold;
 }
 
 header p {
     font-size: 1.2rem;
-    font-weight: 300;
 }
 
-/* Section Styling */
 section {
-    background-color: #223370; /* Deep Blue for contrast */
+    background-color: #f7f7f7; /* Light gray background */
     padding: 2rem;
-    margin: 1.5rem auto;
+    margin: 1rem 0;
     width: 90%;
     max-width: 1200px;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #FFC107; /* Yellow highlights */
-    font-size: 2rem;
+    color: #001f3d; /* Navy text */
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 ul, dl {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 ul li, dl dd {
-    background-color: #2B457D; /* Slightly lighter blue */
-    margin-bottom: 0.8rem;
-    padding: 1rem;
-    border-radius: 8px;
-    color: #F5F5F5; /* Soft Gray text */
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #3A5BA8; /* Brighter blue on hover */
-    transform: scale(1.02);
+    background-color: #001f3d; /* Navy hover effect */
+    color: #fff; /* White text on hover */
 }
 
-/* Blockquote Styling */
 blockquote {
-    color: #FFC107; /* Yellow */
+    color: #001f3d; /* Navy text */
     font-style: italic;
-    border-left: 5px solid #FFC107;
-    padding-left: 1.5rem;
-    margin: 2rem 0;
+    border-left: 4px solid #001f3d;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
 }
 
-/* Button Styling */
 .description-button {
     margin: 2rem 0;
-    text-align: center;
 }
 
 .button {
-    background-color: #FFC107; /* Yellow */
-    color: #1E3A8A; /* Midnight Blue text */
-    padding: 12px 24px;
+    background-color: #001f3d; /* Navy background */
+    color: #fff; /* White text */
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #FFB300; /* Slightly darker yellow */
-    transform: translateY(-2px);
+    background-color: #000f1a; /* Darker navy on hover */
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
-    background-color: #FFC107; /* Yellow */
-    color: #1E3A8A; /* Midnight Blue text */
-    padding: 1.5rem 1rem;
+    background-color: #001f3d; /* Navy background */
+    color: #fff; /* White text */
+    padding: 1rem;
     width: 100%;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    margin-top: auto;
-    font-size: 0.9rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
     }
 
-    header p {
-        font-size: 1rem;
+    header {
+        padding: 1.5rem;
     }
 
-    section h2 {
-        font-size: 1.8rem;
+    section {
+        padding: 1.5rem;
     }
 
-    .button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
     header h1 {
         font-size: 2rem;
-    }
-
-    header p {
-        font-size: 0.9rem;
     }
 
     section h2 {
@@ -157,7 +126,6 @@ footer {
     }
 
     .button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
+        font-size: 1em;
     }
 }
