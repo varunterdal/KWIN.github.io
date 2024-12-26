@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #333; /* Dark gray background */
-    color: #FFD700; /* Yellow text */
+    color: #ffff; /* Yellow text */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -64,7 +64,7 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #FF7F32; /* Highlight orange on hover */
+    background-color: #FFD700; /* Highlight orange on hover */
     color: #121212; /* Dark text on hover */
 }
 
