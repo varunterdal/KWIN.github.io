@@ -8,104 +8,131 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000; /* Black background for the body */
-    color: white; /* White text for all body content */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     margin: 0;
-    padding: 20px; /* Adding padding to prevent content from sticking to the edges */
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Aligns content towards the top */
+    flex-direction: column;
+    align-items: center;
     min-height: 100vh;
-}
-
-/* Main Container */
-section {
-    background-color: #222; /* Dark gray background for the section */
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 30px; /* Space from the top */
 }
 
 /* Header */
 header {
-    background-color: #FFC107; /* Yellow background for the header */
-    color: black; /* Black text inside the header */
+    background-color: #FF6A00; /* Orange background */
+    color: #fff; /* White text */
     padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    margin: 1rem 0 0;
-}
-
-/* Section Titles (h2) */
-h2 {
-    color: #FFC107; /* Yellow color for section titles */
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-/* List Items */
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+    background-color: #222; /* Dark gray background */
+    color: #fff; /* White text */
+    padding: 2rem;
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #FF6A00; /* Orange text */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* List Styling */
 ul {
-    list-style: none; /* Removing bullet points */
-    padding: 0;
+    list-style: none; /* Remove bullets */
+    margin-top: 1rem;
 }
 
 ul li {
-    background-color: #333; /* Dark gray background for list items */
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
+    background-color: #333; /* Dark gray background */
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Links */
-a {
-    color: #FFC107; /* Yellow color for links */
-    text-decoration: none; /* Removing the default underline */
-    font-weight: bold;
+ul li:hover {
+    background-color: #444; /* Slightly lighter on hover */
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
 }
 
-a:hover {
-    text-decoration: underline; /* Underline links on hover */
-}
-
-/* Definition List */
+/* Definition List Styling */
 dl dt {
     font-weight: bold;
-    color: #FFC107; /* Yellow for definition titles */
+    color: #FF6A00; /* Orange text */
     margin-top: 1rem;
 }
 
 dl dd {
     margin-left: 1.5rem;
-    color: #fff; /* White for definition descriptions */
+    color: #fff; /* White text */
 }
 
-/* Blockquote */
+/* Blockquote Styling */
 blockquote {
     font-style: italic;
-    color: #fff; /* White for blockquote text */
-    border-left: 4px solid #FFC107; /* Yellow left border for blockquotes */
+    color: #FF6A00; /* Orange text */
+    border-left: 4px solid #FF6A00;
     padding-left: 1rem;
     margin-top: 2rem;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
+    body {
+        padding: 10px;
     }
 
     header {
         padding: 1.5rem;
     }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+} 
+
+/* Links Styling */
+a {
+    color: #FF6A00; /* Orange links */
+    text-decoration: none;
+    font-weight: bold;
 }
+
+a:hover {
+    text-decoration: underline;
+} 
+
+/* Add transitions */
+a, button {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+} 
