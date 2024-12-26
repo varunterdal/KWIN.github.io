@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #1E3A8A; /* Midnight Blue */
+    color: #F5F5F5; /* Soft Gray text */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,8 +19,8 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #FFC107; /* Yellow background */
-    color: #000; /* Black text for contrast */
+    background-color: #FF6F61; /* Bright Coral background */
+    color: #F5F5F5; /* Soft Gray text */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -43,17 +43,17 @@ header p {
 
 /* Section Styling */
 section {
-    background-color: #111; /* Dark gray background */
+    background-color: #223370; /* Deep Blue for contrast */
     padding: 2rem;
     margin: 1.5rem auto;
     width: 90%;
     max-width: 1200px;
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-    color: #FFC107; /* Yellow highlights */
+    color: #FF6F61; /* Bright Coral highlights */
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -65,24 +65,24 @@ ul, dl {
 }
 
 ul li, dl dd {
-    background-color: #222; /* Slightly lighter gray */
+    background-color: #2B457D; /* Slightly lighter blue */
     margin-bottom: 0.8rem;
     padding: 1rem;
     border-radius: 8px;
-    color: #fff; /* White text */
+    color: #F5F5F5; /* Soft Gray text */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #333; /* Slightly lighter gray on hover */
+    background-color: #3A5BA8; /* Brighter blue on hover */
     transform: scale(1.02);
 }
 
 /* Blockquote Styling */
 blockquote {
-    color: #FFC107; /* Yellow */
+    color: #FF6F61; /* Bright Coral */
     font-style: italic;
-    border-left: 5px solid #FFC107;
+    border-left: 5px solid #FF6F61;
     padding-left: 1.5rem;
     margin: 2rem 0;
 }
@@ -94,8 +94,8 @@ blockquote {
 }
 
 .button {
-    background-color: #FFC107; /* Yellow */
-    color: #000; /* Black text for contrast */
+    background-color: #FF6F61; /* Bright Coral */
+    color: #F5F5F5; /* Soft Gray text */
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 8px;
@@ -106,15 +106,15 @@ blockquote {
 }
 
 .button:hover {
-    background-color: #E6A800; /* Slightly darker yellow */
+    background-color: #E65A50; /* Slightly darker coral */
     transform: translateY(-2px);
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    background-color: #FFC107; /* Yellow */
-    color: #000; /* Black text for contrast */
+    background-color: #FF6F61; /* Bright Coral */
+    color: #F5F5F5; /* Soft Gray text */
     padding: 1.5rem 1rem;
     width: 100%;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
