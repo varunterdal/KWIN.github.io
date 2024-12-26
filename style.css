@@ -11,7 +11,7 @@ body {
     background-color: #000; /* Black background */
     color: #fff; /* White text */
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,8 +26,9 @@ header {
     border-radius: 12px;
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem; /* Added spacing */
 }
 
 header h1 {
@@ -44,17 +45,17 @@ section {
     background-color: #222; /* Dark gray background */
     color: #fff; /* White text */
     padding: 2rem;
-    margin-top: 30px;
+    margin: 1rem 0; /* Added margin between sections */
     border-radius: 8px;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
     color: #FF6A00; /* Orange text */
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* List Styling */
@@ -65,8 +66,8 @@ ul {
 
 ul li {
     background-color: #333; /* Dark gray background */
-    padding: 0.8rem;
-    margin-bottom: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -78,6 +79,10 @@ ul li:hover {
 }
 
 /* Definition List Styling */
+dl {
+    margin-bottom: 2rem; /* Added spacing between sections */
+}
+
 dl dt {
     font-weight: bold;
     color: #FF6A00; /* Orange text */
@@ -87,6 +92,7 @@ dl dt {
 dl dd {
     margin-left: 1.5rem;
     color: #fff; /* White text */
+    margin-bottom: 0.5rem;
 }
 
 /* Blockquote Styling */
@@ -95,7 +101,7 @@ blockquote {
     color: #FF6A00; /* Orange text */
     border-left: 4px solid #FF6A00;
     padding-left: 1rem;
-    margin-top: 2rem;
+    margin: 2rem 0; /* Added spacing around blockquotes */
 }
 
 /* Responsive Design */
@@ -135,4 +141,33 @@ a:hover {
 /* Add transitions */
 a, button {
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+} 
+
+/* Flexbox for Layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem; /* Added gap for spacing */
+}
+
+.flex-item {
+    flex: 1 1 calc(33.333% - 1rem); /* Three columns layout */
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .flex-item {
+        flex: 1 1 calc(50% - 1rem); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-item {
+        flex: 1 1 100%; /* Single column for small screens */
+    }
 } 
