@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #001f3d; /* Navy background */
-    color: #fff; /* Yellow text for a pop of color */
+    color: #FFD700; /* Yellow text for a pop of color */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -46,7 +46,7 @@ section {
 }
 
 section h2 {
-    color: #fff; /* Yellow color for headings */
+    color: #FFD700; /* Yellow color for headings */
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -64,42 +64,30 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #ff; /* Yellow hover effect */
+    background-color: #FFD700; /* Yellow hover effect */
     color: #121212; /* Dark text on hover */
 }
 
-blockquote {
-    color: #333; /* Yellow text */
-    font-style: italic;
-    border-left: 4px solid #FFD700;
-    padding-left: 1rem;
-    margin: 1.5rem 0;
-}
-
-.description-button {
-    margin: 2rem 0;
-}
-
-.button {
-    background-color: #yellow; /* Navy background for buttons */
-    color: #333; /* Yellow text */
+button {
+    background-color: #001f3d; /* Navy background for buttons */
+    color: #FFD700; /* Yellow text */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.1em;
-    transition: background-color 0.3s ease;
     margin: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: #fff; /* Yellow background on hover */
+button:hover {
+    background-color: #FFD700; /* Yellow background on hover */
     color: #121212; /* Dark text on hover */
 }
 
 footer {
     text-align: center;
     background-color: #001f3d; /* Navy background */
-    color: #fff; /* Yellow text */
+    color: #FFD700; /* Yellow text */
     padding: 1rem;
     width: 100%;
 }
@@ -126,7 +114,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .button {
+    button {
         font-size: 1em;
     }
 }
