@@ -6,10 +6,14 @@
     <title>[City Name] - Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Function to toggle visibility of sections
+        // Function to toggle the visibility of additional sections
         function toggleInfo(id) {
-            const section = document.getElementById(id);
-            section.style.display = (section.style.display === "block") ? "none" : "block";
+            var section = document.getElementById(id);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
         }
     </script>
 </head>
@@ -20,23 +24,22 @@
     <p>Your hub for [City Vision/Slogan].</p>
 </header>
 
-<nav>
-    <button onclick="toggleInfo('course-intro')">Course Introduction</button>
-    <button onclick="toggleInfo('business-ideas')">Business Ideas</button>
-    <button onclick="toggleInfo('city-plan')">City Plan</button>
-    <button onclick="toggleInfo('city-map')">City Map</button>
-    <button onclick="toggleInfo('team-members')">Team Members</button>
-</nav>
+<!-- Buttons to show more info -->
+<button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
+<button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
+<button class="button" onclick="toggleInfo('education-details')">Education Details</button>
 
 <!-- Course Introduction Section -->
 <section id="course-intro" style="display:none;">
     <h2>Course Introduction</h2>
-    <p>[Brief description of the course or program related to the city project].</p>
-    <h3>Key Concepts:</h3>
+    <p>[Brief description of the course or program related to the team or project].</p>
+    
+    <h3>Data Structures and Algorithms Studied So Far:</h3>
     <ul>
-        <li><strong>[Concept 1]:</strong> [Description].</li>
-        <li><strong>[Concept 2]:</strong> [Description].</li>
-        <li><strong>[Concept 3]:</strong> [Description].</li>
+        <li><strong>[Data Structure 1]:</strong> [Short description of its application].</li>
+        <li><strong>[Data Structure 2]:</strong> [Short description of its application].</li>
+        <li><strong>[Data Structure 3]:</strong> [Short description of its application].</li>
+        <li><strong>[Data Structure 4]:</strong> [Short description of its application].</li>
     </ul>
 </section>
 
@@ -46,51 +49,78 @@
     <table>
         <thead>
             <tr>
-                <th>#</th>
-                <th>Business Idea</th>
+                <th>SLNO</th>
+                <th>Business Cases Identified</th>
                 <th>Description</th>
                 <th>Owner</th>
-                <th>Tools</th>
+                <th>Problem Tools</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>[Idea 1]</td>
-                <td>[Description of Idea 1]</td>
-                <td>[Owner Name]</td>
-                <td>[Tools]</td>
+                <td>[Business Case Name 1]</td>
+                <td>[Short description of the business idea].</td>
+                <td>[Team Member Name]</td>
+                <td>[Related tools or algorithms].</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>[Business Case Name 2]</td>
+                <td>[Short description of the business idea].</td>
+                <td>[Team Member Name]</td>
+                <td>[Related tools or algorithms].</td>
             </tr>
             <!-- Add more rows as needed -->
         </tbody>
     </table>
 </section>
 
-<!-- City Plan Section -->
-<section id="city-plan" style="display:none;">
+<!-- Education Details Section -->
+<section id="education-details" style="display:none;">
+    <h2>Education Details</h2>
+    <dl>
+        <dt><strong>Class:</strong></dt>
+        <dd>[Class Information]</dd>
+        <dt><strong>Subject:</strong></dt>
+        <dd>[Subject Information]</dd>
+        <dt><strong>Mentor:</strong></dt>
+        <dd>[Mentor Name]</dd>
+    </dl>
+</section>
+
+<!-- Updated City Plan Section -->
+<section id="city-plan">
     <h2>About [City Name]</h2>
-    <p>[City's vision, purpose, and unique features].</p>
+    <p>[Brief description of the city vision, purpose, and key features].</p>
+    
+    <h3>Strategic Location</h3>
+    <p>[Information about the city’s location, transportation, and connectivity advantages].</p>
 </section>
 
 <!-- City Map Section -->
-<section id="city-map" style="display:none;">
+<section id="city-map">
     <h2>City Map</h2>
-    <p>[Description of the map].</p>
-    <img src="[Image URL]" alt="City Map" class="map-image">
+    <p>[Brief description of the city layout or purpose of the map].</p>
+    <div style="margin-bottom: 1.5rem;">
+        <img src="[Map Image URL]" alt="[City Map Placeholder]" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+    </div>
 </section>
 
 <!-- Team Members Section -->
-<section id="team-members" style="display:none;">
+<section>
     <h2>Team Members</h2>
     <ul>
-        <li>[Name 1]</li>
-        <li>[Name 2]</li>
-        <li>[Name 3]</li>
+        <li>[Team Member Name 1]</li>
+        <li>[Team Member Name 2]</li>
+        <li>[Team Member Name 3]</li>
+        <li>[Team Member Name 4]</li>
+        <!-- Add more team members if required -->
     </ul>
 </section>
 
 <footer>
-    <p>&copy; 2024 [City Name] | Designed by [Institution]</p>
+    <p>&copy; 2024 [City Name] | Designed by Students of [Institution Name]</p>
 </footer>
 
 </body>
