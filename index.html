@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWIN City - Student Portfolio</title>
+    <title>[City Name] - Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Function to toggle the visibility of additional sections
+        // Function to toggle visibility of sections
         function toggleInfo(id) {
-            var section = document.getElementById(id);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
+            const section = document.getElementById(id);
+            section.style.display = (section.style.display === "block") ? "none" : "block";
         }
     </script>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to KWIN City</h1>
-    <p>Your gateway to knowledge, innovation, and well-being.</p>
+    <h1>Welcome to [City Name]</h1>
+    <p>Your hub for [City Vision/Slogan].</p>
 </header>
 
-<!-- Buttons to show more info -->
-<button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
-<button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
+<nav>
+    <button onclick="toggleInfo('course-intro')">Course Introduction</button>
+    <button onclick="toggleInfo('business-ideas')">Business Ideas</button>
+    <button onclick="toggleInfo('city-plan')">City Plan</button>
+    <button onclick="toggleInfo('city-map')">City Map</button>
+    <button onclick="toggleInfo('team-members')">Team Members</button>
+</nav>
+
 <!-- Course Introduction Section -->
 <section id="course-intro" style="display:none;">
     <h2>Course Introduction</h2>
-    <p>Design and Analysis of Algorithms course helped us to learn how to solve problems that are seen around us in smart and efficient ways. It focuses on how to design algorithms for different problems and how to make sure that the provided solutions work well and quickly. Starting with basic ideas and moving to advanced concepts, the course helps us understand, analyze, and create algorithms that are both correct and fast.</p>
-    
-    <h3>Data Structures and Algorithms Studied So Far:</h3>
+    <p>[Brief description of the course or program related to the city project].</p>
+    <h3>Key Concepts:</h3>
     <ul>
-        <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through data arranged in a hierarchy.</li>
-        <li><strong>AVL Trees:</strong> A more balanced version of BSTs, making search faster.</li>
-        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree that guarantees logarithmic height and fast operations.</li>
-        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to store and retrieve data efficiently.</li>
+        <li><strong>[Concept 1]:</strong> [Description].</li>
+        <li><strong>[Concept 2]:</strong> [Description].</li>
+        <li><strong>[Concept 3]:</strong> [Description].</li>
     </ul>
 </section>
 
@@ -47,92 +46,51 @@
     <table>
         <thead>
             <tr>
-                <th>SLNO</th>
-                <th>Business Cases Identified</th>
+                <th>#</th>
+                <th>Business Idea</th>
                 <th>Description</th>
                 <th>Owner</th>
-                <th>Problem Tools</th>
+                <th>Tools</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Predicting optimal tourist routes</td>
-                <td>Identify and optimize travel routes for tourists based on real-time data and preference</td>
-                <td>ABC</td>
-                <td>Graphs</td>
+                <td>[Idea 1]</td>
+                <td>[Description of Idea 1]</td>
+                <td>[Owner Name]</td>
+                <td>[Tools]</td>
             </tr>
-            <tr>
-                <td>2</td>
-                <td>Sorting Menu Items</td>
-                <td>Sort menu items by price or popularity</td>
-                <td>WXY</td>
-                <td>Quick sort, Array</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Monitoring traffic flow</td>
-                <td>Analyze traffic density at intersections</td>
-                <td>DEF</td>
-                <td>Graphs, BFS, DFS</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Optimizing Waste Management routes</td>
-                <td>Generate efficient waste collection routes to minimize fuel and time</td>
-                <td>ABC</td>
-                <td>Dijkstra's Algorithm</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Monitoring water usage in residential areas</td>
-                <td>Track and analyze water consumption patterns across neighborhoods</td>
-                <td>JKL</td>
-                <td>Time series analysis</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Optimizing city-wide internet connectivity</td>
-                <td>Ensure high-speed connectivity by mapping and optimizing Wi-Fi hotspots</td>
-                <td>XYA</td>
-                <td>Minimum spanning tree</td>
-            </tr>
+            <!-- Add more rows as needed -->
         </tbody>
     </table>
 </section>
 
-<!-- More Info Section -->
-
-   <section id="More Information">
-    <h2>About KWIN City</h2>
-    <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation. KWIN City emphasizes eco-friendly and people-centric designs while focusing on collaboration and coexistence. It empowers its residents through technology and innovation to help create a sustainable future.</p>
-    
-    <h3>Strategic Location</h3>
-    <p>KWIN City enjoys a prime location that makes it an ideal hub for growth and development. It is conveniently located just 45 minutes away from Kempegowda International Airport, providing easy access for international travelers and business ventures. Moreover, KWIN City is well-connected via major highways and rail routes, ensuring seamless transportation and connectivity to other parts of the region and beyond.</p>
+<!-- City Plan Section -->
+<section id="city-plan" style="display:none;">
+    <h2>About [City Name]</h2>
+    <p>[City's vision, purpose, and unique features].</p>
 </section>
 
 <!-- City Map Section -->
-<section id="city-map">
+<section id="city-map" style="display:none;">
     <h2>City Map</h2>
-    <p>Explore the districts of KWIN City, designed for knowledge, innovation, and growth.</p>
-    <div style="margin-bottom: 1.5rem;">
-        <img src="https://i.ibb.co/W6FNqyd/projdaa.png" alt="Image Placeholder" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-    </div>
+    <p>[Description of the map].</p>
+    <img src="[Image URL]" alt="City Map" class="map-image">
 </section>
 
 <!-- Team Members Section -->
-<section>
+<section id="team-members" style="display:none;">
     <h2>Team Members</h2>
     <ul>
-        <li>Vishal U Hosur</li>
-        <li>Varun S Terdal</li>
-        <li>Suleman A</li>
-        <li>Saif Ali</li>
+        <li>[Name 1]</li>
+        <li>[Name 2]</li>
+        <li>[Name 3]</li>
     </ul>
 </section>
 
 <footer>
-    <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
+    <p>&copy; 2024 [City Name] | Designed by [Institution]</p>
 </footer>
 
 </body>
