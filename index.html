@@ -16,6 +16,78 @@
             }
         }
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 10px 0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
@@ -26,7 +98,7 @@
 
 <!-- Buttons to show more info -->
 <button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
-
+<button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
 
 <!-- Course Introduction Section -->
 <section id="course-intro" style="display:none;">
@@ -40,69 +112,70 @@
         <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree that guarantees logarithmic height and fast operations.</li>
         <li><strong>2-3 Trees:</strong> A self-balancing search tree used to store and retrieve data efficiently.</li>
     </ul>
-
-    <p>For each of these topics, we focused on both understanding the theory and learning how to use these tools effectively in practice.</p><br>
-
-    <h3>Connecting the Course with Real-Time Applications:</h3>
-    <p>Algorithms are behind many things we use every day. We saw how they power search engines, social media, and even GPS systems. This course helps us understand the logic behind these technologies.</p><br>
-    
-    <h4>Search Algorithms in Everyday Use:</h4>
-    <p>We came to know how DFS and BFS are essential for exploring connections in networks. For example, DFS can find all possible paths between two friends on social media, while BFS finds the shortest way to connect them.</p><br>
-    
-    <h4>Managing Huge Amounts of Data in Filesystems:</h4>
-    <p>AVL and Red-Black Trees ensure data is organized for quick access in systems like databases, which must efficiently retrieve records among millions. We also saw how heaps are used to arrange the data more efficiently and retrieve it from databases.</p>
 </section>
 
-<!-- City Map Section -->
-<section id="city-map">
-    <h2>City Map</h2>
-    <p>Explore the districts of KWIN City, designed for knowledge, innovation, and growth.</p>
-    <div style="margin-bottom: 1.5rem;">
-            <img src="https://i.ibb.co/W6FNqyd/projdaa.png alt="Image Placeholder" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-        </div>
-</section>
-
-<!-- Course Highlights Section -->
-<section>
-    <h2>Course Highlights</h2>
-    <dl>
-        <dt>Course Name</dt>
-        <dd>Design and Analysis of Algorithms</dd>
-
-        <dt>Course Code</dt>
-        <dd>24ECAC203</dd>
-
-        <dt>Instructor</dt>
-        <dd>KMMR</dd>
-
-        <dt>University</dt>
-        <dd>KLE Technological University</dd>
-    </dl>
-</section>
-
-<!-- Team Members Section -->
-<section>
-    <h2>Team Members</h2>
-    <ul>
-        <li>Vishal U Hosur</li>
-        <li>Varun S Terdal</li>
-        <li>Suleman A</li>
-        <li>Saif Ali</li>
-    </ul>
-</section>
-
-    <button class="button" onclick="toggleInfo('about-kwin')">More Info</button>
-<!-- More Info Section (About KWIN City and Strategic Location) -->
-<section id="about-kwin" style="display:none;">
-    <h2>About KWIN City</h2>
-    <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation. KWIN City emphasizes eco-friendly and people-centric designs while focusing on collaboration and coexistence. It empowers its residents through technology and innovation to help create a sustainable future.</p>
-     <br> 
-    <h2>Strategic Location</h2>
-    <p>KWIN City enjoys a prime location that makes it an ideal hub for growth and development. It is conveniently located just 45 minutes away from Kempegowda International Airport, providing easy access for international travelers and business ventures. Moreover, KWIN City is well-connected via major highways and rail routes, ensuring seamless transportation and connectivity to other parts of the region and beyond. This strategic location enhances both its accessibility and its potential for future economic and technological growth.</p>
+<!-- Business Ideas Section -->
+<section id="business-ideas" style="display:none;">
+    <h2>Business Ideas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>SLNO</th>
+                <th>Business Cases Identified</th>
+                <th>Description</th>
+                <th>Owner</th>
+                <th>Problem Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Predicting optimal tourist routes</td>
+                <td>Identify and optimize travel routes for tourists based on real-time data and preference</td>
+                <td>ABC</td>
+                <td>Graphs</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sorting Menu Items</td>
+                <td>Sort menu items by price or popularity</td>
+                <td>WXY</td>
+                <td>Quick sort, Array</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Monitoring traffic flow</td>
+                <td>Analyze traffic density at intersections</td>
+                <td>DEF</td>
+                <td>Graphs, BFS, DFS</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Optimizing Waste Management routes</td>
+                <td>Generate efficient waste collection routes to minimize fuel and time</td>
+                <td>ABC</td>
+                <td>Dijkstra's Algorithm</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Monitoring water usage in residential areas</td>
+                <td>Track and analyze water consumption patterns across neighborhoods</td>
+                <td>JKL</td>
+                <td>Time series analysis</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Optimizing city-wide internet connectivity</td>
+                <td>Ensure high-speed connectivity by mapping and optimizing Wi-Fi hotspots</td>
+                <td>XYA</td>
+                <td>Minimum spanning tree</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
 <footer>
-    <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
+    <p>&copy; 2024 KWIN City | Designed by Varun S Terdal</p>
 </footer>
 
 </body>
