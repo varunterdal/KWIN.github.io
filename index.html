@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <script>
         // Function to toggle the visibility of additional sections
-        function toggleInfo(id) {
+        function toggleInfo(id, btn) {
             var section = document.getElementById(id);
             if (section.style.display === "none" || section.style.display === "") {
                 section.style.display = "block";
+                if (btn) btn.textContent = "Show Less";
             } else {
                 section.style.display = "none";
+                if (btn) btn.textContent = "More Info";
             }
         }
     </script>
@@ -75,34 +77,27 @@
     </table>
 </section>
 
-<!-- Education Details Section (Always Visible) -->
+<!-- Education Details Section -->
 <section id="education-details">
     <h2>Education Details</h2>
     <dl>
         <dt><strong>Class:</strong></dt>
         <dd>D Division</dd>
         <dt><strong>Subject:</strong></dt>
-        <dd>Design and anylasis of Algorithm</dd>
+        <dd>Design and Analysis of Algorithm</dd>
         <dt><strong>Mentor:</strong></dt>
         <dd>Arundati Mam</dd>
     </dl>
 </section>
 
-
-<section id="city-plan">
+<!-- About Section Wrapped in More Info -->
+<section>
     <h1>About VAYUJIVA</h1>
-    <p>
-        Vayujiva: A planned smart city in Karnataka, India, focusing on sustainability, technology, and citizen welfare.
-    </p>
-    <br>
-    <br>
-<button class="button" onclick="toggleInfo('about-section')">More Info</button><br>
-    <!-- About Section Wrapped in More Info -->
-<div id="about-section" style="display: none;">
-    <section id="city-plan">
-
-    <br><h2>Location and Population</h2>
-    <p>
+    <p>Vayujiva: A planned smart city in Karnataka, India, focusing on sustainability, technology, and citizen welfare.</p>
+    <button class="button" onclick="toggleInfo('about-section', this)">More Info</button>
+    <div id="about-section" style="display: none;">
+        <h2>Location and Population</h2>
+        <p><p>
         <strong>State:</strong> Karnataka<br>
         <strong>District:</strong> Chamrajnagar<br>
         <strong>Taluk:</strong> Gundlupet<br>
@@ -135,7 +130,7 @@
         <li>Growth and Expansion: ₹10,000 crores</li>
         <li>Expansion of Transport: ₹8,000 crores (Metro extensions)</li>
         <li>Residential Expansion: ₹5,000 crores</li>
-        <li>Green Energy Development: ₹7,000 crores (wind and solar farms)</li>
+<li>Green Energy Development: ₹7,000 crores (wind and solar farms)</li>
         <li>Commercial & Industrial Zone Development: ₹5,000 crores</li>
         <li>Tourism & Cultural Infrastructure Development: ₹4,000 crores</li>
         <li>Smart Public Services Integration: ₹2,000 crores</li>
@@ -154,7 +149,7 @@
     <h2>Government Initiatives</h2>
     <ul>
         <li><strong>Smart Cities Mission:</strong> Digital infrastructure, e-governance, and city surveillance. Grants: ₹3,000 crores</li>
-        <li><strong>Beti Bachao Beti Padhao:</strong> Support for girl children in below poverty line families. Health insurance: Up to ₹25,000/year. Annual scholarship: ₹500-₹1,000 (up to 10th standard)</li>
+        <li><strong>Beti Bachao Beti Padhao:</strong> Support for girl children in below poverty line families. Health insurance: Up to ₹25,000/year. Annual scholarhip: ₹500-₹1,000 (up to 10th standard)</li>
         <li><strong>National Solar Mission:</strong> Renewable energy production. Funds: ₹1,000 crores for solar farms and sustainable energy</li>
         <li><strong>Nali-Kali Programme:</strong> Redesigned elementary education to improve writing and learning outcomes</li>
     </ul>
@@ -173,7 +168,7 @@
         </li>
     </ul>
 
-    <h2>Revenue Generation</h2>
+<h2>Revenue Generation</h2>
     <ul>
         <li>Property taxes and development fees: ₹3,000 crores annually</li>
         <li>Tourism revenue: ₹1,000 crores annually</li>
@@ -192,21 +187,20 @@
         <li>Digital Infrastructure: City-wide WiFi, e-governance platforms</li>
         <li>Women's Help Center: Support for safety, health, and education</li>
     </ul>
+
 </section>
 
-    
-
 <!-- City Map Section -->
-<section>
+<section id="city-map">
     <h2>City Map</h2>
     <p>[Brief description of the city layout or purpose of the map].</p>
     <div style="margin-bottom: 1.5rem;">
-            <img src="https://ibb.co/5svRW2K" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-        </div>
+        <img src="https://ibb.co/5svRW2K" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+    </div>
 </section>
 
 <!-- Team Members Section -->
-<section>
+<section id="team-members">
     <h2>Team Members</h2>
     <ul>
         <li>Ria Javalagi 01fe23bcs060</li>
