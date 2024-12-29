@@ -311,10 +311,176 @@
 <section id="team-members">
     <h2>Team Members</h2>
     <ul>
-        <li>Ria Javalagi 01fe23bcs060</li>
-        <li>Sanjana Shetti 01fe23bcs057 </li>
-        <li>Chinmayi K.B 01fe23bcs080</li>
-        <li>Ananya Pattanashetty 01fe23bcs055</li>
+    <br><button class="button" onclick="toggleInfo('Rio')"> 01fe23bcs060.Ria Javalagi</li>
+        <section id="course-intro" style="display:none;">
+    <title>Algorithmic Problem-Solving Techniques</title>
+
+</head>
+<body>
+
+<header>
+    <h1>Algorithmic Problem-Solving Techniques</h1>
+</header>
+
+<div class="container">
+
+    <!-- Problems in Nature Section -->
+    <section>
+        <h2>1. Problems in Nature</h2>
+        <ul>
+            <li><strong>Iteration:</strong>
+                <ul>
+                    <li><strong>Compound Interest:</strong> Keeps adding interest over time.</li>
+                    <li><strong>Traffic Lights:</strong> Switches between red, yellow, and green.</li>
+                </ul>
+            </li>
+            <li><strong>Recursion:</strong>
+                <ul>
+                    <li><strong>Directory Size:</strong> Adds up folder sizes, including subfolders.</li>
+                    <li><strong>Fractals:</strong> Patterns repeat in smaller versions.</li>
+                </ul>
+            </li>
+            <li><strong>Backtracking:</strong>
+                <ul>
+                    <li><strong>Sudoku:</strong> Fills in numbers and fixes mistakes.</li>
+                    <li><strong>Maze:</strong> Tries a path, goes back if stuck.</li>
+                </ul>
+            </li>
+            <li><strong>Divide and Conquer:</strong>
+                <ul>
+                    <li><strong>Merging Records:</strong> Breaks data into pieces and puts it together.</li>
+                    <li><strong>Sorting (Merge Sort):</strong> Splits, sorts, and combines data.</li>
+                </ul>
+            </li>
+            <li><strong>Greedy Algorithm:</strong>
+                <ul>
+                    <li><strong>ATM Withdrawal:</strong> Takes the biggest bills first.</li>
+                    <li><strong>Activity Scheduling:</strong> Chooses the task that ends quickest.</li>
+                </ul>
+            </li>
+            <li><strong>Dynamic Programming:</strong>
+                <ul>
+                    <li><strong>Route Planning:</strong> Solves parts of a route to find the best one.</li>
+                    <li><strong>Fibonacci:</strong> Remembers results to avoid doing the same work again.</li>
+                </ul>
+            </li>
+            <li><strong>Graph Algorithms:</strong>
+                <ul>
+                    <li><strong>Dijkstra (Shortest Path):</strong> Finds the quickest route.</li>
+                    <li><strong>Prim's/Kruskal's (MST):</strong> Connects with the least cost.</li>
+                </ul>
+            </li>
+            <li><strong>Sorting Algorithms:</strong>
+                <ul>
+                    <li><strong>Task Sorting:</strong> Organizes tasks to get them done efficiently.</li>
+                    <li><strong>Ticket Sorting:</strong> Sorts tickets by price.</li>
+                </ul>
+            </li>
+            <li><strong>Searching Algorithms:</strong>
+                <ul>
+                    <li><strong>Linear Search:</strong> Finds a file.</li>
+                    <li><strong>Binary Search:</strong> Finds a word in a sorted list.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Space and Time Efficiency Section -->
+    <section>
+        <h2>2. Space and Time Efficiency</h2>
+        <p><strong>Space Efficiency:</strong> Extra memory an algorithm uses.</p>
+        <p><strong>Time Efficiency:</strong> Speed at which an algorithm completes its task.</p>
+
+        <h3>Orders of Growth</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Order</th>
+                <th>Time</th>
+                <th>Space</th>
+            </tr>
+            <tr>
+                <td>O(1)</td>
+                <td>Array access</td>
+                <td>Single variable</td>
+            </tr>
+            <tr>
+                <td>O(log n)</td>
+                <td>Binary search</td>
+                <td>Recursive stack</td>
+            </tr>
+            <tr>
+                <td>O(n)</td>
+                <td>Loop through list</td>
+                <td>Storing list</td>
+            </tr>
+            <tr>
+                <td>O(n log n)</td>
+                <td>Merge Sort</td>
+                <td>Auxiliary space</td>
+            </tr>
+            <tr>
+                <td>O(n²)</td>
+                <td>Bubble Sort</td>
+                <td>2D matrix</td>
+            </tr>
+            <tr>
+                <td>O(2^n)</td>
+                <td>Brute force</td>
+                <td>Storing subsets</td>
+            </tr>
+            <tr>
+                <td>O(n!)</td>
+                <td>Generating permutations</td>
+                <td>Storing permutations</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Design Principles Section -->
+    <section>
+        <h2>3. Design Principles</h2>
+        <ul>
+            <li><strong>Shortest Path Trees:</strong> Finds the most efficient routes. Example: GPS routing.</li>
+            <li><strong>Partitioning:</strong> Breaks down complex problems into smaller segments. Example: Quicksort.</li>
+            <li><strong>Balancing and Rotations:</strong> Maintains optimal performance of data structures. Examples: AVL trees, Red-Black trees.</li>
+            <li><strong>Edge Relaxation:</strong> Allows dynamic updating of path solutions. Example: Dijkstra's algorithm.</li>
+            <li><strong>Level Order Traversal:</strong> Systematic, layer-by-layer exploration. Used in graph and tree navigation techniques.</li>
+            <li><strong>Pruning:</strong> Eliminates unnecessary solution paths. Reduces computational complexity.</li>
+            <li><strong>Brave and Cautious Travel Strategies:</strong> DFS (Deep exploration), BFS (Methodical investigation).</li>
+        </ul>
+    </section>
+
+    <!-- Hierarchical Data Structures Section -->
+    <section>
+        <h2>4. Hierarchical Data Structures</h2>
+        <ul>
+            <li><strong>Tree:</strong> Represents hierarchies (filesystems, organizations). Pro: Simple and intuitive. Con: Lacks balance; inefficient operations.</li>
+            <li><strong>Binary Search Tree (BST):</strong> Sorted data storage and retrieval. Pro: Efficient when balanced. Con: Degrades if unbalanced.</li>
+            <li><strong>AVL Tree:</strong> Always balanced; guarantees O(log n) operations. Con: Costly rotations during updates.</li>
+            <li><strong>2-3 Tree:</strong> Ensures perfect balance with multi-child nodes. Pro: Robust structure. Con: Implementation complexity.</li>
+            <li><strong>Red-Black Tree:</strong> Dynamic operations with approximate balancing. Pro: Predictable O(log n). Con: Slightly slower lookups compared to AVL.</li>
+            <li><strong>Heap:</strong> Priority management and sorting. Pro: Quick min/max access. Con: Inefficient for general-purpose searches.</li>
+            <li><strong>Trie:</strong> Efficient string and prefix searches. Pro: Fast operations. Con: High memory usage.</li>
+        </ul>
+    </section>
+
+    <!-- More sections can follow as needed -->
+
+</div>
+            
+             </section>
+    <br><button class="button" onclick="toggleInfo('Sam')"> 01fe23bcs057.Sanjana Shetti  </li>
+        <section id="course-intro" style="display:none;">
+    <h2>Reff 2</h2>
+             </section>
+    <br><button class="button" onclick="toggleInfo('Chi')"> 01fe23bcs080.Chinmayi K.B </li>
+        <section id="course-intro" style="display:none;">
+    <h2>CReff 3</h2>
+             </section>
+    <br><button class="button" onclick="toggleInfo('Aps')"> 01fe23bcs055.Ananya Pattanashetty </li>
+        <section id="course-intro" style="display:none;">
+    <h2Reff4</h2>
+             </section>
         <!-- Add more team members if required -->
     </ul>
 </section>
