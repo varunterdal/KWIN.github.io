@@ -437,7 +437,7 @@
         </li>
     </ol>ent 
     </section>
-        <button class="button" onclick="toggleInfo('chi-reflections')">CHINNMAY's REFLECTIONS</button><br>
+   <br>     <button class="button" onclick="toggleInfo('chi-reflections')">CHINNMAY's REFLECTIONS</button><br>
 
     <section id="chi-reflections" style="display: none;">
    <h2>Course Reflections</h2>
@@ -523,6 +523,98 @@
                     <li>Quick Sort: Partitions the array around a pivot for sorting.</li>
                 </ul>
                 Applications: Database Management (sorting for faster querying), E-commerce (arranging products by price, ratings, etc.)
+            </p>
+        </li>
+    </ol>
+    </section>
+        <button class="button" onclick="toggleInfo('ann-reflections')">Ananya's REFLECTIONS</button><br>
+
+    <section id="ann-reflections" style="display: none;">
+   <h2>Course Reflections</h2>
+   <ol>
+        <li>
+            <b>1. What are the kinds of problems we see in nature? (iteration, recursion, backtracking)?</b>
+            <p>
+                Nature provides numerous examples that parallel the concepts of iteration, recursion, and backtracking in computational terms. 
+                The recurring cycle of seasons, which progresses and repeats predictably each year, is a clear representation of iteration. 
+                Similarly, the growth pattern of cabbage leaves, where each layer forms upon the previous one in a structured sequence, embodies recursion—a process building upon itself. 
+                Ants foraging for food illustrate backtracking; they traverse paths in search of resources and, upon encountering obstacles or dead ends, retrace their steps to explore alternative routes. 
+                These examples showcase how fundamental algorithmic principles are intricately mirrored in natural processes, emphasizing the profound connection between computational logic and the patterns observed in the natural world.
+            </p>
+        </li>
+        <li>
+            <b>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth?</b>
+            <p>
+                <b>Space Complexity:</b> Additional memory an algorithm requires during execution. <br>
+                <b>Time Complexity:</b> The duration it takes for an algorithm to complete its task.
+            </p>
+            <p>
+                These measures are crucial for assessing an algorithm's efficiency, enabling programmers to determine its suitability for specific applications. 
+                The orders of growth of an algorithm describe how time or space requirements grow as the input size increases:
+            </p>
+            <ul>
+                <li>O(1) → Constant order of growth</li>
+                <li>O(n) → Linear order of growth</li>
+                <li>O(log n) → Logarithmic order of growth</li>
+            </ul>
+        </li>
+        <li>
+            <b>3. Take away from different design principles from Chapter 2?</b>
+            <p>
+                Studying different algorithms has helped me grasp their key principles and applications more clearly. For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
+                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
+                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
+                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
+            </p>
+        </li>
+        <li>
+            <b>4. The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, BST, AVL, 2-3, Red-Black, heap, trie)?</b>
+            <p>
+                Similar to the previous reflections, hierarchical data structures like AVL trees and Red-Black trees focus on maintaining balance for efficient operations. 
+                These structures optimize scenarios like database indexing, network routing, and problem-solving in programming challenges.
+            </p>
+        </li>
+        <li>
+            <b>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed.</b>
+            <p>
+                Efficient array queries are crucial for managing large datasets with frequent updates. Lookup tables precompute and store results for fast range queries, while segment trees handle dynamic updates efficiently. 
+                A simpler alternative is the Binary Indexed Tree (BIT), which uses a clever bitwise approach for quick range operations. These tools have practical uses, like enabling price filters on shopping sites such as Amazon, where customers can search within specific price ranges. Similarly, financial platforms use range queries to analyze stock trends over chosen periods.
+            </p>
+        </li>
+        <li>
+            <b>6. Differentiate between tree and graphs and their traversals. The applications of each.</b>
+            <p>
+                <b>Trees:</b> A connected, acyclic graph with n nodes and n-1 edges. Always has a root node. Is always connected and has no cycles. <br>
+                <b>Graphs:</b> A collection of vertices connected by edges, which can be cyclic or disconnected.
+            </p>
+            <p>
+                <b>Tree Traversals:</b> Pre-order, In-order, Post-order. Examples: Heaps, Binary Search Trees (BST) for efficient search, insertion, and deletion. <br>
+                <b>Graph Traversals:</b> DFS (Depth-First Search), BFS (Breadth-First Search). Examples: Road navigation, social networks, communication networks.
+            </p>
+        </li>
+        <li>
+            <b>7. Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.</b>
+            <p>
+                Sorting algorithms arrange data in order (ascending/descending). Examples include:
+            </p>
+            <ul>
+                <li><b>Bubble Sort:</b> Repeatedly compares and swaps adjacent elements.</li>
+                <li><b>Insertion Sort:</b> Inserts elements into the sorted portion one by one.</li>
+                <li><b>Selection Sort:</b> Finds the smallest/largest element and places it in the sorted section.</li>
+                <li><b>Merge Sort:</b> Recursively splits and merges sorted halves.</li>
+                <li><b>Quick Sort:</b> Partitions the array around a pivot for sorting.</li>
+            </ul>
+        </li>
+        <li>
+            <b>8. Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.</b>
+            <p>
+                Graph algorithms like Kruskal’s and Prim’s help minimize traversal costs. Shortest path algorithms like Dijkstra and Floyd-Warshall are vital for navigation, network routing, and optimization tasks.
+            </p>
+        </li>
+        <li>
+            <b>9. Discuss the different studied algorithm design techniques.</b>
+            <p>
+                Techniques include backtracking, sorting algorithms, brute force, string search algorithms, and shortest path algorithms like Dijkstra's and Floyd's.
             </p>
         </li>
     </ol>
