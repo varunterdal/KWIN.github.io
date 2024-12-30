@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAYUJIVA RIA's - Student Portfolio</title>
+    <title>KWIN City - Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script>
         // Function to toggle the visibility of additional sections
-        function toggleInfo(id, btn) {
+        function toggleInfo(id) {
             var section = document.getElementById(id);
             if (section.style.display === "none" || section.style.display === "") {
                 section.style.display = "block";
-                if (btn) btn.textContent = "Show Less";
             } else {
                 section.style.display = "none";
-                if (btn) btn.textContent = "More Info";
             }
         }
     </script>
@@ -22,745 +20,119 @@
 <body>
 
 <header>
-    <h1>Welcome to VAYUJIVA</h1>
-    <p>The smart city</p>
+    <h1>Welcome to KWIN City</h1>
+    <p>Your gateway to knowledge, innovation, and well-being.</p>
 </header>
 
 <!-- Buttons to show more info -->
-<br><button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button><br>
-
-
+<button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
+<button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
 <!-- Course Introduction Section -->
 <section id="course-intro" style="display:none;">
     <h2>Course Introduction</h2>
-  <p>
-        The "Design and Analysis of Algorithms" course emphasizes understanding, designing, and evaluating algorithms to solve computational problems effectively. It delves into topics such as recursion, graph algorithms, sorting and searching, and advanced data structures like trees and heaps. Students gain skills in analyzing algorithm efficiency in terms of time and space complexity, applying these methods to real-world problems, and building a strong foundation for tackling advanced computing challenges.
-    </p>
-    <h2>What kind of data structures and algorithms have you studied?</h2>
-
-    <h3>Data Structures:</h3>
+    <p>Design and Analysis of Algorithms course helped us to learn how to solve problems that are seen around us in smart and efficient ways. It focuses on how to design algorithms for different problems and how to make sure that the provided solutions work well and quickly. Starting with basic ideas and moving to advanced concepts, the course helps us understand, analyze, and create algorithms that are both correct and fast.</p>
+    
+    <h3>Data Structures and Algorithms Studied So Far:</h3>
     <ul>
-        <li><strong>Basic Structures:</strong> Arrays, Stacks, Queues, Linked Lists</li>
-        <li><strong>Intermediate Structures:</strong> Trees, Graphs, Heaps</li>
-        <li><strong>Advanced Structures:</strong> Tries, Fenwick Trees, Segment Trees, Skip Lists</li>
-    </ul>
-
-    <h3>Algorithms:</h3>
-    <ul>
-        <li><strong>Sorting and Searching:</strong> Organizing data with Bubble Sort, Quick Sort, Merge Sort, and searching with Binary Search, KMP Algorithm</li>
-        <li><strong>Graph Algorithms:</strong> Shortest path algorithms (Dijkstra’s, Bellman-Ford) and Minimum Spanning Trees (Prim’s, Kruskal’s)</li>
-        <li><strong>Pathfinding:</strong> Algorithms for route determination, such as Floyd-Warshall</li>
-<li><strong>Optimization Problems:</strong> Solutions for Knapsack, Travelling Salesperson Problem, and Huffman Coding</li>
-        <li><strong>Recursion and Backtracking:</strong> Function-based problem-solving (e.g., N-Queens Problem)</li>
-        <li><strong>String Matching:</strong> Pattern searching with Rabin-Karp, Boyer-Moore, and Brute Force algorithms</li>
-        <li><strong>Divide and Conquer:</strong> Techniques like Merge Sort and Strassen’s Matrix Multiplication</li>
-        <li><strong>Dynamic Programming:</strong> Breaking problems into overlapping subproblems (e.g., Fibonacci, Longest Common Subsequence)</li>
-        <li><strong>Undecidability:</strong> Exploring problems with no algorithmic solutions (e.g., Halting Problem)</li>
-    </ul>
-
-    <h2>How do you connect the course with real-time applications?</h2>
-    <ul>
-        <li><strong>Graph Algorithms:</strong> Employ Dijkstra's or Kruskal's algorithms to optimize routes in transportation networks or telecommunication systems.</li>
-        <li><strong>Sorting and Searching:</strong> Use efficient algorithms for inventory management and fast product searches in e-commerce platforms.</li>
-        <li><strong>Data Structures:</strong> Utilize heaps, trees, and hash tables for database indexing and real-time data retrieval systems like caching.</li>
-        <li><strong>Optimization Problems:</strong> Address real-world scenarios, such as resource allocation in project management, using the Knapsack problem.</li>
+        <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through data arranged in a hierarchy.</li>
+        <li><strong>AVL Trees:</strong> A more balanced version of BSTs, making search faster.</li>
+        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree that guarantees logarithmic height and fast operations.</li>
+        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to store and retrieve data efficiently.</li>
     </ul>
 </section>
 
-
-    <!-- Education Details Section -->
-<section id="education-details">
-    <h2>Education Details</h2>
-    <dl>
-        <dt><strong>Class:</strong></dt>
-        <dd>D Division</dd>
-        <dt><strong>Subject:</strong></dt>
-        <dd>Design and Analysis of Algorithm</dd>
-        <dt><strong>Mentor:</strong></dt>
-        <dd>Arundati Mam</dd>
-    </dl>
+<!-- Business Ideas Section -->
+<section id="business-ideas" style="display:none;">
+    <h2>Business Ideas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>SLNO</th>
+                <th>Business Cases Identified</th>
+                <th>Description</th>
+                <th>Owner</th>
+                <th>Problem Tools</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Predicting optimal tourist routes</td>
+                <td>Identify and optimize travel routes for tourists based on real-time data and preference</td>
+                <td>ABC</td>
+                <td>Graphs</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sorting Menu Items</td>
+                <td>Sort menu items by price or popularity</td>
+                <td>WXY</td>
+                <td>Quick sort, Array</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Monitoring traffic flow</td>
+                <td>Analyze traffic density at intersections</td>
+                <td>DEF</td>
+                <td>Graphs, BFS, DFS</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Optimizing Waste Management routes</td>
+                <td>Generate efficient waste collection routes to minimize fuel and time</td>
+                <td>ABC</td>
+                <td>Dijkstra's Algorithm</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Monitoring water usage in residential areas</td>
+                <td>Track and analyze water consumption patterns across neighborhoods</td>
+                <td>JKL</td>
+                <td>Time series analysis</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Optimizing city-wide internet connectivity</td>
+                <td>Ensure high-speed connectivity by mapping and optimizing Wi-Fi hotspots</td>
+                <td>XYA</td>
+                <td>Minimum spanning tree</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
-<!-- About Section Wrapped in More Info -->
-<section>
-    <h1>About VAYUJIVA</h1>
-    <br><p>Vayujiva: A planned smart city in Karnataka, India, focusing on sustainability, technology, and citizen welfare.</p>
-    <br>
-    <button class="button" onclick="toggleInfo('about-section', this)">More Info</button>
-    <div id="about-section" style="display: none;">
-        <h2>Location and Population</h2>
-        <p><p>
-        <strong>State:</strong> Karnataka<br>
-        <strong>District:</strong> Chamrajnagar<br>
-        <strong>Taluk:</strong> Gundlupet<br>
-        <strong>Area:</strong> 15.60 sq. km<br>
-        <strong>Scale:</strong> 1 cm on chart = 2 km (x = 1.2 cm, y = 1.4 cm)<br>
-        <strong>PIN Code:</strong> 571419<br>
-        <strong>STD Code:</strong> 0822<br>
-        <strong>Time Zone:</strong> IST (Indian Standard Time) UTC+5:30<br>
-        <strong>Nearby Cities:</strong> Gundlupet (47 km), Kollegal (112 km), Chamrajnagar (134 km)<br>
-        <strong>Population:</strong><br>
-        Phase 1 (2025-2030): 300,000 residents (Primarily government and industrial workers)<br>
-        Phase 2 (2030-2035): 600,000 residents (Expansion of residential zones)<br>
-        Phase 3 (2035-2040): 1 million residents (Target population)
-    </p>
+<!-- More Info Section -->
 
-    <h2>Budget</h2>
-    <h3>Phase 1 (2025-2030)</h3>
-    <ul>
-        <li>Infrastructure Development: ₹10,000 crores</li>
-        <li>Public Transportation: ₹6,000 crores (Metro, EV buses)</li>
-        <li>Affordable Housing: ₹5,000 crores (50,000 units for lower-income groups)</li>
-        <li>Smart Technology Implementation: ₹5,000 crores (IoT, AI for governance)</li>
-        <li>Green Energy and Water Conservation: ₹3,000 crores</li>
-        <li>Government Services and Administration: ₹2,000 crores</li>
-        <li>Education and Healthcare Initiatives: ₹3,000 crores</li>
-    </ul>
-
-    <h3>Phase 2 (2030-2035)</h3>
-    <ul>
-        <li>Growth and Expansion: ₹10,000 crores</li>
-        <li>Expansion of Transport: ₹8,000 crores (Metro extensions)</li>
-        <li>Residential Expansion: ₹5,000 crores</li>
-<li>Green Energy Development: ₹7,000 crores (wind and solar farms)</li>
-        <li>Commercial & Industrial Zone Development: ₹5,000 crores</li>
-        <li>Tourism & Cultural Infrastructure Development: ₹4,000 crores</li>
-        <li>Smart Public Services Integration: ₹2,000 crores</li>
-        <li>Eco-friendly Waste Management: ₹1,000 crores</li>
-    </ul>
-
-    <h3>Phase 3 (2035-2040)</h3>
-    <ul>
-        <li>Mature Phase: ₹18,000 crores</li>
-        <li>Upgradation of Public Infrastructure: ₹8,000 crores</li>
-        <li>Sustainable Water System: ₹4,000 crores</li>
-        <li>Urban Development of Green Spaces: ₹1,000 crores</li>
-        <li>Public Health and Education Services Expansion: ₹3,000 crores</li>
-    </ul>
-
-    <h2>Government Initiatives</h2>
-    <ul>
-        <li><strong>Smart Cities Mission:</strong> Digital infrastructure, e-governance, and city surveillance. Grants: ₹3,000 crores</li>
-        <li><strong>Beti Bachao Beti Padhao:</strong> Support for girl children in below poverty line families. Health insurance: Up to ₹25,000/year. Annual scholarhip: ₹500-₹1,000 (up to 10th standard)</li>
-        <li><strong>National Solar Mission:</strong> Renewable energy production. Funds: ₹1,000 crores for solar farms and sustainable energy</li>
-        <li><strong>Nali-Kali Programme:</strong> Redesigned elementary education to improve writing and learning outcomes</li>
-    </ul>
-
-    <h2>City Layout Plan</h2>
-    <ul>
-        <li><strong>Total Area:</strong> 1,500 sq. km</li>
-        <li><strong>Zones:</strong>
-            <ul>
-                <li>Residential Zone: Population: 1 million. Housing Density: 1,000-2,000 people per sq. km</li>
-                <li>Commercial and Business Zone: Area: 225 sq. km. Industries: IT services, eco-friendly product manufacturing</li>
-                <li>Education and Healthcare Zone: Area: 45 sq. km. Facilities: Schools, universities, research centers, hospitals</li>
-                <li>Industrial Zone: Area: 300 sq. km. Focus: Renewable energy, electric vehicles</li>
-                <li>Recreation and Cultural Zone: Area: 50 sq. km. Facilities: Museums, monuments, cultural centers</li>
-            </ul>
-        </li>
-    </ul>
-
-<h2>Revenue Generation</h2>
-    <ul>
-        <li>Property taxes and development fees: ₹3,000 crores annually</li>
-        <li>Tourism revenue: ₹1,000 crores annually</li>
-        <li>Commercial leasing: ₹3,500 crores annually</li>
-        <li>Public transport and utility services: ₹1,500 crores annually</li>
-        <li>Renewable energy export: ₹1,200 crores annually</li>
-    </ul>
-
-    <h2>Sustainability and Smart Elements</h2>
-    <ul>
-        <li>Renewable Energy: Solar and wind power meet 10% of city energy needs</li>
-        <li>Green Buildings: Energy-efficient and environmentally friendly designs</li>
-        <li>Green Spaces: Enhancing biodiversity and air quality</li>
-        <li>Smart Transportation: Electric buses, integrated public transport, cycling infrastructure</li>
-        <li>Smart Waste Management: Waste segregation, recycling, and composting</li>
-        <li>Digital Infrastructure: City-wide WiFi, e-governance platforms</li>
-        <li>Women's Help Center: Support for safety, health, and education</li>
-    </ul>
-
+   <section id="More Information">
+    <h2>About KWIN City</h2>
+    <p>Our city is designed for a brighter tomorrow. Every step you take here leads to opportunities, learning, and innovation. KWIN City emphasizes eco-friendly and people-centric designs while focusing on collaboration and coexistence. It empowers its residents through technology and innovation to help create a sustainable future.</p>
+    
+    <h3>Strategic Location</h3>
+    <p>KWIN City enjoys a prime location that makes it an ideal hub for growth and development. It is conveniently located just 45 minutes away from Kempegowda International Airport, providing easy access for international travelers and business ventures. Moreover, KWIN City is well-connected via major highways and rail routes, ensuring seamless transportation and connectivity to other parts of the region and beyond.</p>
 </section>
 
 <!-- City Map Section -->
 <section id="city-map">
     <h2>City Map</h2>
-    <p>VAYUJIVA where dreams meet Reality.</p>
-     <br><div style="margin-bottom: 1.5rem;">
-               <img src="https://i.ibb.co/dk6507m/VAYU-JIVA.jpg" alt="Image Placeholder" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+    <p>Explore the districts of KWIN City, designed for knowledge, innovation, and growth.</p>
+    <div style="margin-bottom: 1.5rem;">
+        <img src="https://i.ibb.co/W6FNqyd/projdaa.png" alt="Image Placeholder" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
     </div>
-
 </section>
 
-     <section id="Problem-statement">
-    <h2>Problem Statement</h2>
-    <dl>
-        Urban mobility faces issues like traffic congestion, lack of parking, and slow emergency response. A smart system that manages traffic, parking, and emergencies can improve efficiency and reduce delays.
-    </dl>
-</section>
-
-   <br> <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button><br>
-    <section id="business-ideas">
-   <h2>Business Ideas</h2>
-<table>
-    <thead>
-        <tr>
-            <th><strong>SL NO</strong></th>
-            <th><strong>Business Case Identified</strong></th>
-            <th><strong>Description</strong></th>
-            <th><strong>Owner</strong></th>
-            <th><strong>Problem Tools</strong></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><strong>1</strong></td>
-            <td><strong><label for="AnanyaB" class="clickable-row">Real-time Traffic Monitoring</label></strong></td>
-            <td>Collect, process, and analyze real-time traffic data using IoT devices and sensors.</td>
-            <td>Ananya B P</td>
-            <td>Arrays, Hashing, Sparse Table</td>
-        </tr>
-        <tr>
-            <td><strong>2</strong></td>
-            <td><strong><label for="Ria" class="clickable-row">Citizen Feedback Processing</label></strong></td>
-            <td>Collect, analyze, and act on citizen feedback regarding traffic issues.</td>
-            <td>Ria</td>
-            <td>Brute Force, String Search, Rabin-Karp, Lookup Table, Heap, AVL Tree, BFS, DFS, Queue</td>
-        </tr>
-        <tr>
-            <td><strong>3</strong></td>
-            <td><strong><label for="Sanjana" class="clickable-row">Smart Traffic Signal Control</label></strong></td>
-            <td>Dynamically adjust signal timings based on traffic flow and congestion.</td>
-            <td>Sanjana</td>
-            <td>Binary Search Tree, Trie, Queue</td>
-        </tr>
-        <tr>
-            <td><strong>4</strong></td>
-            <td><strong><label for="Chinmayi" class="clickable-row">Smart Parking Systems</label></strong></td>
-            <td>Use Trie to store and search for parking space availability in real-time, providing instant updates.</td>
-            <td>Chinmayi KB</td>
-            <td>Trie, Tree, BFS, DFS, Queue</td>
-        </tr>
-        <tr>
-            <td><strong>5</strong></td>
-            <td><strong><label for="RiaAndSanjana" class="clickable-row">Emergency Vehicle Routing</label></strong></td>
-            <td>Implement a 2-3 Tree to handle route optimization for emergency vehicles, ensuring minimal delay.</td>
-            <td>Ria and Sanjana</td>
-            <td>2-3 Tree, Dijkstra's Algorithm</td>
-        </tr>
-        <tr>
-            <td><strong>6</strong></td>
-            <td><strong><label for="AnanyaAndChinmayi" class="clickable-row">EV Charging Station Management</label></strong></td>
-            <td>Locate and manage EV charging stations in the city.</td>
-            <td>Ananya and Chinmayi</td>
-            <td>Binary Search Tree, Trie, Arrays</td>
-        </tr>
-    </tbody>
-</table>
-
-<!-- Industrial Strategy Sections -->
-<input type="checkbox" id="AnanyaB" class="toggle-section" hidden>
-<section class="info-section">
-    <h2>INDUSTRIAL STRATEGIES Of Ananya B P</h2>
-
-    <h3><strong>Real-Time Traffic Monitoring</strong></h3>
-    <p>
-        <strong>SDG 9: Industry, Innovation, and Infrastructure</strong><br>
-        <ul>
-            <li><strong>9.1.1:</strong> Proportion of the rural population who live within 2 km of an all-season road.</li>
-            <li><strong>9.1.2:</strong> Passenger and freight volumes, by mode of transport.</li>
-            <li><strong>9.3.1:</strong> Proportion of small-scale industries in total industry value added.</li>
-            <li><strong>9.3.2:</strong> Proportion of small-scale industries with a loan or line of credit.</li>
-            <li><strong>9.c.1:</strong> Proportion of population covered by a mobile network, by technology.</li>
-        </ul>
-        
-        <strong>SDG 11: Sustainable Cities and Communities</strong><br>
-        <ul>
-            <li><strong>11.2.1:</strong> Proportion of population that has convenient access to public transport.</li>
-            <li><strong>11.3.1:</strong> Ratio of land consumption rate to population growth rate.</li>
-            <li><strong>11.3.2:</strong> Proportion of cities with a direct participation structure of civil society in urban planning.</li>
-            <li><strong>11.4.1:</strong> Total expenditure per capita spent on the preservation, protection, and conservation of cultural and natural heritage.</li>
-        </ul>
-    </p>
-
-    <h3><strong>EV Charging Station Management</strong></h3>
-    <p>
-        <strong>SDG 7: Affordable and Clean Energy</strong><br>
-        <ul>
-            <li><strong>7.1.1:</strong> Proportion of population with access to electricity.</li>
-            <li><strong>7.2.1:</strong> Renewable energy share in the total final energy consumption.</li>
-            <li><strong>7.3.1:</strong> Energy intensity measured in terms of primary energy and GDP.</li>
-            <li><strong>7.a.1:</strong> International financial flows to developing countries in support of clean energy research, development, and renewable energy production.</li>
-            <li><strong>7.b.1:</strong> Installed renewable energy-generating capacity in developing countries.</li>
-        </ul>
-
-        <strong>SDG 11: Sustainable Cities and Communities</strong><br>
-        <ul>
-            <li><strong>11.2.1:</strong> Proportion of population that has convenient access to public transport.</li>
-        </ul>
-    </p>
-</section>
-
-
-<input type="checkbox" id="Ria" class="toggle-section" hidden>
-<section class="info-section">
-    <h2>INDUSTRIAL STRATEGIES Of Ria</h2>
-    <ul>
-        <li><strong>SDG Target 9.1</strong><br>Focus: Develop quality, reliable, sustainable, and resilient infrastructure...</li>
-        <li><strong>SDG Target 11.3</strong><br>Focus: Enhance inclusive and sustainable urbanization...</li>
-        <li><strong>SDG Target 16.6</strong><br>Focus: Develop effective, accountable, and transparent institutions...</li>
-    </ul>
-</section>
-
-<input type="checkbox" id="Sanjana" class="toggle-section" hidden>
-<section class="info-section">
-    <h2>INDUSTRIAL STRATEGIES Of Sanjana</h2>
-    <ul>
-        <li><strong>SDG Target 11.2</strong><br>Focus: Provide access to safe, affordable, accessible transport...</li>
-        <li><strong>SDG Target 9.4</strong><br>Focus: Upgrade infrastructure to make them sustainable...</li>
-        <li><strong>SDG Target 13.2</strong><br>Focus: Integrate climate change measures into national policies...</li>
-    </ul>
-</section>
-
-<input type="checkbox" id="Chinmayi" class="toggle-section" hidden>
-<section class="info-section">
-    <h2>INDUSTRIAL STRATEGIES Of Chinmayi</h2>
-    <ul>
-        <li><strong><ul>
-        <li><strong>a. Goal (SDG_GOAL):*</strong> Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable.</li> 
-        <li><strong>b. Target (SDG_TARGET):*</strong> Target 11.2: By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport.</li>  
-        <li><strong>c. Indicator (SDG_INDICATOR):*</strong> Indicator 11.2.1: Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</li>
-    </ul></strong></li>
-    </ul>
-</section>
-
-<input type="checkbox" id="RiaAndSanjana" class="toggle-section" hidden>
-<section class="info-section">
-    <h2>INDUSTRIAL STRATEGIES Of Ria and Sanjana</h2>
-    <ul>
-        <li><strong>SDG Target 11.2</strong><br>Focus: Provide access to safe, affordable transport systems...</li>
-        <li><strong>SDG Target 3.6</strong><br>Focus: Halve the number of global deaths from road accidents...</li>
-        <li><strong>SDG Target 9.1</strong><br>Focus: Develop quality, reliable infrastructure...</li>
-    </ul>
-</section>
-
-<input type="checkbox" id="AnanyaAndChinmayi" class="toggle-section" hidden>
-<section class="info-section">
-    <h2>INDUSTRIAL STRATEGIES for Ananya Of Chinmayi</h2>
-    <ul>
-        <li><strong>a. Goal (SDG_GOAL):*</strong> Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable.</li> 
-        <li><strong>b. Target (SDG_TARGET):*</strong> Target 11.2: By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport.</li>  
-        <li><strong>c. Indicator (SDG_INDICATOR):*</strong> Indicator 11.2.1: Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</li>
-    </ul>
-</section>
-
-</section>
-</section>
-   
-    
 <!-- Team Members Section -->
-<section id="team-members">
+<section>
     <h2>Team Members</h2>
- <table>
-    <tr>
-      <th>ROLL.NO</th>
-      <th>USN</th>
-      <th>NAME</th>
-    </tr>
-    <tr>
-      <td>408</td>
-      <td>01fe23bcs060</td>
-      <td>Ria Javalagi</td>
-    </tr>
-    <tr>
-      <td>407</td>
-      <td>01fe23bcs057</td>
-      <td>Sanjana Shetty</td>
-    </tr>
-    <tr>
-      <td>412</td>
-      <td>01fe23bcs080</td>
-      <td>Chinmayi K.B</td>
-    </tr>
-    <tr>
-      <td>406</td>
-      <td>01fe23bcs055</td>
-      <td>Ananya Pattanashetty</td>
-    </tr>
-  </table>
-    </section>
+    <ul>
+        <li>Vishal U Hosur</li>
+        <li>Varun S Terdal</li>
+        <li>Suleman A</li>
+        <li>Saif Ali</li>
+    </ul>
+</section>
 
-    </section>
-    <!-- Hidden content -->
-    <br>
-    <button class="button" onclick="toggleInfo('reflections')">Reflections</button>
-    <br><br>
-
-    <!-- Reflections Section -->
-    <section id="reflections" style="display:none;">
-        <button class="button" onclick="toggleInfo('rias-reflections')">RIA's REFLECTIONS</button><br>
-
-    <section id="rias-reflections" style="display: none;">
-    <h2>Algorithmic Problem-Solving Techniques</h2>
-    <ol>
-        <li>
-            <b>Problems in Nature</b>
-            <p><b>Iteration:</b> Compound Interest: Keeps adding interest over time. Traffic Lights: Switches between red, yellow, and green.</p>
-            <p><b>Recursion:</b> Directory Size: Adds up folder sizes, including subfolders. Fractals: Patterns repeat in smaller versions.</p>
-            <p><b>Backtracking:</b> Sudoku: Fills in numbers and fixes mistakes. Maze: Tries a path, goes back if stuck.</p>
-            <p><b>Divide and Conquer:</b> Merging Records: Breaks data into pieces and puts it together. Sorting (Merge Sort): Splits, sorts, and combines data.</p>
-            <p><b>Greedy Algorithm:</b> ATM Withdrawal: Takes the biggest bills first. Activity Scheduling: Chooses the task that ends quickest.</p>
-            <p><b>Dynamic Programming:</b> Route Planning: Solves parts of a route to find the best one. Fibonacci: Remembers results to avoid doing the same work again.</p>
-            <p><b>Graph Algorithms:</b> Dijkstra (Shortest Path): Finds the quickest route. Prim's/Kruskal's (MST): Connects with the least cost.</p>
-        </li>
-        <li>
-            <b>Space and Time Efficiency</b>
-            <p>Space Efficiency: Extra memory an algorithm uses. Time Efficiency: Speed at which an algorithm completes its task.</p>
-            <p><b>Orders of Growth:</b></p>
-            <table border="1">
-                <tr>
-                    <th>Order</th><th>Time</th><th>Space</th>
-                </tr>
-                <tr>
-                    <td>O(1)</td><td>Array access</td><td>Single variable</td>
-                </tr>
-                <tr>
-                    <td>O(log n)</td><td>Binary search</td><td>Recursive stack</td>
-                </tr>
-                <tr>
-                    <td>O(n)</td><td>Loop through list</td><td>Storing list</td>
-                </tr>
-                <tr>
-                    <td>O(n log n)</td><td>Merge Sort</td><td>Auxiliary space</td>
-                </tr>
-                <tr>
-                    <td>O(n²)</td><td>Bubble Sort</td><td>2D matrix</td>
-                </tr>
-                <tr>
-                    <td>O(2^n)</td><td>Brute force</td><td>Storing subsets</td>
-                </tr>
-                <tr>
-                    <td>O(n!)</td><td>Generating permutations</td><td>Storing permutations</td>
-                </tr>
-            </table>
-            <p><b>Complexity Order:</b> Time: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!). Space: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).</p>
-        </li>
-        <li>
-            <b>Design Principles</b>
-            <p>Shortest Path Trees: Finds the most efficient routes. Real-world example: GPS routing.</p>
-            <p>Partitioning: Breaks down complex problems into smaller segments. Example: Quicksort.</p>
-            <p>Balancing and Rotations: Maintains optimal performance of data structures. Examples: AVL trees, Red-Black trees.</p>
-            <p>Edge Relaxation: Allows dynamic updating of path solutions. Example: Dijkstra's algorithm.</p>
-            <p>Level Order Traversal: Systematic, layer-by-layer exploration. Used in graph and tree navigation techniques.</p>
-            <p>Pruning: Eliminates unnecessary solution paths. Reduces computational complexity.</p>
-        </li>
-        <li>
-            <b>Hierarchical Data Structures</b>
-            <p><b>Tree:</b> Represents hierarchies (filesystems, organizations). Pro: Simple and intuitive. Con: Lacks balance; inefficient operations.</p>
-            <p><b>Binary Search Tree (BST):</b> Sorted data storage and retrieval. Pro: Efficient when balanced. Con: Degrades if unbalanced.</p>
-            <p><b>AVL Tree:</b> Always balanced; guarantees O(log n) operations. Con: Costly rotations during updates.</p>
-            <p><b>Heap:</b> Priority management and sorting. Pro: Quick min/max access. Con: Inefficient for general-purpose searches.</p>
-        </li>
-        <li>
-            <b>Array Query Algorithms</b>
-            <p><b>Why Needed:</b> Efficient Data Access: Fast retrieval of data in large arrays. Optimized Operations: Reduce time complexity. Dynamic Applications: Handle real-time tasks.</p>
-            <p><b>Applications:</b> Range Queries: Segment Tree, Fenwick Tree. Dynamic Updates: Fenwick Tree, Lazy Propagation. Prefix Queries: Prefix Sum Array.</p>
-        </li>
-        <li>
-            <b>Trees and Graphs</b>
-            <p><b>Tree:</b> Hierarchical structure with one root.</p>
-            <p><b>Graph:</b> Collection of nodes connected by edges. Characteristics: Can be cyclic, disconnected, directed/undirected.</p>
-            <p><b>Tree Traversals:</b> Pre-order, In-order, Post-order, Level-order (BFS).</p>
-            <p><b>Applications:</b> File systems, expression trees, database indexing, decision trees in ML.</p>
-        </li>
-    </ol>ent 
-    </section>
-   <br>     <button class="button" onclick="toggleInfo('chi-reflections')">CHINNMAY's REFLECTIONS</button><br>
-
-    <section id="chi-reflections" style="display: none;">
-   <h2>Course Reflections</h2>
-    <ol>
-        <li>
-            <b>What are the kinds of problems we see in nature? (iteration, recursion, backtracking)?</b>
-            <p>
-                Nature provides numerous examples that parallel the concepts of iteration, recursion, and backtracking in computational terms. 
-                The recurring cycle of seasons, which progresses and repeats predictably each year, is a clear representation of iteration. 
-                Similarly, the growth pattern of cabbage leaves, where each layer forms upon the previous one in a structured sequence, embodies recursion—a process building upon itself. 
-                Ants foraging for food illustrate backtracking; they traverse paths in search of resources and, upon encountering obstacles or dead ends, retrace their steps to explore alternative routes. 
-                These examples showcase how fundamental algorithmic principles are intricately mirrored in natural processes, emphasizing the profound connection between computational logic and the patterns observed in the natural world.
-            </p>
-        </li>
-        <li>
-            <b>What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth?</b>
-            <p>
-                <b>Space Complexity:</b> Additional memory an algorithm requires during execution. <br>
-                <b>Time Complexity:</b> The duration it takes for an algorithm to complete its task.
-            </p>
-            <p>
-                These measures are crucial for assessing an algorithm's efficiency, enabling programmers to determine its suitability for specific applications. 
-                The orders of growth of an algorithm describe how time or space requirements grow as the input size increases.
-            </p>
-            <ul>
-                <li>O(1) -> Constant order of growth</li>
-                <li>O(n) -> Linear order of growth</li>
-                <li>O(log n) -> Logarithmic order of growth</li>
-            </ul>
-        </li>
-        <li>
-            <b>Take away from different design principles from Chapter 2?</b>
-            <p>
-                Studying different algorithms has helped me grasp their key principles and applications more clearly. 
-                For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
-                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
-                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
-                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
-            </p>
-        </li>
-        <li>
-            <b>The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)?</b>
-            <p>
-                Studying different algorithms has helped me grasp their key principles and applications more clearly. 
-                For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
-                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
-                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
-                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
-            </p>
-        </li>
-        <li>
-            <b>The need for array query algorithms and their implications. Their applications and principles need to be discussed.</b>
-            <p>
-                Efficient array queries are crucial for managing large datasets with frequent updates. Lookup tables precompute and store results for fast range queries, while segment trees handle dynamic updates efficiently. 
-                A simpler alternative is the Binary Indexed Tree (BIT), which uses a clever bitwise approach for quick range operations. 
-            </p>
-            <p>
-                These tools have practical uses, like enabling price filters on shopping sites such as Amazon, where customers can search within specific price ranges. 
-                Similarly, financial platforms use range queries to analyze stock trends over chosen periods. 
-                These structures balance speed and simplicity, making them vital for modern data-driven applications.
-            </p>
-        </li>
-        <li>
-            <b>Differentiate between tree and graphs and their traversals. The applications of each.</b>
-            <p>
-                <b>Trees:</b> A connected, acyclic graph with n nodes and n-1 edges. Always has a root node. Is always connected and has no cycles.<br>
-                <b>Graphs:</b> A collection of vertices connected by edges, which can be cyclic or disconnected. Does not have a specific root unless explicitly defined. Can be either connected or disconnected and may include cycles.
-            </p>
-            <p>
-                <b>Tree Traversals:</b> Pre-order, In-order, Post-order. Examples: Heaps, Binary Search Trees (BST) for efficient search, insertion, and deletion.<br>
-                <b>Graph Traversals:</b> DFS (Depth-First Search), BFS (Breadth-First Search). Examples: Road navigation, social networks, communication networks.
-            </p>
-        </li>
-        <li>
-            <b>Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.</b>
-            <p>
-                <b>Sorting Algorithms:</b>
-                <ul>
-                    <li>Bubble Sort: Repeatedly compares and swaps adjacent elements.</li>
-                    <li>Insertion Sort: Inserts elements into the sorted portion one by one.</li>
-                    <li>Selection Sort: Finds the smallest/largest element and places it in the sorted section.</li>
-                    <li>Merge Sort: Recursively splits and merges sorted halves.</li>
-                    <li>Quick Sort: Partitions the array around a pivot for sorting.</li>
-                </ul>
-                Applications: Database Management (sorting for faster querying), E-commerce (arranging products by price, ratings, etc.)
-            </p>
-        </li>
-    </ol>
-    </section>
-     <br>   <button class="button" onclick="toggleInfo('ann-reflections')">Ananya's REFLECTIONS</button><br>
-
-    <section id="ann-reflections" style="display: none;">
-   <h2>Course Reflections</h2>
-   <ol>
-        <li>
-            <b>1. What are the kinds of problems we see in nature? (iteration, recursion, backtracking)?</b>
-            <p>
-                Nature provides numerous examples that parallel the concepts of iteration, recursion, and backtracking in computational terms. 
-                The recurring cycle of seasons, which progresses and repeats predictably each year, is a clear representation of iteration. 
-                Similarly, the growth pattern of cabbage leaves, where each layer forms upon the previous one in a structured sequence, embodies recursion—a process building upon itself. 
-                Ants foraging for food illustrate backtracking; they traverse paths in search of resources and, upon encountering obstacles or dead ends, retrace their steps to explore alternative routes. 
-                These examples showcase how fundamental algorithmic principles are intricately mirrored in natural processes, emphasizing the profound connection between computational logic and the patterns observed in the natural world.
-            </p>
-        </li>
-        <li>
-            <b>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth?</b>
-            <p>
-                <b>Space Complexity:</b> Additional memory an algorithm requires during execution. <br>
-                <b>Time Complexity:</b> The duration it takes for an algorithm to complete its task.
-            </p>
-            <p>
-                These measures are crucial for assessing an algorithm's efficiency, enabling programmers to determine its suitability for specific applications. 
-                The orders of growth of an algorithm describe how time or space requirements grow as the input size increases:
-            </p>
-            <ul>
-                <li>O(1) → Constant order of growth</li>
-                <li>O(n) → Linear order of growth</li>
-                <li>O(log n) → Logarithmic order of growth</li>
-            </ul>
-        </li>
-        <li>
-            <b>3. Take away from different design principles from Chapter 2?</b>
-            <p>
-                Studying different algorithms has helped me grasp their key principles and applications more clearly. For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
-                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
-                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
-                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
-            </p>
-        </li>
-        <li>
-            <b>4. The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, BST, AVL, 2-3, Red-Black, heap, trie)?</b>
-            <p>
-                Similar to the previous reflections, hierarchical data structures like AVL trees and Red-Black trees focus on maintaining balance for efficient operations. 
-                These structures optimize scenarios like database indexing, network routing, and problem-solving in programming challenges.
-            </p>
-        </li>
-        <li>
-            <b>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed.</b>
-            <p>
-                Efficient array queries are crucial for managing large datasets with frequent updates. Lookup tables precompute and store results for fast range queries, while segment trees handle dynamic updates efficiently. 
-                A simpler alternative is the Binary Indexed Tree (BIT), which uses a clever bitwise approach for quick range operations. These tools have practical uses, like enabling price filters on shopping sites such as Amazon, where customers can search within specific price ranges. Similarly, financial platforms use range queries to analyze stock trends over chosen periods.
-            </p>
-        </li>
-        <li>
-            <b>6. Differentiate between tree and graphs and their traversals. The applications of each.</b>
-            <p>
-                <b>Trees:</b> A connected, acyclic graph with n nodes and n-1 edges. Always has a root node. Is always connected and has no cycles. <br>
-                <b>Graphs:</b> A collection of vertices connected by edges, which can be cyclic or disconnected.
-            </p>
-            <p>
-                <b>Tree Traversals:</b> Pre-order, In-order, Post-order. Examples: Heaps, Binary Search Trees (BST) for efficient search, insertion, and deletion. <br>
-                <b>Graph Traversals:</b> DFS (Depth-First Search), BFS (Breadth-First Search). Examples: Road navigation, social networks, communication networks.
-            </p>
-        </li>
-        <li>
-            <b>7. Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.</b>
-            <p>
-                Sorting algorithms arrange data in order (ascending/descending). Examples include:
-            </p>
-            <ul>
-                <li><b>Bubble Sort:</b> Repeatedly compares and swaps adjacent elements.</li>
-                <li><b>Insertion Sort:</b> Inserts elements into the sorted portion one by one.</li>
-                <li><b>Selection Sort:</b> Finds the smallest/largest element and places it in the sorted section.</li>
-                <li><b>Merge Sort:</b> Recursively splits and merges sorted halves.</li>
-                <li><b>Quick Sort:</b> Partitions the array around a pivot for sorting.</li>
-            </ul>
-        </li>
-        <li>
-            <b>8. Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.</b>
-            <p>
-                Graph algorithms like Kruskal’s and Prim’s help minimize traversal costs. Shortest path algorithms like Dijkstra and Floyd-Warshall are vital for navigation, network routing, and optimization tasks.
-            </p>
-        </li>
-        <li>
-            <b>9. Discuss the different studied algorithm design techniques.</b>
-            <p>
-                Techniques include backtracking, sorting algorithms, brute force, string search algorithms, and shortest path algorithms like Dijkstra's and Floyd's.
-            </p>
-        </li>
-    </ol>
-    </section>
- <br>   <button class="button" onclick="toggleInfo('san-reflections')">Sanjana's REFLECTIONS</button><br>
-
-    <section id="san-reflections" style="display: none;">
-   <h2>Course Reflections</h2>
-   <ol>
-       <h1>Problems in Nature</h1>
-    <p>
-        <b>Iteration:</b> Compound Interest keeps adding interest over time. Traffic Lights switch between red, yellow, and green.<br>
-        <b>Recursion:</b> Directory Size adds up folder sizes, including subfolders. Fractals repeat patterns in smaller versions.<br>
-        <b>Backtracking:</b> Sudoku fills in numbers and fixes mistakes. Maze tries a path and goes back if stuck.<br>
-        <b>Divide and Conquer:</b> Merging Records breaks data into pieces and puts it together. Sorting (Merge Sort) splits, sorts, and combines data.<br>
-        <b>Greedy Algorithm:</b> ATM Withdrawal takes the biggest bills first. Activity Scheduling chooses the task that ends quickest.<br>
-        <b>Dynamic Programming:</b> Route Planning solves parts of a route to find the best one. Fibonacci remembers results to avoid redundant work.<br>
-        <b>Graph Algorithms:</b> Dijkstra (Shortest Path) finds the quickest route. Prim's/Kruskal's (MST) connects with the least cost.<br>
-        <b>Sorting Algorithms:</b> Task Sorting organizes tasks for efficiency. Ticket Sorting arranges tickets by price.<br>
-        <b>Searching Algorithms:</b> Linear Search finds a file. Binary Search locates a word in a sorted list.
-    </p>
-
-    <h1>Space and Time Efficiency</h1>
-    <p>
-        <b>Space Efficiency:</b> Extra memory an algorithm uses.<br>
-        <b>Time Efficiency:</b> Speed at which an algorithm completes its task.<br>
-        <b>Orders of Growth:</b><br>
-        <b>Order:</b> <b>Time:</b> <b>Space:</b><br>
-        <b>O(1):</b> Array access. Single variable.<br>
-        <b>O(log n):</b> Binary search. Recursive stack.<br>
-        <b>O(n):</b> Loop through a list. Storing list.<br>
-        <b>O(n log n):</b> Merge Sort. Auxiliary space.<br>
-        <b>O(n²):</b> Bubble Sort. 2D matrix.<br>
-        <b>O(2^n):</b> Brute force. Storing subsets.<br>
-        <b>O(n!):</b> Generating permutations. Storing permutations.<br>
-        <b>Complexity Order:</b> Time: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).<br>
-        Space: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).<br>
-        <b>Why It Matters:</b> Optimized performance, efficient memory use, scalability, real-world impact, and smooth operation on limited devices.
-    </p>
-
-    <h1>Design Principles</h1>
-    <p>
-        <b>Shortest Path Trees:</b> Fundamental technique to find the most efficient routes. Applications: GPS routing.<br>
-        <b>Partitioning:</b> Breaks down problems into smaller parts. Reduces complexity. Example: Quick Sort.<br>
-        <b>Balancing and Rotations:</b> Maintains performance of data structures. Examples: AVL and Red-Black Trees.<br>
-        <b>Edge Relaxation:</b> Dynamically updates path solutions. Example: Dijkstra's algorithm.<br>
-        <b>Level Order Traversal:</b> Systematic, layer-by-layer exploration. Important for tree navigation.<br>
-        <b>Pruning:</b> Eliminates unnecessary solution paths to save time.<br>
-        <b>Brave and Cautious Travel Strategies:</b> Depth-First Search (DFS) for aggressive exploration, Breadth-First Search (BFS) for methodical investigation.
-    </p>
-
-    <h1>Hierarchical Data Structures</h1>
-    <p>
-        <b>Tree:</b> Represents hierarchies like file systems.<br>
-        <b>Binary Search Tree (BST):</b> Efficient sorted data storage.<br>
-        <b>AVL Tree:</b> Maintains balance for consistent performance.<br>
-        <b>2-3 Tree:</b> Ensures perfect balance with logarithmic time.<br>
-        <b>Red-Black Tree:</b> Approximate balancing with fewer rotations.<br>
-        <b>Heap:</b> Priority management with quick min/max access.<br>
-        <b>Trie:</b> Efficient string and prefix searches.
-    </p>
-
-    <h1>Array Query Algorithms</h1>
-    <p>
-        <b>Why Needed:</b> Efficient data access, optimized operations, dynamic applications, and memory efficiency.<br>
-        <b>Applications:</b> Range queries, dynamic updates, prefix queries, static queries, searches, and pattern matching.<br>
-        <b>Core Principles:</b> Divide and Conquer, preprocessing, caching, space-time tradeoff, and incremental updates.
-    </p>
-
-    <h1>Trees and Graphs</h1>
-    <p>
-        <b>Tree:</b> A hierarchical structure.<br>
-        <b>Graph:</b> A collection of nodes connected by edges.<br>
-        <b>Tree Traversals:</b> Pre-order, In-order, Post-order, and Level-order.<br>
-        <b>Graph Traversals:</b> DFS and BFS.<br>
-        <b>Applications:</b> File systems, social networks, routing, web crawling, and recommendation systems.
-    </p>
-
-    <h1>Sorting and Searching Algorithms</h1>
-    <p>
-        <b>Sorting Algorithms:</b> Bubble Sort, Insertion Sort, Merge Sort, Quick Sort, and Heap Sort.<br>
-        <b>Searching Algorithms:</b> Linear Search, Binary Search, and Hashing.<br>
-        <b>Applications:</b> Databases, e-commerce, operating systems, web search engines, and navigation.
-    </p>
-
-    <h1>Graph Algorithms: Spanning Trees and Shortest Paths</h1>
-    <p>
-        <b>Spanning Trees:</b> Connects all nodes with the fewest edges. Applications: Network design and circuit design.<br>
-        <b>Shortest Path Algorithms:</b> Dijkstra's, Bellman-Ford, and A* Algorithm. Applications: GPS, telecommunication, and logistics.
-    </p>
-
-    <h1>Algorithm Design Techniques</h1>
-    <p>
-        <b>Brave and Cautious Travel:</b> Combines DFS and BFS.<br>
-        <b>Pruning:</b> Eliminates unnecessary parts of solution space.<br>
-        <b>Lazy Propagation:</b> Delays updates until necessary.<br>
-        <b>Level Order Traversal:</b> Visits tree nodes level by level.<br>
-        <b>Edge Relaxation:</b> Updates shortest paths dynamically.<br>
-        <b>Balancing and Rotations:</b> Keeps structures balanced.<br>
-        <b>Partitioning:</b> Divides problems into smaller parts.<br>
-        <b>Shortest Path Trees:</b> Represents shortest paths efficiently.
-    </p>
-    </ol>
-    </section>
-    </section>
-    
 <footer>
-    <p>&copy; 2024 VAYUJIVA | Designed by RIA JAVALAGI</p>
+    <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
 </footer>
 
 </body>
