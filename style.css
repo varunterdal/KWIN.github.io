@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: #333; /* Dark gray background */
-    color: #fff; /* Yellow text */
+    color: #FFD700; /* Yellow text */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -33,6 +33,27 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
+}
+
+nav {
+    margin: 1rem 0;
+}
+
+nav .button {
+    background-color: #FFD700; /* Yellow buttons */
+    color: #121212; /* Dark text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .button:hover {
+    background-color: #FF7F32; /* Highlight orange */
+    color: #fff; /* White text */
 }
 
 section {
@@ -64,24 +85,38 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #FFD700; /* Highlight orange on hover */
+    background-color: #FFD700; /* Highlight yellow on hover */
     color: #121212; /* Dark text on hover */
 }
 
-button {
-    background-color: #FFD700; /* Yellow background for buttons */
-    color: #121212; /* Dark text */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    margin: 10px;
-    transition: background-color 0.3s ease;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #FF7F32; /* Highlight orange on hover */
-    color: #fff; /* White text on hover */
+table th, table td {
+    padding: 0.8rem;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+table th {
+    background-color: #333;
+    color: #FFD700; /* Yellow headings */
+}
+
+table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -114,7 +149,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    button {
+    nav .button {
         font-size: 1em;
     }
 }
