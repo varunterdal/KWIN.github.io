@@ -353,8 +353,6 @@
     </div>
 
     </section>
-    <a href="#" onclick="toggleContent()">Reflections</a>
-
     <!-- Hidden content -->
     <br>
     <button class="button" onclick="toggleInfo('reflections')">Reflections</button>
@@ -362,27 +360,80 @@
 
     <!-- Reflections Section -->
     <section id="reflections" style="display:none;">
-        <h2>RIA'S REFLECTIONS</h2>
-        <h3>Algorithmic Problem-Solving Techniques</h3>
-        <ol>
-            <li><strong>Problems in Nature</strong></li>
-            <ul>
-                <li><strong>Iteration:</strong> Compound Interest (adds over time), Traffic Lights (switch colors).</li>
-                <li><strong>Recursion:</strong> Directory Size (adds folders), Fractals (self-similarity).</li>
-                <li><strong>Backtracking:</strong> Sudoku solving, Maze exploration.</li>
-                <li><strong>Divide and Conquer:</strong> Merging records, Sorting (Merge Sort).</li>
-                <li><strong>Greedy Algorithm:</strong> ATM Withdrawal, Activity Scheduling.</li>
-                <li><strong>Dynamic Programming:</strong> Route Planning, Fibonacci numbers.</li>
-                <li><strong>Graph Algorithms:</strong> Shortest Path (Dijkstra), MST (Prim's/Kruskal's).</li>
-            </ul>
-            <li><strong>Space and Time Efficiency</strong></li>
-            <p>Orders of Growth, complexity optimization, and trade-offs.</p>
-            <li><strong>Design Principles:</strong> Shortest Paths, Partitioning, Balancing structures, Pruning.</li>
-            <li><strong>Hierarchical Data Structures:</strong> Trees, BSTs, Heaps, Tries.</li>
-            <li><strong>Array Query Algorithms:</strong> Efficient queries and updates for arrays.</li>
-            <li><strong>Trees and Graphs:</strong> Traversals and real-world applications.</li>
-            <li><strong>Sorting and Searching Algorithms:</strong> Efficient sorting and lookup techniques.</li>
-        </ol>
+         <h1>RIA'S REFLECTIONS</h1>
+    <h2>Algorithmic Problem-Solving Techniques</h2>
+    <ol>
+        <li>
+            <b>Problems in Nature</b>
+            <p><b>Iteration:</b> Compound Interest: Keeps adding interest over time. Traffic Lights: Switches between red, yellow, and green.</p>
+            <p><b>Recursion:</b> Directory Size: Adds up folder sizes, including subfolders. Fractals: Patterns repeat in smaller versions.</p>
+            <p><b>Backtracking:</b> Sudoku: Fills in numbers and fixes mistakes. Maze: Tries a path, goes back if stuck.</p>
+            <p><b>Divide and Conquer:</b> Merging Records: Breaks data into pieces and puts it together. Sorting (Merge Sort): Splits, sorts, and combines data.</p>
+            <p><b>Greedy Algorithm:</b> ATM Withdrawal: Takes the biggest bills first. Activity Scheduling: Chooses the task that ends quickest.</p>
+            <p><b>Dynamic Programming:</b> Route Planning: Solves parts of a route to find the best one. Fibonacci: Remembers results to avoid doing the same work again.</p>
+            <p><b>Graph Algorithms:</b> Dijkstra (Shortest Path): Finds the quickest route. Prim's/Kruskal's (MST): Connects with the least cost.</p>
+        </li>
+        <li>
+            <b>Space and Time Efficiency</b>
+            <p>Space Efficiency: Extra memory an algorithm uses. Time Efficiency: Speed at which an algorithm completes its task.</p>
+            <p><b>Orders of Growth:</b></p>
+            <table border="1">
+                <tr>
+                    <th>Order</th><th>Time</th><th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(1)</td><td>Array access</td><td>Single variable</td>
+                </tr>
+                <tr>
+                    <td>O(log n)</td><td>Binary search</td><td>Recursive stack</td>
+                </tr>
+                <tr>
+                    <td>O(n)</td><td>Loop through list</td><td>Storing list</td>
+                </tr>
+                <tr>
+                    <td>O(n log n)</td><td>Merge Sort</td><td>Auxiliary space</td>
+                </tr>
+                <tr>
+                    <td>O(n²)</td><td>Bubble Sort</td><td>2D matrix</td>
+                </tr>
+                <tr>
+                    <td>O(2^n)</td><td>Brute force</td><td>Storing subsets</td>
+                </tr>
+                <tr>
+                    <td>O(n!)</td><td>Generating permutations</td><td>Storing permutations</td>
+                </tr>
+            </table>
+            <p><b>Complexity Order:</b> Time: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!). Space: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).</p>
+        </li>
+        <li>
+            <b>Design Principles</b>
+            <p>Shortest Path Trees: Finds the most efficient routes. Real-world example: GPS routing.</p>
+            <p>Partitioning: Breaks down complex problems into smaller segments. Example: Quicksort.</p>
+            <p>Balancing and Rotations: Maintains optimal performance of data structures. Examples: AVL trees, Red-Black trees.</p>
+            <p>Edge Relaxation: Allows dynamic updating of path solutions. Example: Dijkstra's algorithm.</p>
+            <p>Level Order Traversal: Systematic, layer-by-layer exploration. Used in graph and tree navigation techniques.</p>
+            <p>Pruning: Eliminates unnecessary solution paths. Reduces computational complexity.</p>
+        </li>
+        <li>
+            <b>Hierarchical Data Structures</b>
+            <p><b>Tree:</b> Represents hierarchies (filesystems, organizations). Pro: Simple and intuitive. Con: Lacks balance; inefficient operations.</p>
+            <p><b>Binary Search Tree (BST):</b> Sorted data storage and retrieval. Pro: Efficient when balanced. Con: Degrades if unbalanced.</p>
+            <p><b>AVL Tree:</b> Always balanced; guarantees O(log n) operations. Con: Costly rotations during updates.</p>
+            <p><b>Heap:</b> Priority management and sorting. Pro: Quick min/max access. Con: Inefficient for general-purpose searches.</p>
+        </li>
+        <li>
+            <b>Array Query Algorithms</b>
+            <p><b>Why Needed:</b> Efficient Data Access: Fast retrieval of data in large arrays. Optimized Operations: Reduce time complexity. Dynamic Applications: Handle real-time tasks.</p>
+            <p><b>Applications:</b> Range Queries: Segment Tree, Fenwick Tree. Dynamic Updates: Fenwick Tree, Lazy Propagation. Prefix Queries: Prefix Sum Array.</p>
+        </li>
+        <li>
+            <b>Trees and Graphs</b>
+            <p><b>Tree:</b> Hierarchical structure with one root.</p>
+            <p><b>Graph:</b> Collection of nodes connected by edges. Characteristics: Can be cyclic, disconnected, directed/undirected.</p>
+            <p><b>Tree Traversals:</b> Pre-order, In-order, Post-order, Level-order (BFS).</p>
+            <p><b>Applications:</b> File systems, expression trees, database indexing, decision trees in ML.</p>
+        </li>
+    </ol>ent 
     </section>
 
     
