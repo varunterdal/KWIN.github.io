@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F5F5F5; /* Light gray background */
+    background-color: #FFFFFF; /* White background for a clean look */
     color: #333333; /* Dark gray text for contrast */
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #000000; /* BlackRock black */
+    background-color: #D30000; /* Vanguard Red */
     color: #FFFFFF; /* White text for contrast */
     padding: 2rem;
     text-align: center;
@@ -47,7 +47,7 @@ section {
 }
 
 section h2 {
-    color: #003366; /* BlackRock deep blue for headings */
+    color: #D30000; /* Vanguard Red for headings */
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -57,7 +57,7 @@ ul, dl {
 }
 
 ul li, dl dd {
-    background-color: #F5F5F5; /* Light gray background for list items */
+    background-color: #F9F9F9; /* Very light gray for list items */
     color: #333333; /* Dark gray text */
     margin-bottom: 0.5rem;
     padding: 0.8rem;
@@ -66,11 +66,11 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #E0E0E0; /* Slightly darker gray on hover */
+    background-color: #F0F0F0; /* Slightly darker gray on hover */
 }
 
 button {
-    background-color: #003366; /* BlackRock deep blue for buttons */
+    background-color: #D30000; /* Vanguard Red for buttons */
     color: #FFFFFF; /* White text */
     padding: 10px 20px;
     border: none;
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-    background-color: #00509E; /* Lighter blue on hover */
+    background-color: #9A0000; /* Darker red on hover */
 }
 
 table {
@@ -100,17 +100,17 @@ table th, table td {
 }
 
 table th {
-    background-color: #003366; /* BlackRock deep blue for headers */
+    background-color: #D30000; /* Vanguard Red for table headers */
     color: #FFFFFF; /* White text */
 }
 
 table tr:nth-child(even) {
-    background-color: #F5F5F5; /* Alternating light gray rows */
+    background-color: #F9F9F9; /* Alternating very light gray rows */
 }
 
 footer {
     text-align: center;
-    background-color: #000000; /* BlackRock black */
+    background-color: #000000; /* Black footer */
     color: #FFFFFF; /* White text */
     padding: 1rem;
     width: 100%;
