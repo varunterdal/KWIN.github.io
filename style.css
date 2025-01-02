@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF; /* White background for a clean look */
-    color: #333333; /* Dark gray text for contrast */
+    background-color: #1A1A1A; /* Dark background for the body */
+    color: #E0E0E0; /* Light gray text for better contrast on dark background */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,12 +18,12 @@ body {
 }
 
 header {
-    background-color: #D30000; /* Vanguard Red */
+    background-color: #C0392B; /* Deep Red (for professionalism) */
     color: #FFFFFF; /* White text for contrast */
     padding: 2rem;
     text-align: center;
     width: 100%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -36,18 +36,18 @@ header p {
 }
 
 section {
-    background-color: #FFFFFF; /* White background for sections */
+    background-color: #333333; /* Dark background for sections */
     padding: 2rem;
     margin: 1rem 0;
     width: 90%;
     max-width: 1200px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    color: #333333; /* Dark gray text */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: #E0E0E0; /* Light gray text */
 }
 
 section h2 {
-    color: #D30000; /* Vanguard Red for headings */
+    color: #F39C12; /* Yellow for section headings */
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -57,8 +57,8 @@ ul, dl {
 }
 
 ul li, dl dd {
-    background-color: #F9F9F9; /* Very light gray for list items */
-    color: #333333; /* Dark gray text */
+    background-color: #444444; /* Slightly lighter dark gray for list items */
+    color: #E0E0E0; /* Light gray text */
     margin-bottom: 0.5rem;
     padding: 0.8rem;
     border-radius: 5px;
@@ -66,11 +66,11 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #F0F0F0; /* Slightly darker gray on hover */
+    background-color: #555555; /* Slightly darker gray on hover */
 }
 
 button {
-    background-color: #D30000; /* Vanguard Red for buttons */
+    background-color: #E67E22; /* Orange for buttons */
     color: #FFFFFF; /* White text */
     padding: 10px 20px;
     border: none;
@@ -82,30 +82,30 @@ button {
 }
 
 button:hover {
-    background-color: #9A0000; /* Darker red on hover */
+    background-color: #D35400; /* Darker orange on hover */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    color: #333333; /* Dark gray text */
-    background-color: #FFFFFF; /* White table background */
+    color: #E0E0E0; /* Light gray text */
+    background-color: #333333; /* Dark background for the table */
 }
 
 table th, table td {
     padding: 0.8rem;
     text-align: left;
-    border: 1px solid #E0E0E0; /* Light border */
+    border: 1px solid #444444; /* Slightly lighter border */
 }
 
 table th {
-    background-color: #D30000; /* Vanguard Red for table headers */
+    background-color: #C0392B; /* Deep Red for table headers */
     color: #FFFFFF; /* White text */
 }
 
 table tr:nth-child(even) {
-    background-color: #F9F9F9; /* Alternating very light gray rows */
+    background-color: #444444; /* Alternating dark gray rows */
 }
 
 footer {
