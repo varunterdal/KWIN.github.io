@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #F4F4F4; /* Light gray background */
-    color: #2E2E2E; /* Dark text for contrast */
+    background-color: #F5F5F5; /* Light gray background */
+    color: #333333; /* Dark gray text for contrast */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #820000; /* Vanguard deep red */
+    background-color: #000000; /* BlackRock black */
     color: #FFFFFF; /* White text for contrast */
     padding: 2rem;
     text-align: center;
@@ -43,11 +43,11 @@ section {
     max-width: 1200px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    color: #2E2E2E; /* Dark text for readability */
+    color: #333333; /* Dark gray text */
 }
 
 section h2 {
-    color: #820000; /* Vanguard deep red for headings */
+    color: #003366; /* BlackRock deep blue for headings */
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -57,8 +57,8 @@ ul, dl {
 }
 
 ul li, dl dd {
-    background-color: #F4F4F4; /* Light gray background for list items */
-    color: #2E2E2E; /* Dark text */
+    background-color: #F5F5F5; /* Light gray background for list items */
+    color: #333333; /* Dark gray text */
     margin-bottom: 0.5rem;
     padding: 0.8rem;
     border-radius: 5px;
@@ -66,11 +66,11 @@ ul li, dl dd {
 }
 
 ul li:hover, dl dd:hover {
-    background-color: #EAEAEA; /* Slightly darker gray on hover */
+    background-color: #E0E0E0; /* Slightly darker gray on hover */
 }
 
 button {
-    background-color: #820000; /* Vanguard deep red for buttons */
+    background-color: #003366; /* BlackRock deep blue for buttons */
     color: #FFFFFF; /* White text */
     padding: 10px 20px;
     border: none;
@@ -82,35 +82,35 @@ button {
 }
 
 button:hover {
-    background-color: #AA1E1E; /* Lighter red on hover */
+    background-color: #00509E; /* Lighter blue on hover */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    color: #2E2E2E;
+    color: #333333; /* Dark gray text */
     background-color: #FFFFFF; /* White table background */
 }
 
 table th, table td {
     padding: 0.8rem;
     text-align: left;
-    border: 1px solid #EAEAEA; /* Light border */
+    border: 1px solid #E0E0E0; /* Light border */
 }
 
 table th {
-    background-color: #820000; /* Vanguard deep red for headers */
+    background-color: #003366; /* BlackRock deep blue for headers */
     color: #FFFFFF; /* White text */
 }
 
 table tr:nth-child(even) {
-    background-color: #F4F4F4; /* Alternating light gray rows */
+    background-color: #F5F5F5; /* Alternating light gray rows */
 }
 
 footer {
     text-align: center;
-    background-color: #820000; /* Vanguard deep red */
+    background-color: #000000; /* BlackRock black */
     color: #FFFFFF; /* White text */
     padding: 1rem;
     width: 100%;
