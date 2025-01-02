@@ -9,11 +9,7 @@
         // Function to toggle the visibility of additional sections
         function toggleInfo(id) {
             var section = document.getElementById(id);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
+            section.style.display = section.style.display === "none" || section.style.display === "" ? "block" : "none";
         }
     </script>
 </head>
@@ -25,16 +21,13 @@
 </header>
 
 <nav>
-      <button class="button" onclick="toggleInfo('course-intro')"> Course Introduction </button>
+    <button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
     <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
 </nav>
 
-<!-- Course Introduction Section -->
 <section id="course-intro" style="display:none;">
     <h2>Course Introduction</h2>
-    <p>The Design and Analysis of Algorithms course helped us learn how to solve problems in smart and efficient ways. It focuses on designing algorithms for different problems and ensuring they are both correct and fast. Starting with basic ideas and advancing to complex concepts, the course enhances our ability to create efficient solutions.</p>
-    
-    <h3>Data Structures and Algorithms Studied So Far:</h3>
+    <p>The Design and Analysis of Algorithms course helped us learn how to solve problems in smart and efficient ways. It focuses on designing algorithms for different problems and ensuring they are both correct and fast.</p>
     <ul>
         <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through hierarchical data.</li>
         <li><strong>AVL Trees:</strong> A balanced version of BSTs, ensuring faster search operations.</li>
@@ -43,7 +36,6 @@
     </ul>
 </section>
 
-<!-- Business Ideas Section -->
 <section id="business-ideas" style="display:none;">
     <h2>Business Ideas</h2>
     <table>
@@ -78,216 +70,21 @@
                 <td>DEF</td>
                 <td>Graphs, BFS, DFS</td>
             </tr>
-            <tr>
-                <td>4</td>
-                <td>Optimizing Waste Management Routes</td>
-                <td>Generate efficient waste collection routes to minimize fuel and time.</td>
-                <td>ABC</td>
-                <td>Dijkstra's Algorithm</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Monitoring Water Usage in Residential Areas</td>
-                <td>Track and analyze water consumption patterns across neighborhoods.</td>
-                <td>JKL</td>
-                <td>Time Series Analysis</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Optimizing City-Wide Internet Connectivity</td>
-                <td>Ensure high-speed connectivity by mapping and optimizing Wi-Fi hotspots.</td>
-                <td>XYA</td>
-                <td>Minimum Spanning Tree</td>
-            </tr>
         </tbody>
     </table>
 </section>
 
-<!-- More Info Section -->
-<section id="more-info">
-    <h2>About KWIN City</h2>
-    <p>KWIN City is designed for a brighter tomorrow. Every step here leads to opportunities, learning, and innovation. The city emphasizes eco-friendly, people-centric designs while fostering collaboration and coexistence. It empowers its residents through technology and innovation to help create a sustainable future.</p>
-    
-    <h3>Strategic Location</h3>
-    <p>KWIN City enjoys a prime location that makes it an ideal hub for growth and development. It is conveniently located just 45 minutes away from Kempegowda International Airport, providing easy access for international travelers and businesses. Additionally, the city is well-connected via major highways and rail routes.</p>
-</section>
-
-<!-- City Map Section -->
-<section id="city-map">
-    <h2>City Map</h2>
-    <p>Explore the districts of KWIN City, designed for knowledge, innovation, and growth.</p>
-    <div style="margin-bottom: 1.5rem;">
-        <img src="https://i.ibb.co/W6FNqyd/projdaa.png" alt="City Map" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-    </div>
-</section>
-
-<!-- Team Members Section -->
 <section id="team">
     <h2>Team Members</h2>
-       <nav>
-      <button class="button" onclick="toggleInfo('vis-intro')"> Vishal U H</button>
-    <button class="button" onclick="toggleInfo('var-ideas')"> Varun S T</button>
-            <button class="button" onclick="toggleInfo('sul-intro')"> Suleman A </button>
-    <button class="button" onclick="toggleInfo('saif-ideas')">Saif ALi</button>
-</nav>
-  <button class="button" onclick="toggleInfo('vis-intro')"> Vishal U H</button>
-  <ul>   <h1>Vishal's Reflections</h1>
+    <button class="button" onclick="toggleInfo('vishal-reflections')">Vishal U H</button>
+    <button class="button" onclick="toggleInfo('varun-ideas')">Varun S T</button>
+    <button class="button" onclick="toggleInfo('suleman-intro')">Suleman A</button>
+    <button class="button" onclick="toggleInfo('saif-ideas')">Saif Ali</button>
 
-    <h2>Question 1: Challenges in Learning/Understanding the Above Concepts</h2>
-
-    <h3>Abstractness</h3>
-    <p>
-        Many concepts, such as time complexity, graph algorithms, or dynamic programming, are <b>highly abstract</b>. 
-        They can be difficult to visualize without concrete examples or real-world applications, making it harder to grasp the theory. 
-        Abstract concepts like <strong>Big O notation</strong> require not only mathematical reasoning but also an understanding of how these 
-        concepts affect the overall performance and behavior of programs.
-    </p>
-
-    <h3>Mathematical Foundations</h3>
-    <p>
-        Understanding these concepts often requires a <strong>solid foundation in mathematics</strong>, particularly discrete mathematics, 
-        linear algebra, and set theory. Students without this background may struggle with logic, proofs, or formal algorithm analysis. 
-        Building this mathematical proficiency can be a barrier for many.
-    </p>
-
-    <h3>Interconnectedness</h3>
-    <p>
-        Many algorithmic concepts are deeply interrelated, and grasping one concept often requires a sound understanding of others. 
-        For instance, understanding <strong>sorting algorithms</strong> is vital for comprehending how certain graph traversal algorithms 
-        (like Dijkstra’s or Prim’s algorithm) work efficiently. This interconnectedness can create a compounding effect, where mastering one concept becomes necessary before others can be fully understood.
-    </p>
-
-    <h3>Implementation Details</h3>
-    <p>
-        Translating abstract theoretical concepts into practical, executable code can be a daunting challenge. Concepts like 
-        <strong>recursion</strong>, <strong>backtracking</strong>, or <strong>memoization</strong> are essential to implementing many algorithms. 
-        Students must also understand the subtleties of memory management (e.g., stack vs heap) and optimization techniques (e.g., loop unrolling, caching), 
-        which can be difficult to grasp without experience in low-level programming.
-    </p>
-
-    <h2>Question 2: Challenges in Correlating with Real-World Applications</h2>
-
-    <h3>Idealized vs. Real-World Conditions</h3>
-    <p>
-        In theoretical settings, algorithms often assume <b>ideal conditions</b> (e.g., perfectly sorted data, unlimited processing power). 
-        However, real-world applications often deal with imperfect data, unreliable network conditions, and hardware limitations. For example, 
-        sorting algorithms like quicksort assume that the data is distributed evenly, which may not always be the case.
-    </p>
-
-    <h3>Trade-offs and Constraints</h3>
-    <p>
-        Real-world applications often require balancing <b>trade-offs</b> between competing factors, such as time complexity, memory usage, 
-        and the responsiveness of the system. For instance, a real-time system might prioritize speed over memory usage, whereas a mobile 
-        application might prioritize battery life.
-    </p>
-
-    <h3>Non-Deterministic Behavior</h3>
-    <p>
-        Algorithms often perform unpredictably in the real world due to the inherent randomness of data and user behavior. For example, 
-        a search algorithm might be highly efficient on a static dataset but may fail to perform well when the data is constantly changing 
-        or when faced with inconsistent input sizes.
-    </p>
-
-    <h3>Integration with Existing Systems</h3>
-    <p>
-        Integrating algorithms into existing software often presents practical challenges. This can involve adjusting the algorithm to work 
-        within the constraints of legacy systems, working with different programming languages, or optimizing an algorithm to be compatible 
-        with a specific hardware environment.
-    </p>
-
-    <h2>Question 3: Determining the Most Efficient Approach/Design Techniques</h2>
-
-    <h3>Problem Decomposition</h3>
-    <p>
-        The process of breaking down a complex problem into smaller, more manageable subproblems is essential in designing efficient algorithms. 
-        By applying the <strong>divide and conquer strategy</strong>, for example, problems can be divided into simpler parts that are easier to 
-        solve independently. Once the smaller problems are solved, their solutions are combined to solve the overall problem. This technique 
-        is commonly used in algorithms like <b>merge sort</b> or <b>quick sort</b>, and also in solving matrix multiplication problems through the 
-        <strong>Strassen algorithm</strong>.
-    </p>
-    <p>
-        This approach not only makes problems more tractable but also often results in more efficient solutions. For instance, 
-        <strong>dynamic programming (DP)</strong> is another decomposition technique where a problem is broken into overlapping subproblems, and 
-        intermediate results are stored (<strong>memoization</strong>) to avoid redundant calculations, improving efficiency.
-    </p>
-
-    <h3>Algorithm Analysis</h3>
-    <p>
-        It is crucial to analyze and compare the time and space complexity of different algorithms to select the most efficient one for a 
-        given problem. The <strong>Big O notation</strong> is a valuable tool for representing the worst-case time complexity of an algorithm, 
-        helping developers choose the best algorithm based on the input size. For example, while a brute-force solution might be simple to 
-        implement, its higher time complexity (e.g., <b>O(n^2)</b> in the case of bubble sort) can be less efficient than more sophisticated 
-        algorithms like quicksort (<b>O(n log n)</b>) for larger data sets.
-    </p>
-    <p>
-        In addition to Big O, other complexities, such as <b>Big Ω (omega)</b> and <b>Big Θ (theta)</b>, are important in capturing the best-case 
-        and average-case performance. By considering these different cases, developers can more precisely evaluate how the algorithm will 
-        perform in various conditions.
-    </p>
-
-    <h3>Data Structure Selection</h3>
- <p>
-        Choosing the appropriate data structure is critical for ensuring efficient performance. For example, if quick access to elements by 
-        index is required, an array or hash table may be ideal, but if ordered data needs to be maintained or frequent insertions/deletions 
-        are required, binary search trees (BSTs) or heaps may offer better performance. For instance, in graph algorithms, the decision to 
-        use an adjacency list or adjacency matrix can drastically affect performance based on the graph’s sparsity.
-    </p>
-    <p>
-        Understanding the strengths and weaknesses of data structures like stacks, queues, linked lists, trees, and graphs enables developers 
-        to make informed decisions and optimize algorithm performance based on the specific problem at hand.
-    </p>
-
-    <h3>Profiling and Optimization</h3>
-    <p>
-        Optimizing code is often an iterative process that involves identifying performance bottlenecks through <b>profiling tools</b>. By 
-        analyzing code performance with tools like <strong>gprof</strong> or <strong>Valgrind</strong> in C/C++ or <strong>cProfile</strong> in Python, 
-        developers can pinpoint areas of inefficiency—such as unnecessary memory allocations, repeated computations, or excessive function calls—
-        and focus on optimizing those specific sections.
-    </p>
-    <p>
-        After identifying critical bottlenecks, developers can experiment with different techniques, such as loop unrolling, memoization, 
-        or parallelization, to reduce time complexity. This is particularly useful in environments with stringent resource constraints, such as 
-        mobile devices or embedded systems, where optimization is often necessary for achieving real-time performance.
-    </p>
-
-    </ul>
-</section>
-    <button class="button" onclick="toggleInfo('var-ideas')"> Varun S T</button>
-    <h2>Course Introduction</h2>
-    <p>The Design and Analysis of Algorithms course helped us learn how to solve problems in smart and efficient ways. It focuses on designing algorithms for different problems and ensuring they are both correct and fast. Starting with basic ideas and advancing to complex concepts, the course enhances our ability to create efficient solutions.</p>
-    
-    <h3>Data Structures and Algorithms Studied So Far:</h3>
-    <ul>
-        <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through hierarchical data.</li>
-        <li><strong>AVL Trees:</strong> A balanced version of BSTs, ensuring faster search operations.</li>
-        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree ensuring logarithmic height.</li>
-        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to efficiently store and retrieve data.</li>
-    </ul>
-</section>
-    <button class="button" onclick="toggleInfo('sul-intro')"> Suleman A </button>
-    <h2>Course Introduction</h2>
-    <p>The Design and Analysis of Algorithms course helped us learn how to solve problems in smart and efficient ways. It focuses on designing algorithms for different problems and ensuring they are both correct and fast. Starting with basic ideas and advancing to complex concepts, the course enhances our ability to create efficient solutions.</p>
-    
-    <h3>Data Structures and Algorithms Studied So Far:</h3>
-    <ul>
-        <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through hierarchical data.</li>
-        <li><strong>AVL Trees:</strong> A balanced version of BSTs, ensuring faster search operations.</li>
-        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree ensuring logarithmic height.</li>
-        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to efficiently store and retrieve data.</li>
-    </ul>
-</section>
-    < <button class="button" onclick="toggleInfo('saif-ideas')">Saif ALi</button>
-    <h2>Course Introduction</h2>
-    <p>The Design and Analysis of Algorithms course helped us learn how to solve problems in smart and efficient ways. It focuses on designing algorithms for different problems and ensuring they are both correct and fast. Starting with basic ideas and advancing to complex concepts, the course enhances our ability to create efficient solutions.</p>
-    
-    <h3>Data Structures and Algorithms Studied So Far:</h3>
-    <ul>
-        <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through hierarchical data.</li>
-        <li><strong>AVL Trees:</strong> A balanced version of BSTs, ensuring faster search operations.</li>
-        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree ensuring logarithmic height.</li>
-        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to efficiently store and retrieve data.</li>
-    </ul>
-</section>
+    <div id="vishal-reflections" style="display:none;">
+        <h3>Vishal U H: Reflections</h3>
+        <p>Challenges in understanding algorithms and their correlation to real-world problems.</p>
+    </div>
 </section>
 
 <footer>
