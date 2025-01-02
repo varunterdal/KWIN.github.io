@@ -3,93 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWIN City - Student Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        // Function to toggle the visibility of additional sections
-        function toggleInfo(id) {
-            var section = document.getElementById(id);
-            section.style.display = section.style.display === "none" || section.style.display === "" ? "block" : "none";
-        }
-    </script>
+    <title>Professional Redesign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to Our Platform</h1>
+        <p>Your partner in growth and success</p>
+    </header>
 
-<header>
-    <h1>Welcome to KWIN City</h1>
-    <p>Your gateway to knowledge, innovation, and well-being.</p>
-</header>
+    <nav>
+        <button class="button">Home</button>
+        <button class="button">About Us</button>
+        <button class="button">Services</button>
+        <button class="button">Contact</button>
+    </nav>
 
-<nav>
-    <button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
-    <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
-</nav>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Investment Planning</li>
+            <li>Wealth Management</li>
+            <li>Retirement Solutions</li>
+        </ul>
+    </section>
 
-<section id="course-intro" style="display:none;">
-    <h2>Course Introduction</h2>
-    <p>The Design and Analysis of Algorithms course helped us learn how to solve problems in smart and efficient ways. It focuses on designing algorithms for different problems and ensuring they are both correct and fast.</p>
-    <ul>
-        <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through hierarchical data.</li>
-        <li><strong>AVL Trees:</strong> A balanced version of BSTs, ensuring faster search operations.</li>
-        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree ensuring logarithmic height.</li>
-        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to efficiently store and retrieve data.</li>
-    </ul>
-</section>
+    <section>
+        <h2>Resources</h2>
+        <dl>
+            <dt>Articles</dt>
+            <dd>Discover insights on financial planning.</dd>
+            <dt>Videos</dt>
+            <dd>Learn through expert-led tutorials.</dd>
+        </dl>
+    </section>
 
-<section id="business-ideas" style="display:none;">
-    <h2>Business Ideas</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>SLNO</th>
-                <th>Business Cases Identified</th>
-                <th>Description</th>
-                <th>Owner</th>
-                <th>Problem Tools</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Predicting Optimal Tourist Routes</td>
-                <td>Identify and optimize travel routes for tourists based on real-time data and preferences.</td>
-                <td>ABC</td>
-                <td>Graphs</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Sorting Menu Items</td>
-                <td>Sort menu items by price or popularity.</td>
-                <td>WXY</td>
-                <td>Quick Sort, Array</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Monitoring Traffic Flow</td>
-                <td>Analyze traffic density at intersections.</td>
-                <td>DEF</td>
-                <td>Graphs, BFS, DFS</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+    <section>
+        <h2>Performance Overview</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fund</th>
+                    <th>1-Year Return</th>
+                    <th>5-Year Return</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Equity Growth</td>
+                    <td>10.5%</td>
+                    <td>45.8%</td>
+                </tr>
+                <tr>
+                    <td>Income Fund</td>
+                    <td>7.2%</td>
+                    <td>30.4%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-<section id="team">
-    <h2>Team Members</h2>
-    <button class="button" onclick="toggleInfo('vishal-reflections')">Vishal U H</button>
-    <button class="button" onclick="toggleInfo('varun-ideas')">Varun S T</button>
-    <button class="button" onclick="toggleInfo('suleman-intro')">Suleman A</button>
-    <button class="button" onclick="toggleInfo('saif-ideas')">Saif Ali</button>
-
-    <div id="vishal-reflections" style="display:none;">
-        <h3>Vishal U H: Reflections</h3>
-        <p>Challenges in understanding algorithms and their correlation to real-world problems.</p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>
