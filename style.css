@@ -40,7 +40,7 @@ nav {
 }
 
 nav .button {
-    background-color: #FF6F00; /* Orange button color */
+    background-color: #FFCC00; /* Light yellow-orange button color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -52,7 +52,7 @@ nav .button {
 }
 
 nav .button:hover {
-    background-color: #FF4500; /* Darker orange on hover */
+    background-color: #FFA500; /* Slightly darker yellow-orange on hover */
 }
 
 /* Section styles */
@@ -81,7 +81,7 @@ section {
 
 /* Button styling within sections */
 button {
-    background-color: #FF6F00; /* Orange color for buttons */
+    background-color: #FFCC00; /* Light yellow-orange color for buttons */
     color: white;
     padding: 10px 20px;
     margin: 10px;
@@ -93,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: #FF4500; /* Darker orange for hover effect */
+    background-color: #FFA500; /* Slightly darker yellow-orange for hover effect */
 }
 
 /* Footer styling */
@@ -119,7 +119,7 @@ footer {
 
 /* Section heading styles */
 h2 {
-    color: #FF6F00; /* Orange headings */
+    color: #FFCC00; /* Light yellow-orange headings */
     margin-bottom: 10px;
     font-size: 1.8em;
 }
@@ -145,3 +145,55 @@ small {
     color: #999; /* Lighter gray for small text */
 }
 
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444; /* Light border for separation */
+}
+
+th {
+    background-color: #FFCC00; /* Light yellow-orange background for table headers */
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #2a2a2a; /* Dark gray background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #1f1f1f; /* Slightly lighter gray for odd rows */
+}
+
+tr:hover {
+    background-color: #444; /* Hover effect on rows to highlight them */
+}
+
+td {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+table th, table td {
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+}
+
+/* Responsive table styling */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px; /* Smaller font on mobile for better readability */
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
