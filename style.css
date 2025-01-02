@@ -8,7 +8,7 @@
 /* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa; /* Light background */
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
 
 /* Header styling */
 header {
-    background-color: #007BFF;
+    background-color: #9c2a2a; /* Vanred color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -40,7 +40,7 @@ nav {
 }
 
 nav .button {
-    background-color: #28a745;
+    background-color: #f8c203; /* Warm yellow */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -52,7 +52,7 @@ nav .button {
 }
 
 nav .button:hover {
-    background-color: #218838;
+    background-color: #e5a300; /* Darker yellow */
 }
 
 /* Section styles */
@@ -66,7 +66,7 @@ section {
 
 /* About section styling */
 #More Information {
-    background-color: #e9ecef;
+    background-color: #f1f1f1; /* Light grey background */
 }
 
 /* City Map image styles */
@@ -81,7 +81,7 @@ section {
 
 /* Button styling within sections */
 button {
-    background-color: #007BFF;
+    background-color: #9c2a2a; /* Vanred color */
     color: white;
     padding: 10px 20px;
     margin: 10px;
@@ -93,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #7d1e1e; /* Darker Vanred */
 }
 
 /* Footer styling */
@@ -119,7 +119,7 @@ footer {
 
 /* Section heading styles */
 h2 {
-    color: #333;
+    color: #9c2a2a; /* Vanred color */
     margin-bottom: 10px;
     font-size: 1.8em;
 }
