@@ -3,69 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Redesign</title>
+    <title>KWIN City - Student Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleInfo(id) {
+            var section = document.getElementById(id);
+            section.style.display = section.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Platform</h1>
-        <p>Your partner in growth and success</p>
+        <h1>Welcome to KWIN City</h1>
+        <p>Your gateway to knowledge, innovation, and well-being.</p>
     </header>
 
     <nav>
-        <button class="button">Home</button>
-        <button class="button">About Us</button>
-        <button class="button">Services</button>
-        <button class="button">Contact</button>
+        <button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
+        <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
     </nav>
 
-    <section>
-        <h2>Our Services</h2>
+    <section id="course-intro" style="display: none;">
+        <h2>Course Introduction</h2>
+        <p>Design and Analysis of Algorithms teaches us to solve real-world problems efficiently. It covers basic and advanced concepts, enabling us to design, analyze, and implement effective algorithms.</p>
+        <h3>Data Structures and Algorithms Studied:</h3>
         <ul>
-            <li>Investment Planning</li>
-            <li>Wealth Management</li>
-            <li>Retirement Solutions</li>
+            <li><strong>Binary Search Trees:</strong> Quick hierarchical data search.</li>
+            <li><strong>AVL Trees:</strong> Balanced BSTs for faster search.</li>
+            <li><strong>Red-Black Trees:</strong> Self-balancing trees ensuring efficient operations.</li>
+            <li><strong>2-3 Trees:</strong> Multi-node trees for efficient storage and retrieval.</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Resources</h2>
-        <dl>
-            <dt>Articles</dt>
-            <dd>Discover insights on financial planning.</dd>
-            <dt>Videos</dt>
-            <dd>Learn through expert-led tutorials.</dd>
-        </dl>
-    </section>
-
-    <section>
-        <h2>Performance Overview</h2>
+    <section id="business-ideas" style="display: none;">
+        <h2>Business Ideas</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Fund</th>
-                    <th>1-Year Return</th>
-                    <th>5-Year Return</th>
+                    <th>SLNO</th>
+                    <th>Business Case</th>
+                    <th>Description</th>
+                    <th>Owner</th>
+                    <th>Tools</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Equity Growth</td>
-                    <td>10.5%</td>
-                    <td>45.8%</td>
-                </tr>
-                <tr>
-                    <td>Income Fund</td>
-                    <td>7.2%</td>
-                    <td>30.4%</td>
-                </tr>
+                <tr><td>1</td><td>Optimal Tourist Routes</td><td>Route optimization for tourists.</td><td>ABC</td><td>Graphs</td></tr>
+                <tr><td>2</td><td>Menu Item Sorting</td><td>Sort menus by price/popularity.</td><td>WXY</td><td>Quick Sort</td></tr>
+                <tr><td>3</td><td>Traffic Monitoring</td><td>Analyze intersection traffic density.</td><td>DEF</td><td>BFS, DFS</td></tr>
+                <tr><td>4</td><td>Waste Management</td><td>Efficient waste collection routes.</td><td>ABC</td><td>Dijkstra's</td></tr>
+                <tr><td>5</td><td>Water Usage</td><td>Residential water analysis.</td><td>JKL</td><td>Time Series</td></tr>
+                <tr><td>6</td><td>Internet Connectivity</td><td>Optimize city-wide Wi-Fi.</td><td>XYA</td><td>Minimum Spanning Tree</td></tr>
             </tbody>
         </table>
     </section>
 
+    <section id="More Information">
+        <h2>About KWIN City</h2>
+        <p>KWIN City is a future-focused urban environment emphasizing sustainability, collaboration, and growth. Strategically located 45 minutes from Kempegowda International Airport, it’s well-connected for global and regional development.</p>
+    </section>
+
+    <section id="city-map">
+        <h2>City Map</h2>
+        <p>Explore the layout of KWIN City.</p>
+        <img src="https://i.ibb.co/W6FNqyd/projdaa.png" alt="KWIN City Map" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+    </section>
+
+    <section>
+        <h2>Team Members</h2>
+        <ul>
+            <li>Vishal U Hosur</li>
+            <li>Varun S Terdal</li>
+            <li>Suleman A</li>
+            <li>Saif Ali</li>
+        </ul>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University</p>
     </footer>
 </body>
 </html>
