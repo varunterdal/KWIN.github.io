@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWIN City - Student Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>VAYUJIVA RIA's - Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        function toggleInfo(id) {
+        // Function to toggle the visibility of additional sections
+        function toggleInfo(id, btn) {
             var section = document.getElementById(id);
-            section.style.display = section.style.display === "block" ? "none" : "block";
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+                if (btn) btn.textContent = "Show Less";
+            } else {
+                section.style.display = "none";
+                if (btn) btn.textContent = "More Info";
+            }
         }
     </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to KWIN City</h1>
-        <p>Your gateway to knowledge, innovation, and well-being.</p>
-    </header>
 
-    <nav>
-        <button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
-        
-    </nav>
+<header>
+    <h1>Welcome to VAYUJIVA</h1>
+    <p>The smart city</p>
+</header>
 
-    <section id="course-intro" style="display: none;">
-          <h2>Course Introduction</h2>
+<!-- Buttons to show more info -->
+<br><button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button><br>
+
+
+<!-- Course Introduction Section -->
+<section id="course-intro" style="display:none;">
+    <h2>Course Introduction</h2>
   <p>
         The "Design and Analysis of Algorithms" course emphasizes understanding, designing, and evaluating algorithms to solve computational problems effectively. It delves into topics such as recursion, graph algorithms, sorting and searching, and advanced data structures like trees and heaps. Students gain skills in analyzing algorithm efficiency in terms of time and space complexity, applying these methods to real-world problems, and building a strong foundation for tackling advanced computing challenges.
     </p>
- <br>   <h2>What kind of data structures and algorithms have you studied?</h2>
+    <h2>What kind of data structures and algorithms have you studied?</h2>
 
     <h3>Data Structures:</h3>
     <ul>
@@ -51,757 +58,946 @@
         <li><strong>Undecidability:</strong> Exploring problems with no algorithmic solutions (e.g., Halting Problem)</li>
     </ul>
 
-   <br> <h2>How do you connect the course with real-time applications?</h2>
+    <h2>How do you connect the course with real-time applications?</h2>
     <ul>
         <li><strong>Graph Algorithms:</strong> Employ Dijkstra's or Kruskal's algorithms to optimize routes in transportation networks or telecommunication systems.</li>
         <li><strong>Sorting and Searching:</strong> Use efficient algorithms for inventory management and fast product searches in e-commerce platforms.</li>
         <li><strong>Data Structures:</strong> Utilize heaps, trees, and hash tables for database indexing and real-time data retrieval systems like caching.</li>
         <li><strong>Optimization Problems:</strong> Address real-world scenarios, such as resource allocation in project management, using the Knapsack problem.</li>
     </ul>
-    </section>
-       <section id="PPS">
-        <h2>Problem Statement</h2>
-        <p>data-driven urban planning system for smart cities with minimal vehicle usage. It will use efficient data structures and algorithms to optimize transportation, resource management, and governance while promoting environmental sustainability and enhancing tourism opportunities. The system will focus on leveraging real-time data and predictive analytics to ensure efficient, eco-friendly city operations.</p>  </section>
-    </section>
-
-    <section id="More Information">
-       <header>
-        <h1>KWIN City: Journey On with Conviction</h1>
-    </header>
-
-        <h2><b>A City for Tomorrow</b></h2>
-        <p>KWIN City is built with tomorrow in mind, designed to bring a better future today. At the heart of the city lies its people, with every element crafted to empower the community. Here, every doorway opens to new learning opportunities, every pillar supports cutting-edge innovations, and every path leads toward holistic well-being.</p>
-
-        <h2><b>Core Values: A Mindful Social Framework</b></h2>
-        <p>KWIN City is not just a place, but a community built on values that matter. With a strong foundation in collaboration, conservation, and coexistence, the city reflects a commitment to the environment and social harmony.</p>
-        <h2><b>A Green, People-Centric Future</b></h2>
-        <p>Our city is rich in green promises, creating a sustainable environment where nature and people coexist seamlessly. KWIN isn’t just designed for the future; it is designed by and for the people, making it a destination like no other. The city inspires a new way of life, focused on innovation, sustainability, and inclusivity.</p>
-        <h2><b>Strategic Location: Connecting to the World</b></h2>
-        <p><b>Well-Connected, Convenient, and Accessible</b></p>
-        <p>KWIN City enjoys a prime location strategically positioned between <b>Doddaballapur</b> and <b>Dobbaspet</b>, ensuring easy access to key regions. Just <b>45 minutes from Kempegowda International Airport</b>, the city is well-connected by major transportation routes.</p>
-
-        <ul>
-            <li><b>Bangalore-Hubli-Mumbai Express Rail Route</b>: Ensuring seamless rail connectivity to critical hubs.</li>
-            <li><b>National Highways 44 and 648</b>: Providing excellent road access to and from the city.</li>
-        </ul>
-
-        <p>With this connectivity, KWIN City is perfectly situated for regional and global growth, making it an ideal place for business, innovation, and community.</p>
-    </section>
 </section>
 
-    <section id="city-map">
-        <h1>City Map</h1>
-        <p>Explore the layout of KWIN City.</p>
-        <img src="https://i.ibb.co/W6FNqyd/projdaa.png" alt="KWIN City Map" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
-    </section>
 
-  <nav>
-    <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
-  </nav>
-     <section id="business-ideas" style="display: none;">
-        <h2>Business Ideas</h2>
-       <table>
+    <!-- Education Details Section -->
+<section id="education-details">
+    <h2>Education Details</h2>
+    <dl>
+        <dt><strong>Class:</strong></dt>
+        <dd>D Division</dd>
+        <dt><strong>Subject:</strong></dt>
+        <dd>Design and Analysis of Algorithm</dd>
+        <dt><strong>Mentor:</strong></dt>
+        <dd>Arundati Mam</dd>
+    </dl>
+</section>
+
+<!-- About Section Wrapped in More Info -->
+<section>
+    <h1>About VAYUJIVA</h1>
+    <br><p>Vayujiva: A planned smart city in Karnataka, India, focusing on sustainability, technology, and citizen welfare.</p>
+    <br>
+    <button class="button" onclick="toggleInfo('about-section', this)">More Info</button>
+    <div id="about-section" style="display: none;">
+        <h2>Location and Population</h2>
+        <p><p>
+        <strong>State:</strong> Karnataka<br>
+        <strong>District:</strong> Chamrajnagar<br>
+        <strong>Taluk:</strong> Gundlupet<br>
+        <strong>Area:</strong> 15.60 sq. km<br>
+        <strong>Scale:</strong> 1 cm on chart = 2 km (x = 1.2 cm, y = 1.4 cm)<br>
+        <strong>PIN Code:</strong> 571419<br>
+        <strong>STD Code:</strong> 0822<br>
+        <strong>Time Zone:</strong> IST (Indian Standard Time) UTC+5:30<br>
+        <strong>Nearby Cities:</strong> Gundlupet (47 km), Kollegal (112 km), Chamrajnagar (134 km)<br>
+        <strong>Population:</strong><br>
+        Phase 1 (2025-2030): 300,000 residents (Primarily government and industrial workers)<br>
+        Phase 2 (2030-2035): 600,000 residents (Expansion of residential zones)<br>
+        Phase 3 (2035-2040): 1 million residents (Target population)
+    </p>
+
+    <h2>Budget</h2>
+    <h3>Phase 1 (2025-2030)</h3>
+    <ul>
+        <li>Infrastructure Development: ₹10,000 crores</li>
+        <li>Public Transportation: ₹6,000 crores (Metro, EV buses)</li>
+        <li>Affordable Housing: ₹5,000 crores (50,000 units for lower-income groups)</li>
+        <li>Smart Technology Implementation: ₹5,000 crores (IoT, AI for governance)</li>
+        <li>Green Energy and Water Conservation: ₹3,000 crores</li>
+        <li>Government Services and Administration: ₹2,000 crores</li>
+        <li>Education and Healthcare Initiatives: ₹3,000 crores</li>
+    </ul>
+
+    <h3>Phase 2 (2030-2035)</h3>
+    <ul>
+        <li>Growth and Expansion: ₹10,000 crores</li>
+        <li>Expansion of Transport: ₹8,000 crores (Metro extensions)</li>
+        <li>Residential Expansion: ₹5,000 crores</li>
+<li>Green Energy Development: ₹7,000 crores (wind and solar farms)</li>
+        <li>Commercial & Industrial Zone Development: ₹5,000 crores</li>
+        <li>Tourism & Cultural Infrastructure Development: ₹4,000 crores</li>
+        <li>Smart Public Services Integration: ₹2,000 crores</li>
+        <li>Eco-friendly Waste Management: ₹1,000 crores</li>
+    </ul>
+
+    <h3>Phase 3 (2035-2040)</h3>
+    <ul>
+        <li>Mature Phase: ₹18,000 crores</li>
+        <li>Upgradation of Public Infrastructure: ₹8,000 crores</li>
+        <li>Sustainable Water System: ₹4,000 crores</li>
+        <li>Urban Development of Green Spaces: ₹1,000 crores</li>
+        <li>Public Health and Education Services Expansion: ₹3,000 crores</li>
+    </ul>
+
+    <h2>Government Initiatives</h2>
+    <ul>
+        <li><strong>Smart Cities Mission:</strong> Digital infrastructure, e-governance, and city surveillance. Grants: ₹3,000 crores</li>
+        <li><strong>Beti Bachao Beti Padhao:</strong> Support for girl children in below poverty line families. Health insurance: Up to ₹25,000/year. Annual scholarhip: ₹500-₹1,000 (up to 10th standard)</li>
+        <li><strong>National Solar Mission:</strong> Renewable energy production. Funds: ₹1,000 crores for solar farms and sustainable energy</li>
+        <li><strong>Nali-Kali Programme:</strong> Redesigned elementary education to improve writing and learning outcomes</li>
+    </ul>
+
+    <h2>City Layout Plan</h2>
+    <ul>
+        <li><strong>Total Area:</strong> 1,500 sq. km</li>
+        <li><strong>Zones:</strong>
+            <ul>
+                <li>Residential Zone: Population: 1 million. Housing Density: 1,000-2,000 people per sq. km</li>
+                <li>Commercial and Business Zone: Area: 225 sq. km. Industries: IT services, eco-friendly product manufacturing</li>
+                <li>Education and Healthcare Zone: Area: 45 sq. km. Facilities: Schools, universities, research centers, hospitals</li>
+                <li>Industrial Zone: Area: 300 sq. km. Focus: Renewable energy, electric vehicles</li>
+                <li>Recreation and Cultural Zone: Area: 50 sq. km. Facilities: Museums, monuments, cultural centers</li>
+            </ul>
+        </li>
+    </ul>
+
+<h2>Revenue Generation</h2>
+    <ul>
+        <li>Property taxes and development fees: ₹3,000 crores annually</li>
+        <li>Tourism revenue: ₹1,000 crores annually</li>
+        <li>Commercial leasing: ₹3,500 crores annually</li>
+        <li>Public transport and utility services: ₹1,500 crores annually</li>
+        <li>Renewable energy export: ₹1,200 crores annually</li>
+    </ul>
+
+    <h2>Sustainability and Smart Elements</h2>
+    <ul>
+        <li>Renewable Energy: Solar and wind power meet 10% of city energy needs</li>
+        <li>Green Buildings: Energy-efficient and environmentally friendly designs</li>
+        <li>Green Spaces: Enhancing biodiversity and air quality</li>
+        <li>Smart Transportation: Electric buses, integrated public transport, cycling infrastructure</li>
+        <li>Smart Waste Management: Waste segregation, recycling, and composting</li>
+        <li>Digital Infrastructure: City-wide WiFi, e-governance platforms</li>
+        <li>Women's Help Center: Support for safety, health, and education</li>
+    </ul>
+
+</section>
+
+<!-- City Map Section -->
+<section id="city-map">
+    <h2>City Map</h2>
+    <p>VAYUJIVA where dreams meet Reality.</p>
+     <br><div style="margin-bottom: 1.5rem;">
+               <img src="https://i.ibb.co/dk6507m/VAYU-JIVA.jpg" alt="Image Placeholder" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);">
+    </div>
+
+</section>
+
+     <section id="Problem-statement">
+    <h2>Problem Statement</h2>
+    <dl>
+        Urban mobility faces issues like traffic congestion, lack of parking, and slow emergency response. A smart system that manages traffic, parking, and emergencies can improve efficiency and reduce delays.
+    </dl>
+</section>
+
+   <br> <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button><br>
+    <section id="business-ideas">
+   <h2>Business Ideas</h2>
+<table>
     <thead>
         <tr>
-            <th>SLNO</th>
-            <th>Business Case</th>
-            <th>Description</th>
-            <th>Owner</th>
-            <th>Tools</th>
+            <th><strong>SL NO</strong></th>
+            <th><strong>Business Case Identified</strong></th>
+            <th><strong>Description</strong></th>
+            <th><strong>Owner</strong></th>
+            <th><strong>Problem Tools</strong></th>
         </tr>
     </thead>
     <tbody>
-        <tr><td>1</td><td>Optimal Tourist Routes</td><td>Route optimization for tourists.</td><td>Varun S T</td><td>Graphs</td></tr>
-        <tr><td>2</td><td>Menu Item Sorting</td><td>Sort menus by price/popularity.</td><td>Vishal U H</td><td>Quick Sort</td></tr>
-        <tr><td>3</td><td>Traffic Monitoring</td><td>Analyze intersection traffic density.</td><td>Saif Ali</td><td>BFS, DFS</td></tr>
-        <tr><td>4</td><td>Waste Management</td><td>Efficient waste collection routes.</td><td>Suleman A</td><td>Dijkstra's</td></tr>
-        <tr><td>5</td><td>Water Usage</td><td>Residential water analysis.</td><td>Vishal and Varun</td><td>Time Series</td></tr>
-        <tr><td>6</td><td>Internet Connectivity</td><td>Optimize city-wide Wi-Fi.</td><td>Saif and Suleman</td><td>Minimum Spanning Tree</td></tr>
+        <tr>
+            <td><strong>1</strong></td>
+            <td><strong><label for="AnanyaB" class="clickable-row">Real-time Traffic Monitoring</label></strong></td>
+            <td>Collect, process, and analyze real-time traffic data using IoT devices and sensors.</td>
+            <td>Ananya B P</td>
+            <td>Arrays, Hashing, Sparse Table</td>
+        </tr>
+        <tr>
+            <td><strong>2</strong></td>
+            <td><strong><label for="Ria" class="clickable-row">Citizen Feedback Processing</label></strong></td>
+            <td>Collect, analyze, and act on citizen feedback regarding traffic issues.</td>
+            <td>Ria</td>
+            <td>Brute Force, String Search, Rabin-Karp, Lookup Table, Heap, AVL Tree, BFS, DFS, Queue</td>
+        </tr>
+        <tr>
+            <td><strong>3</strong></td>
+            <td><strong><label for="Sanjana" class="clickable-row">Smart Traffic Signal Control</label></strong></td>
+            <td>Dynamically adjust signal timings based on traffic flow and congestion.</td>
+            <td>Sanjana</td>
+            <td>Binary Search Tree, Trie, Queue</td>
+        </tr>
+        <tr>
+            <td><strong>4</strong></td>
+            <td><strong><label for="Chinmayi" class="clickable-row">Smart Parking Systems</label></strong></td>
+            <td>Use Trie to store and search for parking space availability in real-time, providing instant updates.</td>
+            <td>Chinmayi KB</td>
+            <td>Trie, Tree, BFS, DFS, Queue</td>
+        </tr>
+        <tr>
+            <td><strong>5</strong></td>
+            <td><strong><label for="RiaAndSanjana" class="clickable-row">Emergency Vehicle Routing</label></strong></td>
+            <td>Implement a 2-3 Tree to handle route optimization for emergency vehicles, ensuring minimal delay.</td>
+            <td>Ria and Sanjana</td>
+            <td>2-3 Tree, Dijkstra's Algorithm</td>
+        </tr>
+        <tr>
+            <td><strong>6</strong></td>
+            <td><strong><label for="AnanyaAndChinmayi" class="clickable-row">EV Charging Station Management</label></strong></td>
+            <td>Locate and manage EV charging stations in the city.</td>
+            <td>Ananya and Chinmayi</td>
+            <td>Binary Search Tree, Trie, Arrays</td>
+        </tr>
     </tbody>
 </table>
 
-         <h1><strong>Introduction to the Business Cases</strong></h1>
+<!-- Industrial Strategy Sections -->
+<input type="checkbox" id="AnanyaB" class="toggle-section" hidden>
+<section class="info-section">
+    <h2>INDUSTRIAL STRATEGIES Of Ananya B P</h2>
 
-  <br>  <h2><strong>1. Predicting Optimal Tourist Routes (Varun S T)</strong></h2>
-    <p><strong>This initiative focuses on developing a system that leverages real-time data like traffic conditions, crowd density, and user preferences to recommend ideal travel routes for tourists.</strong> Using graph-based algorithms, the system ensures that visitors have a seamless and enjoyable experience while reducing the pressure on popular tourist locations. By optimizing routes, it also supports sustainable urban tourism and enhances the visibility of lesser-known attractions.</p>
+    <h3><strong>Real-Time Traffic Monitoring</strong></h3>
+    <p>
+        <strong>SDG 9: Industry, Innovation, and Infrastructure</strong><br>
+        <ul>
+            <li><strong>9.1.1:</strong> Proportion of the rural population who live within 2 km of an all-season road.</li>
+            <li><strong>9.1.2:</strong> Passenger and freight volumes, by mode of transport.</li>
+            <li><strong>9.3.1:</strong> Proportion of small-scale industries in total industry value added.</li>
+            <li><strong>9.3.2:</strong> Proportion of small-scale industries with a loan or line of credit.</li>
+            <li><strong>9.c.1:</strong> Proportion of population covered by a mobile network, by technology.</li>
+        </ul>
+        
+        <strong>SDG 11: Sustainable Cities and Communities</strong><br>
+        <ul>
+            <li><strong>11.2.1:</strong> Proportion of population that has convenient access to public transport.</li>
+            <li><strong>11.3.1:</strong> Ratio of land consumption rate to population growth rate.</li>
+            <li><strong>11.3.2:</strong> Proportion of cities with a direct participation structure of civil society in urban planning.</li>
+            <li><strong>11.4.1:</strong> Total expenditure per capita spent on the preservation, protection, and conservation of cultural and natural heritage.</li>
+        </ul>
+    </p>
 
-    <h3><strong>Sustainable Goals:</strong></h3>
+    <h3><strong>EV Charging Station Management</strong></h3>
+    <p>
+        <strong>SDG 7: Affordable and Clean Energy</strong><br>
+        <ul>
+            <li><strong>7.1.1:</strong> Proportion of population with access to electricity.</li>
+            <li><strong>7.2.1:</strong> Renewable energy share in the total final energy consumption.</li>
+            <li><strong>7.3.1:</strong> Energy intensity measured in terms of primary energy and GDP.</li>
+            <li><strong>7.a.1:</strong> International financial flows to developing countries in support of clean energy research, development, and renewable energy production.</li>
+            <li><strong>7.b.1:</strong> Installed renewable energy-generating capacity in developing countries.</li>
+        </ul>
+
+        <strong>SDG 11: Sustainable Cities and Communities</strong><br>
+        <ul>
+            <li><strong>11.2.1:</strong> Proportion of population that has convenient access to public transport.</li>
+        </ul>
+    </p>
+</section>
+
+
+<input type="checkbox" id="Ria" class="toggle-section" hidden>
+<section class="info-section">
+    <h2>INDUSTRIAL STRATEGIES Of Ria</h2>
     <ul>
-        <li><strong>Distributes tourism traffic evenly to prevent overcrowding and environmental degradation at popular sites.</strong></li>
-        <li><strong>Encourages the use of sustainable transport modes, reducing the carbon footprint of travel.</strong></li>
-        <li><strong>Enhances accessibility to cultural and natural heritage sites, fostering inclusive tourism.</strong></li>
+        <li><strong>SDG Target 9.1</strong><br>Focus: Develop quality, reliable, sustainable, and resilient infrastructure...</li>
+        <li><strong>SDG Target 11.3</strong><br>Focus: Enhance inclusive and sustainable urbanization...</li>
+        <li><strong>SDG Target 16.6</strong><br>Focus: Develop effective, accountable, and transparent institutions...</li>
     </ul>
+</section>
 
-    <h3><strong>Challenges in Implementation:</strong></h3>
+<input type="checkbox" id="Sanjana" class="toggle-section" hidden>
+<section class="info-section">
+    <h2>INDUSTRIAL STRATEGIES Of Sanjana</h2>
     <ul>
-        <li><strong>Integrating diverse data sources like GPS, weather, and user preferences into a unified system.</strong></li>
-        <li><strong>Balancing system performance and accuracy for real-time route optimization.</strong></li>
-        <li><strong>Ensuring privacy and security while collecting and processing user data.</strong></li>
+        <li><strong>SDG Target 11.2</strong><br>Focus: Provide access to safe, affordable, accessible transport...</li>
+        <li><strong>SDG Target 9.4</strong><br>Focus: Upgrade infrastructure to make them sustainable...</li>
+        <li><strong>SDG Target 13.2</strong><br>Focus: Integrate climate change measures into national policies...</li>
     </ul>
+</section>
 
-    <br><h2><strong>2. Sorting Menu Items (Vishal U H)</strong></h2>
-    <p><strong>Sorting menu items efficiently is crucial for e-commerce and digital platforms in food and retail industries.</strong> This system uses quick sort and array structures to organize items based on price or popularity, offering a streamlined and intuitive interface for users. By dynamically updating sorting criteria based on real-time data, the solution ensures an enhanced customer experience and supports better decision-making.</p>
-
-    <h3><strong>Sustainable Goals:</strong></h3>
+<input type="checkbox" id="Chinmayi" class="toggle-section" hidden>
+<section class="info-section">
+    <h2>INDUSTRIAL STRATEGIES Of Chinmayi</h2>
     <ul>
-        <li><strong>Promotes informed consumer choices by highlighting affordable or eco-friendly options.</strong></li>
-        <li><strong>Reduces decision-making time, indirectly contributing to efficient resource utilization in retail and food services.</strong></li>
-        <li><strong>Supports sustainable consumption patterns by surfacing locally sourced or seasonal items.</strong></li>
+        <li><strong><ul>
+        <li><strong>a. Goal (SDG_GOAL):*</strong> Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable.</li> 
+        <li><strong>b. Target (SDG_TARGET):*</strong> Target 11.2: By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport.</li>  
+        <li><strong>c. Indicator (SDG_INDICATOR):*</strong> Indicator 11.2.1: Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</li>
+    </ul></strong></li>
     </ul>
+</section>
 
-    <h3><strong>Challenges in Implementation:</strong></h3>
+<input type="checkbox" id="RiaAndSanjana" class="toggle-section" hidden>
+<section class="info-section">
+    <h2>INDUSTRIAL STRATEGIES Of Ria and Sanjana</h2>
     <ul>
-        <li><strong>Adapting to changes in popularity or pricing in real-time without significant delays.</strong></li>
-        <li><strong>Scaling efficiently for platforms with extensive and diverse catalogs.</strong></li>
-        <li><strong>Addressing algorithm biases to ensure fair representation of all menu items.</strong></li>
+        <li><strong>SDG Target 11.2</strong><br>Focus: Provide access to safe, affordable transport systems...</li>
+        <li><strong>SDG Target 3.6</strong><br>Focus: Halve the number of global deaths from road accidents...</li>
+        <li><strong>SDG Target 9.1</strong><br>Focus: Develop quality, reliable infrastructure...</li>
     </ul>
+</section>
 
-    <br><h2><strong>3. Monitoring Traffic Flow (Saif Ali)</strong></h2>
-    <p><strong>Managing traffic density at critical intersections is essential for promoting vehicle-free smart cities.</strong> This case employs graph traversal algorithms like BFS and DFS to analyze traffic patterns, identify bottlenecks, and propose alternate routes. The solution supports proactive traffic management, ensuring smoother flow and reducing environmental impact.</p>
-
-    <h3><strong>Sustainable Goals:</strong></h3>
+<input type="checkbox" id="AnanyaAndChinmayi" class="toggle-section" hidden>
+<section class="info-section">
+    <h2>INDUSTRIAL STRATEGIES for Ananya Of Chinmayi</h2>
     <ul>
-        <li><strong>Minimizes emissions by reducing idle times at congested intersections.</strong></li>
-        <li><strong>Supports active commuting methods like walking and cycling by optimizing pathways.</strong></li>
-        <li><strong>Enhances urban mobility while aligning with goals for sustainable cities and communities.</strong></li>
+        <li><strong>a. Goal (SDG_GOAL):*</strong> Goal 11: Make cities and human settlements inclusive, safe, resilient, and sustainable.</li> 
+        <li><strong>b. Target (SDG_TARGET):*</strong> Target 11.2: By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport.</li>  
+        <li><strong>c. Indicator (SDG_INDICATOR):*</strong> Indicator 11.2.1: Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</li>
     </ul>
+</section>
 
-    <h3><strong>Challenges in Implementation:</strong></h3>
-    <ul>
-        <li><strong>High dependency on IoT infrastructure for accurate data collection.</strong></li>
-        <li><strong>Real-time analysis of large datasets from sensors and cameras.</strong></li>
-        <li><strong>Overcoming resistance from commuters used to traditional traffic systems.</strong></li>
-    </ul>
-
-    <br><h2><strong>4. Optimizing Waste Management Routes (Suleman A)</strong></h2>
-    <p><strong>Efficient waste collection is vital for urban hygiene and sustainability.</strong> This system applies Dijkstra's Algorithm to determine optimal routes for waste collection vehicles, minimizing fuel consumption and travel time. It not only reduces operational costs but also contributes to lower emissions, supporting green city initiatives.</p>
-
-    <h3><strong>Sustainable Goals:</strong></h3>
-    <ul>
-        <li><strong>Lowers fuel consumption and carbon emissions by streamlining waste collection routes.</strong></li>
-        <li><strong>Reduces operational costs, enabling reinvestment in other sustainability initiatives.</strong></li>
-        <li><strong>Prevents missed waste pickups, promoting cleaner neighborhoods and efficient waste management.</strong></li>
-    </ul>
-
-    <h3><strong>Challenges in Implementation:</strong></h3>
-    <ul>
-        <li><strong>Handling dynamic changes like roadblocks or unexpected waste accumulation.</strong></li>
-        <li><strong>Collecting and updating accurate data on waste generation across neighborhoods.</strong></li>
-        <li><strong>Ensuring system compatibility with existing waste management infrastructure.</strong></li>
-    </ul>
-
-    <br><h2><strong>5. Monitoring Water Usage in Residential Areas (Varun & Vishal)</strong></h2>
-    <p><strong>Water conservation is a critical concern in urban planning.</strong> This system tracks and analyzes residential water usage patterns using time-series analysis. By identifying trends and irregularities, it provides actionable insights for policymakers and promotes responsible water consumption among residents.</p>
-
-    <h3><strong>Sustainable Goals:</strong></h3>
-    <ul>
-        <li><strong>Identifies wasteful water usage patterns, supporting conservation efforts.</strong></li>
-        <li><strong>Promotes equitable water distribution across neighborhoods.</strong></li>
-        <li><strong>Aligns with SDG Goal 6: Clean Water and Sanitation by fostering efficient water use.</strong></li>
-    </ul>
-
-    <h3><strong>Challenges in Implementation:</strong></h3>
-    <ul>
-        <li><strong>Collecting accurate and granular data without invading privacy.</strong></li>
-        <li><strong>Analyzing seasonal or situational fluctuations in water usage.</strong></li>
-        <li><strong>Encouraging residents to adopt water-saving practices based on insights.</strong></li>
-    </ul>
-
-   <br> <h2><strong>6. Optimizing City-Wide Internet Connectivity (Saif & Suleman)</strong></h2>
-    <p><strong>Reliable internet connectivity is foundational to smart cities.</strong> This initiative maps and optimizes the placement of Wi-Fi hotspots using minimum spanning tree algorithms. By ensuring high-speed connectivity and minimizing redundant infrastructure, the system enhances digital inclusivity and supports the city's technological growth.</p>
-
-    <h3><strong>Sustainable Goals:</strong></h3>
-    <ul>
-        <li><strong>Ensures equitable access to internet resources, bridging the digital divide.</strong></li>
-        <li><strong>Reduces infrastructure redundancy, supporting efficient resource utilization.</strong></li>
-        <li><strong>Promotes digital inclusion, enabling access to e-services for all city residents.</strong></li>
-    </ul>
-
-    <h3><strong>Challenges in Implementation:</strong></h3>
-    <ul>
-        <li><strong>Balancing high-speed connectivity with cost-effective deployment of Wi-Fi hotspots.</strong></li>
-        <li><strong>Addressing challenges in mapping dense urban areas with complex layouts.</strong></li>
-        <li><strong>Ensuring network reliability during peak usage hours or adverse conditions.</strong></li>
-    </ul>
+</section>
+</section>
+   
+    
+<!-- Team Members Section -->
+<section id="team-members">
+    <h2>Team Members</h2>
+ <table>
+    <tr>
+      <th>ROLL.NO</th>
+      <th>USN</th>
+      <th>NAME</th>
+    </tr>
+    <tr>
+      <td>408</td>
+      <td>01fe23bcs060</td>
+      <td>Ria Javalagi</td>
+    </tr>
+    <tr>
+      <td>407</td>
+      <td>01fe23bcs057</td>
+      <td>Sanjana Shetty</td>
+    </tr>
+    <tr>
+      <td>412</td>
+      <td>01fe23bcs080</td>
+      <td>Chinmayi K.B</td>
+    </tr>
+    <tr>
+      <td>406</td>
+      <td>01fe23bcs055</td>
+      <td>Ananya Pattanashetty</td>
+    </tr>
+  </table>
     </section>
-    <section>
-      <br><h2>Team Members</h2>
 
-<!-- Vishal U H -->
-<br>
-<button class="button" onclick="toggleInfo('vishal-reflections')">01fe23bci065 - 130 - Vishal U H</button><br>
-<section id="vishal-reflections" style="display: none;">
-    <h2>Course Reflections - Vishal U H</h2>
+    </section>
+    <!-- Hidden content -->
+    <br>
+    <button class="button" onclick="toggleInfo('reflections')">Reflections</button>
+    <br><br>
+
+    <!-- Reflections Section -->
+    <section id="reflections" style="display:none;">
+        <button class="button" onclick="toggleInfo('rias-reflections')">RIA's REFLECTIONS</button><br>
+
+    <section id="rias-reflections" style="display: none;">
+    <h2>Algorithmic Problem-Solving Techniques</h2>
     <ol>
-       <h2>Course Reflections</h2> <ol> <li> <h2>Question 1: Challenges in Learning/Understanding the Above Concepts</h2> <h3>Abstractness</h3> <p> Many concepts, such as time complexity, graph algorithms, or dynamic programming, are <b>highly abstract</b>. They can be difficult to visualize without concrete examples or real-world applications, making it harder to grasp the theory. Abstract concepts like <strong>Big O notation</strong> require not only mathematical reasoning but also an understanding of how these concepts affect the overall performance and behavior of programs. </p> <h3>Mathematical Foundations</h3> <p> Understanding these concepts often requires a <strong>solid foundation in mathematics</strong>, particularly discrete mathematics, linear algebra, and set theory. Students without this background may struggle with logic, proofs, or formal algorithm analysis. Building this mathematical proficiency can be a barrier for many. </p> <h3>Interconnectedness</h3> <p> Many algorithmic concepts are deeply interrelated, and grasping one concept often requires a sound understanding of others. For instance, understanding <strong>sorting algorithms</strong> is vital for comprehending how certain graph traversal algorithms (like Dijkstra’s or Prim’s algorithm) work efficiently. This interconnectedness can create a compounding effect, where mastering one concept becomes necessary before others can be fully understood. </p> <h3>Implementation Details</h3> <p> Translating abstract theoretical concepts into practical, executable code can be a daunting challenge. Concepts like <strong>recursion</strong>, <strong>backtracking</strong>, or <strong>memoization</strong> are essential to implementing many algorithms. Students must also understand the subtleties of memory management (e.g., stack vs heap) and optimization techniques (e.g., loop unrolling, caching), which can be difficult to grasp without experience in low-level programming. </p> <h2>Question 2: Challenges in Correlating with Real-World Applications</h2> <h3>Idealized vs. Real-World Conditions</h3> <p> In theoretical settings, algorithms often assume <b>ideal conditions</b> (e.g., perfectly sorted data, unlimited processing power). However, real-world applications often deal with imperfect data, unreliable network conditions, and hardware limitations. For example, sorting algorithms like quicksort assume that the data is distributed evenly, which may not always be the case. </p> <h3>Trade-offs and Constraints</h3> <p> Real-world applications often require balancing <b>trade-offs</b> between competing factors, such as time complexity, memory usage, and the responsiveness of the system. For instance, a real-time system might prioritize speed over memory usage, whereas a mobile application might prioritize battery life. </p> <h3>Non-Deterministic Behavior</h3> <p> Algorithms often perform unpredictably in the real world due to the inherent randomness of data and user behavior. For example, a search algorithm might be highly efficient on a static dataset but may fail to perform well when the data is constantly changing or when faced with inconsistent input sizes. </p> <h3>Integration with Existing Systems</h3> <p> Integrating algorithms into existing software often presents practical challenges. This can involve adjusting the algorithm to work within the constraints of legacy systems, working with different programming languages, or optimizing an algorithm to be compatible with a specific hardware environment. </p> <h2>Question 3: Determining the Most Efficient Approach/Design Techniques</h2> <h3>Problem Decomposition</h3> <p> The process of breaking down a complex problem into smaller, more manageable subproblems is essential in designing efficient algorithms. By applying the <strong>divide and conquer strategy</strong>, for example, problems can be divided into simpler parts that are easier to solve independently. Once the smaller problems are solved, their solutions are combined to solve the overall problem. This technique is commonly used in algorithms like <b>merge sort</b> or <b>quick sort</b>, and also in solving matrix multiplication problems through the <strong>Strassen algorithm</strong>. </p> <p> This approach not only makes problems more tractable but also often results in more efficient solutions. For instance, <strong>dynamic programming (DP)</strong> is another decomposition technique where a problem is broken into overlapping subproblems, and intermediate results are stored (<strong>memoization</strong>) to avoid redundant calculations, improving efficiency. </p> <h3>Algorithm Analysis</h3> <p> It is crucial to analyze and compare the time and space complexity of different algorithms to select the most efficient one for a given problem. The <strong>Big O notation</strong> is a valuable tool for representing the worst-case time complexity of an algorithm, helping developers choose the best algorithm based on the input size. For example, while a brute-force solution might be simple to implement, its higher time complexity (e.g., <b>O(n^2)</b> in the case of bubble sort) can be less efficient than more sophisticated algorithms like quicksort (<b>O(n log n)</b>) for larger data sets. </p> <p> In addition to Big O, other complexities, such as <b>Big Ω (omega)</b> and <b>Big Θ (theta)</b>, are important in capturing the best-case and average-case performance. By considering these different cases, developers can more precisely evaluate how the algorithm will perform in various conditions. </p> <h3>Data Structure Selection</h3> <p> Choosing the appropriate data structure is critical for ensuring efficient performance. For example, if quick access to elements by index is required, an array or hash table may be ideal, but if ordered data needs to be maintained or frequent insertions/deletions are required, binary search trees (BSTs) or heaps may offer better performance. For instance, in graph algorithms, the decision to use an adjacency list or adjacency matrix can drastically affect performance based on the graph’s sparsity. </p> <p> Understanding the strengths and weaknesses of data structures like stacks, queues, linked lists, trees, and graphs enables developers to make informed decisions and optimize algorithm performance based on the specific problem at hand. </p> <h3>Profiling and Optimization</h3> <p> Optimizing code is often an iterative process that involves identifying performance bottlenecks through <b>profiling tools</b>. By analyzing code performance with tools like <strong>gprof</strong> or <strong>Valgrind</strong> in C/C++ or <strong>cProfile</strong> in Python, developers can pinpoint areas of inefficiency—such as unnecessary memory allocations, repeated computations, or excessive function calls— and focus on optimizing those specific sections. </p> <p> After identifying critical bottlenecks, developers can experiment with different techniques, such as loop unrolling, memoization, or parallelization, to reduce time complexity. This is particularly useful in environments with stringent resource constraints, such as mobile devices or embedded systems, where optimization is often necessary for achieving real-time performance. </p> </li> </ol>
-    </ol>
-</section>
+        <li>
+            <b>Problems in Nature</b>
+            <p><b>Iteration:</b> Compound Interest: Keeps adding interest over time. Traffic Lights: Switches between red, yellow, and green.</p>
+            <p><b>Recursion:</b> Directory Size: Adds up folder sizes, including subfolders. Fractals: Patterns repeat in smaller versions.</p>
+            <p><b>Backtracking:</b> Sudoku: Fills in numbers and fixes mistakes. Maze: Tries a path, goes back if stuck.</p>
+            <p><b>Divide and Conquer:</b> Merging Records: Breaks data into pieces and puts it together. Sorting (Merge Sort): Splits, sorts, and combines data.</p>
+            <p><b>Greedy Algorithm:</b> ATM Withdrawal: Takes the biggest bills first. Activity Scheduling: Chooses the task that ends quickest.</p>
+            <p><b>Dynamic Programming:</b> Route Planning: Solves parts of a route to find the best one. Fibonacci: Remembers results to avoid doing the same work again.</p>
+            <p><b>Graph Algorithms:</b> Dijkstra (Shortest Path): Finds the quickest route. Prim's/Kruskal's (MST): Connects with the least cost.</p>
+        </li>
+        <li>
+            <b>Space and Time Efficiency</b>
+            <p>Space Efficiency: Extra memory an algorithm uses. Time Efficiency: Speed at which an algorithm completes its task.</p>
+            <p><b>Orders of Growth:</b></p>
+            <table border="1">
+                <tr>
+                    <th>Order</th><th>Time</th><th>Space</th>
+                </tr>
+                <tr>
+                    <td>O(1)</td><td>Array access</td><td>Single variable</td>
+                </tr>
+                <tr>
+                    <td>O(log n)</td><td>Binary search</td><td>Recursive stack</td>
+                </tr>
+                <tr>
+                    <td>O(n)</td><td>Loop through list</td><td>Storing list</td>
+                </tr>
+                <tr>
+                    <td>O(n log n)</td><td>Merge Sort</td><td>Auxiliary space</td>
+                </tr>
+                <tr>
+                    <td>O(n²)</td><td>Bubble Sort</td><td>2D matrix</td>
+                </tr>
+                <tr>
+                    <td>O(2^n)</td><td>Brute force</td><td>Storing subsets</td>
+                </tr>
+                <tr>
+                    <td>O(n!)</td><td>Generating permutations</td><td>Storing permutations</td>
+                </tr>
+            </table>
+            <p><b>Complexity Order:</b> Time: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!). Space: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).</p>
+        </li>
+        <li>
+            <b>Design Principles</b>
+            <p>Shortest Path Trees: Finds the most efficient routes. Real-world example: GPS routing.</p>
+            <p>Partitioning: Breaks down complex problems into smaller segments. Example: Quicksort.</p>
+            <p>Balancing and Rotations: Maintains optimal performance of data structures. Examples: AVL trees, Red-Black trees.</p>
+            <p>Edge Relaxation: Allows dynamic updating of path solutions. Example: Dijkstra's algorithm.</p>
+            <p>Level Order Traversal: Systematic, layer-by-layer exploration. Used in graph and tree navigation techniques.</p>
+            <p>Pruning: Eliminates unnecessary solution paths. Reduces computational complexity.</p>
+        </li>
+        <li>
+            <b>Hierarchical Data Structures</b>
+            <p><b>Tree:</b> Represents hierarchies (filesystems, organizations). Pro: Simple and intuitive. Con: Lacks balance; inefficient operations.</p>
+            <p><b>Binary Search Tree (BST):</b> Sorted data storage and retrieval. Pro: Efficient when balanced. Con: Degrades if unbalanced.</p>
+            <p><b>AVL Tree:</b> Always balanced; guarantees O(log n) operations. Con: Costly rotations during updates.</p>
+            <p><b>Heap:</b> Priority management and sorting. Pro: Quick min/max access. Con: Inefficient for general-purpose searches.</p>
+        </li>
+        <li>
+            <b>Array Query Algorithms</b>
+            <p><b>Why Needed:</b> Efficient Data Access: Fast retrieval of data in large arrays. Optimized Operations: Reduce time complexity. Dynamic Applications: Handle real-time tasks.</p>
+            <p><b>Applications:</b> Range Queries: Segment Tree, Fenwick Tree. Dynamic Updates: Fenwick Tree, Lazy Propagation. Prefix Queries: Prefix Sum Array.</p>
+        </li>
+        <li>
+            <b>Trees and Graphs</b>
+            <p><b>Tree:</b> Hierarchical structure with one root.</p>
+            <p><b>Graph:</b> Collection of nodes connected by edges. Characteristics: Can be cyclic, disconnected, directed/undirected.</p>
+            <p><b>Tree Traversals:</b> Pre-order, In-order, Post-order, Level-order (BFS).</p>
+            <p><b>Applications:</b> File systems, expression trees, database indexing, decision trees in ML.</p>
+        </li>
+    </ol>ent 
+    </section>
+   <br>     <button class="button" onclick="toggleInfo('chi-reflections')">CHINNMAY's REFLECTIONS</button><br>
 
-<!-- Varun S T -->
-<br>
-<button class="button" onclick="toggleInfo('varun-reflections')">01fe23bci068 - 131 - Varun Terdal</button><br>
-<section id="varun-reflections" style="display: none;">
-    <h2>Course Reflections - Varun S T</h2>
+    <section id="chi-reflections" style="display: none;">
+   <h2>Course Reflections</h2>
     <ol>
-      
+        <li>
+            <b>What are the kinds of problems we see in nature? (iteration, recursion, backtracking)?</b>
+            <p>
+                Nature provides numerous examples that parallel the concepts of iteration, recursion, and backtracking in computational terms. 
+                The recurring cycle of seasons, which progresses and repeats predictably each year, is a clear representation of iteration. 
+                Similarly, the growth pattern of cabbage leaves, where each layer forms upon the previous one in a structured sequence, embodies recursion—a process building upon itself. 
+                Ants foraging for food illustrate backtracking; they traverse paths in search of resources and, upon encountering obstacles or dead ends, retrace their steps to explore alternative routes. 
+                These examples showcase how fundamental algorithmic principles are intricately mirrored in natural processes, emphasizing the profound connection between computational logic and the patterns observed in the natural world.
+            </p>
+        </li>
+        <li>
+            <b>What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth?</b>
+            <p>
+                <b>Space Complexity:</b> Additional memory an algorithm requires during execution. <br>
+                <b>Time Complexity:</b> The duration it takes for an algorithm to complete its task.
+            </p>
+            <p>
+                These measures are crucial for assessing an algorithm's efficiency, enabling programmers to determine its suitability for specific applications. 
+                The orders of growth of an algorithm describe how time or space requirements grow as the input size increases.
+            </p>
+            <ul>
+                <li>O(1) -> Constant order of growth</li>
+                <li>O(n) -> Linear order of growth</li>
+                <li>O(log n) -> Logarithmic order of growth</li>
+            </ul>
+        </li>
+        <li>
+            <b>Take away from different design principles from Chapter 2?</b>
+            <p>
+                Studying different algorithms has helped me grasp their key principles and applications more clearly. 
+                For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
+                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
+                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
+                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
+            </p>
+        </li>
+        <li>
+            <b>The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, bst, avl, 2-3, red-black, heap, trie)?</b>
+            <p>
+                Studying different algorithms has helped me grasp their key principles and applications more clearly. 
+                For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
+                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
+                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
+                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
+            </p>
+        </li>
+        <li>
+            <b>The need for array query algorithms and their implications. Their applications and principles need to be discussed.</b>
+            <p>
+                Efficient array queries are crucial for managing large datasets with frequent updates. Lookup tables precompute and store results for fast range queries, while segment trees handle dynamic updates efficiently. 
+                A simpler alternative is the Binary Indexed Tree (BIT), which uses a clever bitwise approach for quick range operations. 
+            </p>
+            <p>
+                These tools have practical uses, like enabling price filters on shopping sites such as Amazon, where customers can search within specific price ranges. 
+                Similarly, financial platforms use range queries to analyze stock trends over chosen periods. 
+                These structures balance speed and simplicity, making them vital for modern data-driven applications.
+            </p>
+        </li>
+        <li>
+            <b>Differentiate between tree and graphs and their traversals. The applications of each.</b>
+            <p>
+                <b>Trees:</b> A connected, acyclic graph with n nodes and n-1 edges. Always has a root node. Is always connected and has no cycles.<br>
+                <b>Graphs:</b> A collection of vertices connected by edges, which can be cyclic or disconnected. Does not have a specific root unless explicitly defined. Can be either connected or disconnected and may include cycles.
+            </p>
+            <p>
+                <b>Tree Traversals:</b> Pre-order, In-order, Post-order. Examples: Heaps, Binary Search Trees (BST) for efficient search, insertion, and deletion.<br>
+                <b>Graph Traversals:</b> DFS (Depth-First Search), BFS (Breadth-First Search). Examples: Road navigation, social networks, communication networks.
+            </p>
+        </li>
+        <li>
+            <b>Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.</b>
+            <p>
+                <b>Sorting Algorithms:</b>
+                <ul>
+                    <li>Bubble Sort: Repeatedly compares and swaps adjacent elements.</li>
+                    <li>Insertion Sort: Inserts elements into the sorted portion one by one.</li>
+                    <li>Selection Sort: Finds the smallest/largest element and places it in the sorted section.</li>
+                    <li>Merge Sort: Recursively splits and merges sorted halves.</li>
+                    <li>Quick Sort: Partitions the array around a pivot for sorting.</li>
+                </ul>
+                Applications: Database Management (sorting for faster querying), E-commerce (arranging products by price, ratings, etc.)
+            </p>
+        </li>
+    </ol>
+    </section>
+     <br>   <button class="button" onclick="toggleInfo('ann-reflections')">Ananya's REFLECTIONS</button><br>
 
-    <h2>Question 1: Challenges in Learning/Understanding the Above Concepts</h2>
+    <section id="ann-reflections" style="display: none;">
+   <h2>Course Reflections</h2>
+   <ol>
+        <li>
+            <b>1. What are the kinds of problems we see in nature? (iteration, recursion, backtracking)?</b>
+            <p>
+                Nature provides numerous examples that parallel the concepts of iteration, recursion, and backtracking in computational terms. 
+                The recurring cycle of seasons, which progresses and repeats predictably each year, is a clear representation of iteration. 
+                Similarly, the growth pattern of cabbage leaves, where each layer forms upon the previous one in a structured sequence, embodies recursion—a process building upon itself. 
+                Ants foraging for food illustrate backtracking; they traverse paths in search of resources and, upon encountering obstacles or dead ends, retrace their steps to explore alternative routes. 
+                These examples showcase how fundamental algorithmic principles are intricately mirrored in natural processes, emphasizing the profound connection between computational logic and the patterns observed in the natural world.
+            </p>
+        </li>
+        <li>
+            <b>2. What is space and time efficiency? Why are they important? Explain the different classes of problems and orders of growth?</b>
+            <p>
+                <b>Space Complexity:</b> Additional memory an algorithm requires during execution. <br>
+                <b>Time Complexity:</b> The duration it takes for an algorithm to complete its task.
+            </p>
+            <p>
+                These measures are crucial for assessing an algorithm's efficiency, enabling programmers to determine its suitability for specific applications. 
+                The orders of growth of an algorithm describe how time or space requirements grow as the input size increases:
+            </p>
+            <ul>
+                <li>O(1) → Constant order of growth</li>
+                <li>O(n) → Linear order of growth</li>
+                <li>O(log n) → Logarithmic order of growth</li>
+            </ul>
+        </li>
+        <li>
+            <b>3. Take away from different design principles from Chapter 2?</b>
+            <p>
+                Studying different algorithms has helped me grasp their key principles and applications more clearly. For example, AVL trees and Red-Black trees taught me how maintaining balance in data structures is essential for efficient operations. 
+                Exploring graph traversal methods like DFS and BFS showed how different strategies can solve problems effectively—DFS being more exploratory and BFS taking a systematic approach. 
+                Learning sorting algorithms like Merge Sort, which divides and merges data, and Quick Sort, which strategically swaps elements, gave me a better understanding of how they work in practice. 
+                These concepts have provided me with a solid foundation in understanding algorithms and their practical uses.
+            </p>
+        </li>
+        <li>
+            <b>4. The hierarchical data and how different tree data structures solve and optimize over problem scenarios (tree, BST, AVL, 2-3, Red-Black, heap, trie)?</b>
+            <p>
+                Similar to the previous reflections, hierarchical data structures like AVL trees and Red-Black trees focus on maintaining balance for efficient operations. 
+                These structures optimize scenarios like database indexing, network routing, and problem-solving in programming challenges.
+            </p>
+        </li>
+        <li>
+            <b>5. The need for array query algorithms and their implications. Their applications and principles need to be discussed.</b>
+            <p>
+                Efficient array queries are crucial for managing large datasets with frequent updates. Lookup tables precompute and store results for fast range queries, while segment trees handle dynamic updates efficiently. 
+                A simpler alternative is the Binary Indexed Tree (BIT), which uses a clever bitwise approach for quick range operations. These tools have practical uses, like enabling price filters on shopping sites such as Amazon, where customers can search within specific price ranges. Similarly, financial platforms use range queries to analyze stock trends over chosen periods.
+            </p>
+        </li>
+        <li>
+            <b>6. Differentiate between tree and graphs and their traversals. The applications of each.</b>
+            <p>
+                <b>Trees:</b> A connected, acyclic graph with n nodes and n-1 edges. Always has a root node. Is always connected and has no cycles. <br>
+                <b>Graphs:</b> A collection of vertices connected by edges, which can be cyclic or disconnected.
+            </p>
+            <p>
+                <b>Tree Traversals:</b> Pre-order, In-order, Post-order. Examples: Heaps, Binary Search Trees (BST) for efficient search, insertion, and deletion. <br>
+                <b>Graph Traversals:</b> DFS (Depth-First Search), BFS (Breadth-First Search). Examples: Road navigation, social networks, communication networks.
+            </p>
+        </li>
+        <li>
+            <b>7. Deliberate on sorting and searching algorithms, the technique behind each and how they connect to the real world.</b>
+            <p>
+                Sorting algorithms arrange data in order (ascending/descending). Examples include:
+            </p>
+            <ul>
+                <li><b>Bubble Sort:</b> Repeatedly compares and swaps adjacent elements.</li>
+                <li><b>Insertion Sort:</b> Inserts elements into the sorted portion one by one.</li>
+                <li><b>Selection Sort:</b> Finds the smallest/largest element and places it in the sorted section.</li>
+                <li><b>Merge Sort:</b> Recursively splits and merges sorted halves.</li>
+                <li><b>Quick Sort:</b> Partitions the array around a pivot for sorting.</li>
+            </ul>
+        </li>
+        <li>
+            <b>8. Discuss the importance of graph algorithms with respect to spanning trees and shortest paths.</b>
+            <p>
+                Graph algorithms like Kruskal’s and Prim’s help minimize traversal costs. Shortest path algorithms like Dijkstra and Floyd-Warshall are vital for navigation, network routing, and optimization tasks.
+            </p>
+        </li>
+        <li>
+            <b>9. Discuss the different studied algorithm design techniques.</b>
+            <p>
+                Techniques include backtracking, sorting algorithms, brute force, string search algorithms, and shortest path algorithms like Dijkstra's and Floyd's.
+            </p>
+        </li>
+    </ol>
+    </section>
+ <br>   <button class="button" onclick="toggleInfo('san-reflections')">Sanjana's REFLECTIONS</button><br>
 
-    <h3>New Terminology</h3>
+    <section id="san-reflections" style="display: none;">
+   <h2>Course Reflections</h2>
+   <ol>
+       <h1>Problems in Nature</h1>
     <p>
-        As students dive deeper into algorithmic concepts, they encounter a wealth of <b>new terminology</b> and notations. 
-        The language used in algorithms—like <strong>"recursion," "graph traversal,"</strong> or <strong>"dynamic programming"</strong>—can be a barrier itself. 
-        Understanding how to interpret symbols such as <strong>Big O notation</strong> (for time/space complexity), tree traversal orders 
-        (<strong>preorder, inorder, postorder</strong>), or graph-based notations (<strong>adjacency list/matrix</strong>) is a significant hurdle.
+        <b>Iteration:</b> Compound Interest keeps adding interest over time. Traffic Lights switch between red, yellow, and green.<br>
+        <b>Recursion:</b> Directory Size adds up folder sizes, including subfolders. Fractals repeat patterns in smaller versions.<br>
+        <b>Backtracking:</b> Sudoku fills in numbers and fixes mistakes. Maze tries a path and goes back if stuck.<br>
+        <b>Divide and Conquer:</b> Merging Records breaks data into pieces and puts it together. Sorting (Merge Sort) splits, sorts, and combines data.<br>
+        <b>Greedy Algorithm:</b> ATM Withdrawal takes the biggest bills first. Activity Scheduling chooses the task that ends quickest.<br>
+        <b>Dynamic Programming:</b> Route Planning solves parts of a route to find the best one. Fibonacci remembers results to avoid redundant work.<br>
+        <b>Graph Algorithms:</b> Dijkstra (Shortest Path) finds the quickest route. Prim's/Kruskal's (MST) connects with the least cost.<br>
+        <b>Sorting Algorithms:</b> Task Sorting organizes tasks for efficiency. Ticket Sorting arranges tickets by price.<br>
+        <b>Searching Algorithms:</b> Linear Search finds a file. Binary Search locates a word in a sorted list.
     </p>
 
-    <h3>Conceptual Shifts</h3>
+    <h1>Space and Time Efficiency</h1>
     <p>
-        The shift from imperative thinking to recursive or algorithmic thinking can be difficult. For example, understanding 
-        <strong>recursion</strong> involves thinking about problems in terms of their subproblems, which is very different from the traditional 
-        linear flow of control seen in iterative algorithms.
+        <b>Space Efficiency:</b> Extra memory an algorithm uses.<br>
+        <b>Time Efficiency:</b> Speed at which an algorithm completes its task.<br>
+        <b>Orders of Growth:</b><br>
+        <b>Order:</b> <b>Time:</b> <b>Space:</b><br>
+        <b>O(1):</b> Array access. Single variable.<br>
+        <b>O(log n):</b> Binary search. Recursive stack.<br>
+        <b>O(n):</b> Loop through a list. Storing list.<br>
+        <b>O(n log n):</b> Merge Sort. Auxiliary space.<br>
+        <b>O(n²):</b> Bubble Sort. 2D matrix.<br>
+        <b>O(2^n):</b> Brute force. Storing subsets.<br>
+        <b>O(n!):</b> Generating permutations. Storing permutations.<br>
+        <b>Complexity Order:</b> Time: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).<br>
+        Space: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!).<br>
+        <b>Why It Matters:</b> Optimized performance, efficient memory use, scalability, real-world impact, and smooth operation on limited devices.
     </p>
 
-    <h3>Debugging Complexity</h3>
+    <h1>Design Principles</h1>
     <p>
-        Debugging is often more challenging with complex algorithms due to their intricate logic. For example, <strong>tree and graph traversal algorithms</strong> 
-        have many recursive or iterative steps, making it harder to track the program's state during execution. It’s easy to introduce subtle bugs, 
-        such as <b>infinite loops, off-by-one errors</b>, or logical errors in base cases.
+        <b>Shortest Path Trees:</b> Fundamental technique to find the most efficient routes. Applications: GPS routing.<br>
+        <b>Partitioning:</b> Breaks down problems into smaller parts. Reduces complexity. Example: Quick Sort.<br>
+        <b>Balancing and Rotations:</b> Maintains performance of data structures. Examples: AVL and Red-Black Trees.<br>
+        <b>Edge Relaxation:</b> Dynamically updates path solutions. Example: Dijkstra's algorithm.<br>
+        <b>Level Order Traversal:</b> Systematic, layer-by-layer exploration. Important for tree navigation.<br>
+        <b>Pruning:</b> Eliminates unnecessary solution paths to save time.<br>
+        <b>Brave and Cautious Travel Strategies:</b> Depth-First Search (DFS) for aggressive exploration, Breadth-First Search (BFS) for methodical investigation.
     </p>
 
-    <h3>Lack of Visual Aids</h3>
+    <h1>Hierarchical Data Structures</h1>
     <p>
-        Many algorithmic problems, especially in <strong>graph theory, dynamic programming</strong>, or <strong>tree structures</strong>, are difficult to visualize without 
-        appropriate diagrams. Visualizing data structures like <strong>AVL trees, heaps, or linked lists</strong> and understanding how they are manipulated 
-        during algorithm execution can be a significant challenge. Having access to interactive tools that can help students visualize algorithm execution 
-        can greatly enhance understanding.
+        <b>Tree:</b> Represents hierarchies like file systems.<br>
+        <b>Binary Search Tree (BST):</b> Efficient sorted data storage.<br>
+        <b>AVL Tree:</b> Maintains balance for consistent performance.<br>
+        <b>2-3 Tree:</b> Ensures perfect balance with logarithmic time.<br>
+        <b>Red-Black Tree:</b> Approximate balancing with fewer rotations.<br>
+        <b>Heap:</b> Priority management with quick min/max access.<br>
+        <b>Trie:</b> Efficient string and prefix searches.
     </p>
 
-    <h2>Question 2: Challenges in Correlating with Real-World Applications</h2>
-
-    <h3>Data Impurity</h3>
+    <h1>Array Query Algorithms</h1>
     <p>
-        In real-world scenarios, data is rarely perfect. Missing values, noise, and outliers can affect the performance of algorithms. For instance, 
-        an algorithm designed for clean data may break down or perform poorly when faced with inconsistent or missing input.
+        <b>Why Needed:</b> Efficient data access, optimized operations, dynamic applications, and memory efficiency.<br>
+        <b>Applications:</b> Range queries, dynamic updates, prefix queries, static queries, searches, and pattern matching.<br>
+        <b>Core Principles:</b> Divide and Conquer, preprocessing, caching, space-time tradeoff, and incremental updates.
     </p>
 
-    <h3>Dynamic Environments</h3>
+    <h1>Trees and Graphs</h1>
     <p>
-        Real-world systems evolve over time, and algorithms must be adaptable to handle changes in the environment. For example, an algorithm 
-        designed to route traffic in a city must account for changes in traffic patterns, construction, or accidents.
+        <b>Tree:</b> A hierarchical structure.<br>
+        <b>Graph:</b> A collection of nodes connected by edges.<br>
+        <b>Tree Traversals:</b> Pre-order, In-order, Post-order, and Level-order.<br>
+        <b>Graph Traversals:</b> DFS and BFS.<br>
+        <b>Applications:</b> File systems, social networks, routing, web crawling, and recommendation systems.
     </p>
 
-    <h3>Ethical Considerations</h3>
+    <h1>Sorting and Searching Algorithms</h1>
     <p>
-        Algorithms can have significant <b>social, ethical, and legal implications</b>. Issues such as <strong>algorithmic bias, fairness, and privacy concerns</strong> 
-        must be considered when applying algorithms to real-world problems. For instance, biased data can lead to discriminatory outcomes in 
-        <b>predictive policing</b> or <b>hiring algorithms</b>.
+        <b>Sorting Algorithms:</b> Bubble Sort, Insertion Sort, Merge Sort, Quick Sort, and Heap Sort.<br>
+        <b>Searching Algorithms:</b> Linear Search, Binary Search, and Hashing.<br>
+        <b>Applications:</b> Databases, e-commerce, operating systems, web search engines, and navigation.
     </p>
 
-    <h3>Domain-Specific Knowledge</h3>
+    <h1>Graph Algorithms: Spanning Trees and Shortest Paths</h1>
     <p>
-        Algorithms need to be tailored to specific real-world domains. For example, understanding the structure of data in a <strong>financial application</strong> 
-        is different from that in a <strong>healthcare</strong> or <strong>social media application</strong>. Deep knowledge of the domain ensures that the algorithm 
-        can be fine-tuned to achieve better performance and results.
+        <b>Spanning Trees:</b> Connects all nodes with the fewest edges. Applications: Network design and circuit design.<br>
+        <b>Shortest Path Algorithms:</b> Dijkstra's, Bellman-Ford, and A* Algorithm. Applications: GPS, telecommunication, and logistics.
     </p>
 
-    <h2>Answer 3: Determining the Most Efficient Approach/Design Techniques</h2>
-
-    <h3>Greedy Algorithms</h3>
+    <h1>Algorithm Design Techniques</h1>
     <p>
-        Greedy algorithms are often used for optimization problems where the goal is to make a series of <strong>locally optimal choices</strong> 
-        with the hope of finding a <b>globally optimal solution</b>. For example, in the coin change problem, a greedy algorithm might choose the 
-        largest denomination first, but this does not always result in the most efficient solution in all cases. Therefore, although greedy 
-        algorithms are quick and simple to implement, their correctness depends on the problem's structure.
-    </p>
-    <p>
-        In cases where greedy algorithms do not work optimally, it’s essential to use other techniques like <strong>dynamic programming</strong> or 
-        <strong>backtracking</strong> to guarantee an optimal solution. The key is to analyze the problem carefully to see if a greedy approach is 
-        applicable or if a more complex solution is required.
-    </p>
-
-    <h3>Divide and Conquer</h3>
-    <p>
-        The divide and conquer technique divides the problem into subproblems, solves them recursively, and then combines their results. 
-        This approach is widely used in algorithms like <strong>merge sort, quick sort</strong>, and <strong>binary search</strong>, which leverage the simplicity 
-        and efficiency of breaking a large problem down. For instance, merge sort divides the list in half, sorts each half, and then merges them 
-        together efficiently, ensuring an optimal time complexity of <b>O(n log n)</b>.
-    </p>
-    <p>
-        The divide and conquer approach can be combined with other techniques, such as <strong>dynamic programming</strong> or <strong>greedy methods</strong>, 
-        depending on the problem's nature. When solving a problem with this technique, it is crucial to define a clear recursive structure and understand 
-        how to efficiently combine the results.
-    </p>
-
-    <h3>Dynamic Programming</h3>
-    <p>
-        Dynamic programming is a powerful technique that optimizes recursive algorithms by storing the results of subproblems in a table (<b>memoization</b>), 
-        avoiding redundant work. This is particularly helpful for problems that exhibit overlapping subproblems, such as the <strong>Knapsack problem</strong> 
-        or <strong>Fibonacci sequence</strong>. For example, the naive recursive Fibonacci algorithm has an exponential time complexity, but dynamic 
-        programming reduces it to linear time by storing intermediate results.
-    </p>
-    <p>
-        Dynamic programming can be categorized into two types: <b>top-down (memoization)</b>, where the problem is solved recursively and results are cached, 
-        and <b>bottom-up (tabulation)</b>, where an iterative approach is used to build up solutions from smaller subproblems. Both methods help improve 
-        time efficiency, but tabulation tends to use less memory.
-    </p>
-
-    <h3>Approximation Algorithms</h3>
-    <p>
-        Approximation algorithms are essential for solving <strong>NP-hard problems</strong>, where finding an exact solution is computationally expensive. 
-        These algorithms are designed to find near-optimal solutions within a guaranteed bound of the optimal answer. For example, the 
-        <strong>Traveling Salesman Problem (TSP)</strong> can be tackled using approximation algorithms that find a solution close to the optimal path, 
-        even if it’s not guaranteed to be the best one. This trade-off is acceptable in many real-world applications where an exact solution is 
-        unnecessary, and time constraints make finding the optimal solution impractical.
+        <b>Brave and Cautious Travel:</b> Combines DFS and BFS.<br>
+        <b>Pruning:</b> Eliminates unnecessary parts of solution space.<br>
+        <b>Lazy Propagation:</b> Delays updates until necessary.<br>
+        <b>Level Order Traversal:</b> Visits tree nodes level by level.<br>
+        <b>Edge Relaxation:</b> Updates shortest paths dynamically.<br>
+        <b>Balancing and Rotations:</b> Keeps structures balanced.<br>
+        <b>Partitioning:</b> Divides problems into smaller parts.<br>
+        <b>Shortest Path Trees:</b> Represents shortest paths efficiently.
     </p>
     </ol>
-</section>
+    </section>
+    </section>
 
-<!-- Suleman A -->
-<br>
-<button class="button" onclick="toggleInfo('suleman-reflections')">01fe23bci071 - 133 - Suleman A</button><br>
-<section id="suleman-reflections" style="display: none;">
-    <h2>Course Reflections - Suleman A</h2>
-    <ol>
-
-
-    <h2>Question 1: Challenges in Learning/Understanding the Above Concepts</h2>
-
-    <h3>Time Commitment</h3>
-    <p>
-        These concepts often require an extensive time investment to master. Not only do students need to read and study textbooks, but they must also 
-        implement and test these algorithms, which can be time-consuming. Working through exercises and solving programming problems on platforms like 
-        <strong>LeetCode, HackerRank</strong>, or <strong>Codeforces</strong> is essential for reinforcing understanding.
-    </p>
-
-    <h3>Motivation and Persistence</h3>
-    <p>
-        Given the complexity of these topics, students may feel overwhelmed or discouraged when progress seems slow. <b>Motivation</b> is key to pushing 
-        through difficult concepts, and maintaining <b>persistence</b> during setbacks, such as failing to understand a tricky algorithm, is necessary 
-        for success.
-    </p>
-
-    <h3>Lack of Prior Experience</h3>
-    <p>
-        Students who are new to programming might find algorithmic thinking particularly challenging. Understanding the theoretical aspects of algorithms 
-        is one thing, but translating that into a working implementation requires practical experience in <b>coding, debugging, and optimizing code</b>, 
-        which may not be easily accessible to beginners.
-    </p>
-
-    <h3>Instructor Quality</h3>
-    <p>
-        The way instructors present these concepts can significantly impact learning. A <b>poorly explained concept</b> or a lack of real-world examples 
-        can make abstract concepts even harder to grasp. Conversely, <strong>engaging instructors</strong> who use diverse teaching methods and provide 
-        hands-on learning opportunities can make a significant difference in student comprehension.
-    </p>
-
-    <h2>Question 2: Challenges in Correlating with Real-World Applications</h2>
-
-    <h3>Complexity of Real-World Problems</h3>
-    <p>
-        Real-world problems often involve multiple variables and constraints. Algorithms need to be able to handle a range of situations and integrate 
-        with other systems to produce viable solutions. For example, an <b>e-commerce recommendation system</b> involves not just user preferences but 
-        also product inventory, shipping constraints, and seasonal trends.
-    </p>
-
-    <h3>Unpredictable User Behavior</h3>
-    <p>
-        Users may behave in unexpected ways, which can influence how algorithms should be designed. For example, a <strong>recommendation algorithm</strong> 
-        for an online video platform needs to handle diverse user tastes and account for behaviors like skipping content, watching out of sequence, 
-        or ignoring recommendations entirely.
-    </p>
-
-    <h3>Resource Constraints</h3>
-    <p>
-        Real-world systems are usually constrained by limited resources such as <strong>memory, processing power</strong>, and <strong>network bandwidth</strong>. 
-        For example, an embedded system may not be able to support complex algorithms, so more efficient and lightweight alternatives are necessary.
-    </p>
-
-    <h3>Emergent Behavior</h3>
-    <p>
-        Systems that involve large numbers of components, such as <strong>social networks</strong>, often exhibit emergent behavior that is difficult to predict. 
-        For example, in a large-scale social media platform, user interactions can generate unexpected viral phenomena, and algorithmic decisions must be 
-        robust enough to handle such complexities.
-    </p>
-
-    <h2>Answer 3: Determining the Most Efficient Approach/Design Techniques</h2>
-
-    <h3>Prototype and Iterate</h3>
-    <p>
-        In real-world software engineering, especially in the context of algorithms, it's common to develop an initial <b>prototype</b> that captures 
-        the core idea. The prototype serves as a proof of concept, allowing developers to test the algorithm in real scenarios. Feedback from testing 
-        helps refine the solution, optimize performance, and fix any bugs. For instance, building a <strong>recommendation system</strong> might begin 
-        with a simple algorithm like <b>content-based filtering</b> before transitioning to more complex collaborative filtering methods.
-    </p>
-    <p>
-        Iterative development helps in adapting to changing requirements or discovering edge cases that weren’t initially considered. It’s also essential 
-        to gather user feedback during the iteration process to ensure the algorithm meets practical needs and real-world constraints.
-    </p>
-
-    <h3>Experimentation</h3>
-    <p>
-        The process of <b>experimentation</b> involves trying multiple approaches to solve a problem and evaluating their performance. By testing various 
-        algorithms under different conditions, developers can determine which method yields the best results. This is especially valuable when applying 
-        <strong>machine learning algorithms</strong>, where different models, hyperparameters, or training techniques can be explored and compared.
-    </p>
-    <p>
-        Experimentation is also vital in optimizing algorithms—by testing with real-world data sets, developers can measure algorithm efficiency and 
-        adjust accordingly. For example, comparing <b>heap sort</b> with <b>merge sort</b> on a specific data set may reveal the better performer, depending 
-        on whether the data is partially sorted or entirely random.
-    </p>
-
-    <h3>Leveraging Existing Libraries</h3>
-    <p>
-        Utilizing pre-built libraries and frameworks can significantly improve the efficiency and speed of software development. Instead of re-implementing 
-        common algorithms, developers can use highly optimized libraries like <strong>NumPy</strong> (for numerical computations), <strong>Scikit-learn</strong> 
-        (for machine learning), or <strong>Boost</strong> (for graph algorithms) that provide optimized implementations and handle edge cases effectively.
-    </p>
-    <p>
-        Leveraging libraries saves valuable development time and ensures that the algorithms are already optimized for performance. However, it’s important 
-        to understand the trade-offs between general-purpose libraries and custom implementations, especially when working under specific constraints.
-    </p>
-
-    <h3>Continuous Learning</h3>
-    <p>
-        Staying updated with new research and developments in algorithms and data structures is essential. The field of algorithms is rapidly evolving, 
-        with new techniques, optimizations, and best practices emerging regularly. Attending <strong>conferences</strong>, reading <strong>academic papers</strong>, 
-        and following <strong>industry leaders</strong> can help developers stay at the cutting edge. This continuous learning can lead to more efficient 
-        solutions and a deeper understanding of emerging trends like <b>quantum computing</b> or <b>graph neural networks</b>, which may impact future 
-        algorithm designs.
-    </p>
-    </ol>
-</section>
-
-<!-- Saif Ali -->
-<br>
-<button class="button" onclick="toggleInfo('saif-reflections')">01fe23bci008 - 158 - Saif Ali</button><br>
-<section id="saif-reflections" style="display: none;">
-    <h2>Course Reflections - Saif Ali</h2>
-    <ol>
-      
-
-    <h2>Question 1: Challenges in Learning/Understanding the Above Concepts</h2>
-
-    <h3>Anxiety and Imposter Syndrome</h3>
-    <p>
-        The complexity of algorithms can sometimes make students feel like they are not capable of mastering them. This can lead to self-doubt 
-        and the fear of not measuring up to peers or instructors. Overcoming these feelings is crucial for staying motivated and continuing to learn
-    </p>
-
-    <h3>Cognitive Load</h3>
-    <p>
-        The learning process often involves processing multiple layers of complexity. This includes learning new terminology, understanding the 
-        nuances of various data structures, and applying them to solve real-world problems. <b>Cognitive overload</b> can make it difficult for 
-        students to retain and apply knowledge effectively.
-    </p>
-
-    <h3>Lack of Real-World Context</h3>
-    <p>
-        Without exposure to real-world applications, it can be difficult for students to see the value of algorithmic knowledge. For example, 
-        knowing how to efficiently sort data or find the shortest path in a graph becomes much more relevant when working on real projects like 
-        <b>web development</b> or <b>data analytics</b>.
-    </p>
-
-    <h3>Limited Resources</h3>
-    <p>
-        While there is an abundance of resources online, not all resources are of high quality or accessible. Books, online courses, and mentoring 
-        from experienced professionals can significantly improve learning, but not everyone has access to such resources, especially in certain 
-        geographic locations or financial circumstances.
-    </p>
-
-    <h2>Question 2: Challenges in Correlating with Real-World Applications</h2>
-
-    <h3>Lack of Real-World Experience</h3>
-    <p>
-        Many students struggle to apply what they learn in a classroom to actual problems in the field. Theoretical knowledge might not always 
-        transfer smoothly to real-world projects, where problems are messy, the environment is dynamic, and constraints are real.
-    </p>
-
-    <h3>Limited Access to Real-World Data</h3>
-    <p>
-        The absence of real-world data is a common issue. Many students work with academic datasets, which, while helpful for understanding basic 
-        concepts, may not accurately reflect the complexity and messiness of data in actual applications.
-    </p>
-
-    <h3>Focus on Theory over Practice</h3>
-    <p>
-        Some academic programs emphasize theoretical learning and may not give students enough opportunities to apply their knowledge to real-world 
-        problems. Without hands-on practice, students may struggle when they encounter practical challenges in applying algorithms.
-    </p>
-
-    <h3>Communication and Collaboration</h3>
-    <p>
-        Applying algorithms in a team environment requires excellent communication skills. Collaborating with domain experts or other software 
-        engineers who are focused on different aspects of the project can be challenging for students who are used to working independently or on 
-        theoretical problems.
-    </p>
-
-    <h2>Answer 3: Determining the Most Efficient Approach/Design Techniques</h2>
-
-    <h3>Understanding Constraints</h3>
-    <p>
-        Before diving into the design of any algorithm, it’s crucial to have a clear understanding of the problem’s constraints—whether that’s 
-        time, memory, processing power, or network bandwidth. These constraints will shape decisions around which algorithms or techniques to apply. 
-        For example, in mobile app development, energy consumption is a primary constraint, so the algorithm should prioritize lower power usage, 
-        such as using <b>O(n log n)</b> algorithms instead of brute-force approaches.
-    </p>
-    <p>
-        Understanding the specific context of the problem allows for more targeted and effective algorithm design.
-    </p>
-
-    <h3>Prioritizing Efficiency</h3>
-    <p>
-        In designing algorithms, focusing on efficiency from the outset helps avoid costly rework later. Whether that’s minimizing time complexity 
-        to handle large inputs or optimizing memory usage to fit within hardware constraints, prioritizing efficiency helps ensure the algorithm 
-        meets performance requirements.
-    </p>
-    <p>
-        Efficiency can also extend to code readability and maintainability. Efficient code isn’t just about performance—it’s about finding the 
-        right balance between clarity and optimization.
-    </p>
-
-    <h3>Testing and Validation</h3>
-    <p>
-        Thorough testing is essential to ensure that the designed solution works under all expected conditions. This includes <b>unit tests</b>, 
-        <b>integration tests</b>, and <b>performance tests</b> to ensure the algorithm behaves correctly across a range of input data. Load testing 
-        can be particularly useful to check whether the algorithm holds up under heavy traffic or large data sets, as might be encountered in web 
-        applications or distributed systems.
-    </p>
-
-    <h3>Communication and Collaboration</h3>
-    <p>
-        Successful algorithm design is often a collaborative effort. Developers must work closely with domain experts, project managers, and other 
-        stakeholders to understand requirements and constraints. Effective communication ensures that the chosen solution meets both technical and 
-        business needs, while collaboration allows for the sharing of knowledge, ideas, and strategies that can lead to a more efficient solution.
-    </p>
-    </ol>
-<</section>
- <nav>
-    <button class="button" onclick="toggleInfo('code-ideas')">C++ CODE</button>
+             <nav>
+    <button class="button" onclick="toggleInfo('code-ideas')">Implementation </button>
   </nav>
      <section id="code-ideas" style="display: none;">
-        <h2>IMPLEMENTATION OF CODE </h2>
-       
-
-    <pre><code>
+        <button class="button" onclick="toggleInfo('Bus-ideas1')"> Business case 1 </button>
+  </nav>
+     <section id="Bus-ideas1" style="display: none;">
+        
+     </section>
+        <button class="button" onclick="toggleInfo('Bus-ideas2')"> Business case 2 </button>
+  </nav>
+     <section id="Bus-ideas2" style="display: none;">
+        <pre>
 #include &lt;iostream&gt;
 #include &lt;vector&gt;
-#include &lt;queue&gt;
-#include &lt;algorithm&gt;
-#include &lt;map&gt;
 #include &lt;string&gt;
-#include &lt;numeric&gt; // For accumulate function
-#include &lt;climits&gt; // For INT_MAX
+#include &lt;unordered_map&gt;
+#include &lt;queue&gt;
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+#include &lt;regex&gt;
 
-using namespace std;
-
-// Function for Optimal Tourist Routes (Graphs)
-void optimalTouristRoutes() {
-    cout &lt;&lt; "Optimal Tourist Routes using Graphs\n";
-    int n;
-    cout &lt;&lt; "Enter the number of nodes: ";
-    cin &gt;&gt; n;
-
-    vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
-
-    cout &lt;&lt; "Enter the adjacency matrix (distance between nodes):\n";
-    for (int i = 0; i &lt; n; ++i) {
-        for (int j = 0; j &lt; n; ++j) {
-            cin &gt;&gt; graph[i][j];
-        }
+// Hashing function for Rabin-Karp string search (case insensitive)
+unsigned long rabinKarpHash(const std::string &str, int start, int end, int prime = 101) {
+    unsigned long hashValue = 0;
+    for (int i = start; i &lt;= end; i++) {
+        hashValue = (hashValue * prime + std::tolower(str[i])) % 1000000000; // Use an integer constant
     }
-
-    cout &lt;&lt; "Optimal route (example): 0 -&gt; 1 -&gt; 3 -&gt; 2\n";
+    return hashValue;
 }
 
-// Function for Menu Item Sorting (Quick Sort)
-void menuItemSorting() {
-    cout &lt;&lt; "Menu Item Sorting by Price or Popularity\n";
-    int n;
-    cout &lt;&lt; "Enter the number of menu items: ";
-    cin &gt;&gt; n;
+// Rabin-Karp String Search (case insensitive)
+bool rabinKarpSearch(const std::string &text, const std::string &pattern) {
+    int n = text.length();
+    int m = pattern.length();
+    unsigned long patternHash = rabinKarpHash(pattern, 0, m - 1);
+    unsigned long textHash = rabinKarpHash(text, 0, m - 1);
+    int prime = 101;
 
-    vector&lt;pair&lt;string, int&gt;&gt; menu;
-    for (int i = 0; i &lt; n; ++i) {
-        string item;
-        int price;
-        cout &lt;&lt; "Enter item name and price: ";
-        cin &gt;&gt; item &gt;&gt; price;
-        menu.emplace_back(item, price);
-    }
-
-    sort(menu.begin(), menu.end(), [](pair&lt;string, int&gt; a, pair&lt;string, int&gt; b) {
-        return a.second &lt; b.second; // Sort by price (ascending)
-    });
-
-    cout &lt;&lt; "Sorted Menu:\n";
-    for (auto item : menu) {
-        cout &lt;&lt; item.first &lt;&lt; " - $" &lt;&lt; item.second &lt;&lt; "\n";
-    }
-}
-
-// Function for Traffic Monitoring (BFS)
-void trafficMonitoring() {
-    cout &lt;&lt; "Traffic Monitoring using BFS\n";
-    int n;
-    cout &lt;&lt; "Enter the number of nodes: ";
-    cin &gt;&gt; n;
-
-    vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
-
-    cout &lt;&lt; "Enter the adjacency matrix (1 for connected, 0 for not connected):\n";
-    for (int i = 0; i &lt; n; ++i) {
-        for (int j = 0; j &lt; n; ++j) {
-            cin &gt;&gt; graph[i][j];
-        }
-    }
-
-    vector&lt;bool&gt; visited(n, false);
-    queue&lt;int&gt; q;
-    q.push(0);
-    visited[0] = true;
-    cout &lt;&lt; "BFS Order: ";
-    while (!q.empty()) {
-        int node = q.front();
-        q.pop();
-        cout &lt;&lt; node &lt;&lt; " ";
-        for (int i = 0; i &lt; n; ++i) {
-            if (graph[node][i] == 1 &amp;&amp; !visited[i]) {
-                visited[i] = true;
-                q.push(i);
+    for (int i = 0; i &lt;= n - m; i++) {
+        if (patternHash == textHash) {
+            if (text.substr(i, m) == pattern) {
+                return true;
             }
         }
-    }
-    cout &lt;&lt; "\n";
-}
-
-// Function for Waste Management (Dijkstra's)
-void wasteManagement() {
-    cout &lt;&lt; "Waste Management Route Optimization using Dijkstra's\n";
-    int n, e;
-    cout &lt;&lt; "Enter the number of nodes and edges: ";
-    cin &gt;&gt; n &gt;&gt; e;
-
-    vector&lt;vector&lt;pair&lt;int, int&gt;&gt;&gt; graph(n);
-    cout &lt;&lt; "Enter the edges (format: node1 node2 weight):\n";
-    for (int i = 0; i &lt; e; ++i) {
-        int u, v, w;
-        cin &gt;&gt; u &gt;&gt; v &gt;&gt; w;
-        graph[u].emplace_back(v, w);
-    }
-
-    vector&lt;int&gt; dist(n, INT_MAX);
-    dist[0] = 0;
-    priority_queue&lt;pair&lt;int, int&gt;, vector&lt;pair&lt;int, int&gt;&gt;, greater&lt;&gt;&gt; pq;
-    pq.push({0, 0});
-
-    while (!pq.empty()) {
-        auto [cost, node] = pq.top();
-        pq.pop();
-        for (auto [next, weight] : graph[node]) {
-            if (dist[next] &gt; cost + weight) {
-                dist[next] = cost + weight;
-                pq.push({dist[next], next});
-            }
+        if (i &lt; n - m) {
+            textHash = (textHash - std::tolower(text[i]) * std::pow(prime, m - 1)) * prime + std::tolower(text[i + m]);
         }
     }
-
-    cout &lt;&lt; "Shortest distances from Node 0: ";
-    for (int d : dist) cout &lt;&lt; d &lt;&lt; " ";
-    cout &lt;&lt; "\n";
+    return false;
 }
 
-// Function for Water Usage Analysis (Time Series)
-void waterUsageAnalysis() {
-    cout &lt;&lt; "Water Usage Analysis using Time Series\n";
-    int n;
-    cout &lt;&lt; "Enter the number of usage entries: ";
-    cin &gt;&gt; n;
+// Data structure for Feedback
+struct Feedback {
+    std::string issue;
+    int count;
+    std::string severity;
+    std::string department;
+    Feedback(std::string i, int c, std::string s, std::string d) : issue(i), count(c), severity(s), department(d) {}
+};
 
-    vector&lt;int&gt; usage(n);
-    cout &lt;&lt; "Enter the water usage data:\n";
-    for (int i = 0; i &lt; n; ++i) {
-        cin &gt;&gt; usage[i];
+// Compare function for the priority queue (min-heap) - now handles severity and department
+struct CompareFeedback {
+    bool operator()(const Feedback &a, const Feedback &b) {  // Use const references
+        if (a.count == b.count) {
+            return a.severity &lt; b.severity; // High severity comes first
+        }
+        return a.count &lt; b.count;
     }
+};
 
-    cout &lt;&lt; "Average Usage: "
-         &lt;&lt; accumulate(usage.begin(), usage.end(), 0) / usage.size()
-         &lt;&lt; "\n";
+// Function to convert string to lowercase for case-insensitive matching
+std::string toLowerCase(const std::string &str) {
+    std::string lowerStr = str;
+    std::transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
+    return lowerStr;
 }
 
-// Function for Internet Connectivity (Minimum Spanning Tree)
-void internetConnectivity() {
-    cout &lt;&lt; "Internet Connectivity Optimization using MST\n";
-    int n;
-    cout &lt;&lt; "Enter the number of nodes: ";
-    cin &gt;&gt; n;
+// Function to categorize the feedback based on keywords
+std::string categorizeFeedback(const std::string &feedback) {
+    std::string lowerFeedback = toLowerCase(feedback);
 
-    vector&lt;vector&lt;int&gt;&gt; graph(n, vector&lt;int&gt;(n, 0));
-    cout &lt;&lt; "Enter the adjacency matrix (cost of edges):\n";
-    for (int i = 0; i &lt; n; ++i) {
-        for (int j = 0; j &lt; n; ++j) {
-            cin &gt;&gt; graph[i][j];
-        }
+    // List of categories and corresponding keywords
+    if (lowerFeedback.find("traffic") != std::string::npos) {
+        return "Traffic Issue";
+    } else if (lowerFeedback.find("accident") != std::string::npos) {
+        return "Accident";
+    } else if (lowerFeedback.find("construction") != std::string::npos) {
+        return "Construction";
+    } else if (lowerFeedback.find("pollution") != std::string::npos) {
+        return "Environmental Concern";
+    } else if (lowerFeedback.find("noise") != std::string::npos) {
+        return "Noise Complaint";
+    } else if (lowerFeedback.find("water") != std::string::npos) {
+        return "Water Supply Issue";
+    } else if (lowerFeedback.find("power") != std::string::npos) {
+        return "Power Supply Issue";
+    } else {
+        return "General Inquiry";
     }
-
-    vector&lt;int&gt; key(n, INT_MAX);
-    vector&lt;bool&gt; inMST(n, false);
-    key[0] = 0;
-    int result = 0;
-
-    for (int i = 0; i &lt; n; ++i) {
-        int u = -1;
-        for (int v = 0; v &lt; n; ++v) {
-            if (!inMST[v] &amp;&amp; (u == -1 || key[v] &lt; key[u])) {
-                u = v;
-            }
-        }
-
-        inMST[u] = true;
-        result += key[u];
-        for (int v = 0; v &lt; n; ++v) {
-            if (graph[u][v] &amp;&amp; !inMST[v] &amp;&amp; graph[u][v] &lt; key[v]) {
-                key[v] = graph[u][v];
-            }
-        }
-    }
-
-    cout &lt;&lt; "Total Cost of MST: " &lt;&lt; result &lt;&lt; "\n";
 }
 
-// Main Function
+// Function to determine department to act on
+std::string getDepartment(const std::string &issue) {
+    if (issue == "Traffic Issue") {
+        return "Traffic Control";
+    } else if (issue == "Accident") {
+        return "Emergency Services";
+    } else if (issue == "Construction") {
+        return "Public Works";
+    } else if (issue == "Environmental Concern") {
+        return "Environmental Protection";
+    } else if (issue == "Noise Complaint") {
+        return "Public Health";
+    } else if (issue == "Water Supply Issue") {
+        return "Water Supply Services";
+    } else if (issue == "Power Supply Issue") {
+        return "Electricity Provider";
+    } else {
+        return "General Inquiry Team";
+    }
+}
+
+// Function to act on feedback
+void actOnFeedback(const Feedback &f) {
+    std::cout << "\nActing on Feedback - " << f.issue << ":\n";
+
+    if (f.severity == "high") {
+        std::cout << " - This is a high priority issue! Immediate action required.\n";
+    } else if (f.severity == "medium") {
+        std::cout << " - Medium priority issue, should be addressed within the next 24 hours.\n";
+    } else {
+        std::cout << " - Low priority issue, action can be scheduled as needed.\n";
+    }
+
+    // Based on the department and severity, take actions
+    if (f.issue == "Traffic Issue") {
+        if (f.severity == "high") {
+            std::cout << "   - Notify traffic control for immediate road rerouting and set up detours.\n";
+        } else {
+            std::cout << "   - Inform traffic monitoring centers to prepare for potential congestion.\n";
+        }
+    } else if (f.issue == "Accident") {
+        std::cout << "   - Emergency services are notified. Dispatch ambulances and route traffic around the site.\n";
+    } else if (f.issue == "Construction") {
+        std::cout << "   - Public Works team notified for further investigation on road work schedule.\n";
+    } else if (f.issue == "Environmental Concern") {
+        std::cout << "   - Environmental Protection will inspect for pollution and report findings.\n";
+    } else if (f.issue == "Noise Complaint") {
+        std::cout << "   - Notify Public Health to assess noise pollution levels.\n";
+    } else if (f.issue == "Water Supply Issue") {
+        std::cout << "   - Water Supply Services to inspect and ensure a prompt response to shortages.\n";
+    } else if (f.issue == "Power Supply Issue") {
+        std::cout << "   - Notify Electricity Provider to check the outage or supply issue.\n";
+    } else {
+        std::cout << "   - The General Inquiry Team will respond to this feedback.\n";
+    }
+}
+
+// Function to display and process feedback priority queue
+void processFeedbackQueue(std::priority_queue<Feedback, std::vector<Feedback>, CompareFeedback>& issuePriorityQueue) {
+    std::cout << "\nProcessed and Prioritized Feedback:\n";
+    while (!issuePriorityQueue.empty()) {
+        Feedback f = issuePriorityQueue.top();
+        std::cout << "\nIssue: " << f.issue
+                  << " - Count: " << f.count
+                  << " - Severity: " << f.severity
+                  << " - Department: " << f.department << "\n";
+        actOnFeedback(f);
+        issuePriorityQueue.pop();
+    }
+}
+
 int main() {
+    // Initialize data structures
+    std::unordered_map<std::string, int> feedbackCount;
+    std::queue<std::string> feedbackQueue;
+    std::priority_queue<Feedback, std::vector<Feedback>, CompareFeedback> issuePriorityQueue;
+
+    // Interactive feedback collection
+    std::string feedback;
+    std::cout << "Enter feedback from citizens (type 'exit' to stop):\n";
+
     while (true) {
-        cout &lt;&lt; "\nChoose an option:\n";
-        cout &lt;&lt; "1. Optimal Tourist Routes\n";
-        cout &lt;&lt; "2. Menu Item Sorting\n";
-        cout &lt;&lt; "3. Traffic Monitoring\n";
-        cout &lt;&lt; "4. Waste Management\n";
-        cout &lt;&lt; "5. Water Usage Analysis\n";
-        cout &lt;&lt; "6. Internet Connectivity Optimization\n";
-        cout &lt;&lt; "7. Exit\n";
+        std::cout << "Feedback: ";
+        std::getline(std::cin, feedback);
 
-        int choice;
-        cin &gt;&gt; choice;
-
-        switch (choice) {
-            case 1: optimalTouristRoutes(); break;
-            case 2: menuItemSorting(); break;
-            case 3: trafficMonitoring(); break;
-            case 4: wasteManagement(); break;
-            case 5: waterUsageAnalysis(); break;
-            case 6: internetConnectivity(); break;
-            case 7: return 0;
-            default: cout &lt;&lt; "Invalid choice. Try again.\n";
+        if (feedback == "exit") {
+            break;  // End the input loop
         }
+
+        // Categorize the feedback
+        std::string category = categorizeFeedback(feedback);
+
+        // Ask for severity (optional: can be 'high', 'medium', 'low')
+        std::string severity;
+        std::cout << "Severity (high, medium, low): ";
+        std::getline(std::cin, severity);
+
+        // Determine department based on category
+        std::string department = getDepartment(category);
+
+        // Store feedback in the queue
+        feedbackQueue.push(feedback);
+
+        // Increment the count of feedback for the specific category
+        feedbackCount[category]++;
+
+        // Add the feedback to the priority queue
+        issuePriorityQueue.push(Feedback(category, feedbackCount[category], severity, department));
+
+        std::cout << "\nFeedback Recorded: " << category << " - Severity: " << severity << "\n\n";
     }
+
+    // Process and display the prioritized feedback
+    processFeedbackQueue(issuePriorityQueue);
+
     return 0;
 }
-    </code></pre>
+</pre>
+     </section>
+        <button class="button" onclick="toggleInfo('Bus-ideas3')"> Business case 3 </button>
+  </nav>
+     <section id="Bus-ideas3" style="display: none;">
+        
+     </section>
+        <button class="button" onclick="toggleInfo('Bus-ideas4')"> Business case 4 </button>
+  </nav>
+     <section id="Bus-ideas4" style="display: none;">
+        
      </section>
         
-    <footer>
-        <p>&copy; 2024 KWIN City | Designed by Students of KLE Technological University.</p>
-    </footer>
+     </section>
+        
+
+            
+<footer>
+    <p>&copy; 2024 VAYUJIVA | Designed by RIA JAVALAGI</p>
+</footer>
+
 </body>
 </html>
