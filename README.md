@@ -33,7 +33,7 @@ And guess what? It was actually **fun** 🕺🔥
 - The portfolio website turned into my **digital playground** where I could show my work proudly 🖥️🎨  
 - And… deploying it on **GitHub Pages** meant anyone can visit my city 🌍  
 
-👉 [Take a Tour of My Smart City 🏙️](https://varunterdal.github.io/smart-city-daa-portfolio/)  
+👉 [Take a Tour of My Smart City 🏙️]([https://varunterdal.github.io/smart-city-daa-portfolio/] (https://varunterdal.github.io/KWIN.github.io/))  
 
 ---
 
